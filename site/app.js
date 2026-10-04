@@ -1,4 +1,4 @@
-/* AI at Work / L'IA au travail — static lesson site
+/* AI for All / L'IA pour tous — static lesson site
    No build step at runtime. No data is ever sent anywhere; all progress lives in localStorage.
    Unit content and quizzes are embedded in content-data.js / quiz-data.js (generated from
    content/*.md and quizzes/*.json by scripts/generate-site-data.js) rather than fetched, so the
@@ -68,7 +68,7 @@
 
   var STRINGS = {
     en: {
-      siteTitle: "AI at Work",
+      siteTitle: "AI for All",
       heroEyebrow: "28 lessons · EN/FR · mobile-first",
       heroTagline: "Practical AI skills for anyone who uses a computer at work.",
       footerNote: "Progress is stored only in this browser. Nothing is sent anywhere.",
@@ -109,7 +109,7 @@
       backToHome: "Back to home"
     },
     fr: {
-      siteTitle: "L'IA au travail",
+      siteTitle: "L'IA pour tous",
       heroEyebrow: "28 leçons · EN/FR · pensé pour mobile",
       heroTagline: "Des compétences IA pratiques pour toute personne qui utilise un ordinateur au travail.",
       footerNote: "La progression est enregistrée uniquement dans ce navigateur. Rien n'est envoyé ailleurs.",
