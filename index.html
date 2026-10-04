@@ -51,6 +51,7 @@
     background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px;
     padding: 7px 14px; font-weight: 700; font-size: .9rem; color: var(--accent);
     cursor: pointer; box-shadow: var(--shadow-sm);
+    min-height: 44px; min-width: 44px;
   }
   .langbtn:active { transform: scale(.95); }
 
@@ -72,10 +73,13 @@
   .hero h1 { margin: 0 0 10px; font-size: 1.7rem; font-weight: 800; letter-spacing: -.01em; line-height: 1.25; }
   .hero p.sub { margin: 0 auto 18px; max-width: 46ch; font-size: 1rem; opacity: .95; }
   .btn {
-    display: inline-block; background: #fff; color: var(--accent); border: none; border-radius: 12px;
+    display: inline-flex; align-items: center; justify-content: center;
+    background: #fff; color: var(--accent); border: none; border-radius: 12px;
     padding: 13px 24px; font-size: 1rem; font-weight: 800; text-decoration: none; box-shadow: var(--shadow-sm);
+    min-height: 44px;
   }
-  .hero .fineprint { margin-top: 12px; font-size: .78rem; opacity: .85; }
+  .fineprint { font-size: .78rem; color: var(--muted); }
+  .hero .fineprint { margin-top: 12px; color: #fff; opacity: .85; }
 
   h2.section-title { font-size: 1.15rem; font-weight: 800; margin: 30px 0 14px; letter-spacing: -.01em; }
 
@@ -147,6 +151,13 @@
   .trust ul { margin: 6px 0 0; padding-left: 1.1rem; }
   .trust li { margin-bottom: 4px; }
 
+  .placeholder-text { color: var(--muted); font-style: italic; }
+  .sources-list { font-size: .82rem; color: var(--muted); padding-left: 1.2rem; margin: 8px 0 0; }
+  .sources-list li { margin-bottom: 6px; }
+  .sources-list a { color: var(--accent); }
+  .measure-list { margin: 8px 0 10px; padding-left: 1.2rem; font-size: .9rem; }
+  .measure-list li { margin-bottom: 4px; }
+
   @media print {
     body { max-width: 100%; padding: 10mm; }
     .hero { break-inside: avoid; }
@@ -166,11 +177,12 @@
 <section class="lang-block" data-lang="en">
   <div class="hero">
     <span class="eyebrow">28 Lessons · EN/FR · Mobile-First</span>
-    <h1>Stop Losing Hours to Repetitive Work.<br>Learn AI in Lessons That Fit Your Day.</h1>
+    <h1>Practise repetitive work with AI.<br>Learn in lessons that fit your day.</h1>
     <p class="sub">Practical AI skills for anyone who uses a computer at work — in English and French, at your own pace.</p>
     <span class="free-chip">FREE ACCESS DURING LAUNCH</span><br>
     <a class="btn" href="site/index.html">Start free now</a>
     <p class="fineprint">Duration descriptions are the intended lesson format, not a guaranteed completion time for every learner.</p>
+    <p class="fineprint">We will publish measured results from our pilot cohort, and only those.</p>
   </div>
 
   <h2 class="section-title">Why this course</h2>
@@ -184,12 +196,19 @@
   <h2 class="section-title">How it works</h2>
   <div class="steps">
     <div class="step"><span class="num">1</span><div><strong>Pick your pace</strong><p>Tap your pace right on the home screen — free during launch, standard price shown up front for later.</p></div></div>
-    <div class="step"><span class="num">2</span><div><strong>Learn by doing</strong><p>Short lessons (15–25 minutes) with copy-ready prompts for the work you already do.</p></div></div>
+    <div class="step"><span class="num">2</span><div><strong>Learn by doing</strong><p>Short lessons (15 to 25 minutes per lesson) with copy-ready prompts for the work you already do.</p></div></div>
     <div class="step"><span class="num">3</span><div><strong>Build your playbook</strong><p>Finish with five tested prompts, a personal data-rule sheet, and a 30-day plan.</p></div></div>
   </div>
 
   <h2 class="section-title">What's inside</h2>
   <p class="modules"><strong>A</strong> AI Foundations · <strong>B</strong> Everyday AI Tasks · <strong>C</strong> Working with AI Tools · <strong>D</strong> Quality and Trust · <strong>E</strong> Team and Workplace Use · <strong>F</strong> Your AI Playbook</p>
+
+  <h2 class="section-title">About the instructor</h2>
+  <div class="card">
+    <p style="margin:0 0 6px;"><strong class="placeholder-text">[Full name]</strong><br><span class="placeholder-text">[Role and organisation]</span></p>
+    <p style="margin:0 0 6px;" class="placeholder-text">[Relevant experience, in one or two factual sentences]</p>
+    <p style="margin:0;" class="placeholder-text">[Qualifications, if any, with the issuing body]</p>
+  </div>
 
   <h2 class="section-title">What learners say</h2>
   <div class="testimonial-card">Real testimonials will appear here once our pilot cohort completes the course. We don't publish feedback we haven't actually collected.</div>
@@ -202,15 +221,19 @@
     <tr><td>7-Day Sprint</td><td>1 week</td><td>None</td><td class="price-cell"><span class="price-was">2 000 FCFA</span><span class="price-free">FREE</span><span class="per-day">standard ≈286 FCFA/day</span></td></tr>
     <tr><td>14-Day Standard</td><td>2 weeks</td><td>Optional async check-in</td><td class="price-cell"><span class="price-was">3 500 FCFA</span><span class="price-free">FREE</span><span class="per-day">standard 250 FCFA/day</span></td></tr>
     <tr><td>28-Day Complete</td><td>4 weeks</td><td>90-minute live workshop</td><td class="price-cell"><span class="price-was">5 000 FCFA</span><span class="price-free">FREE</span><span class="per-day">standard ≈179 FCFA/day</span></td></tr>
-    <tr><td>12-Week Team Rollout (B2B)</td><td>12 weeks</td><td>3 live check-ins</td><td class="price-cell">Contact us</td></tr>
+    <tr><td>12-Week Team Rollout (B2B)</td><td>12 weeks</td><td>3 live check-ins</td><td class="price-cell">Contact for pricing</td></tr>
   </table>
   </div>
+  <p class="fineprint" style="color:var(--muted); opacity:1; margin-top:8px;">Prices are shown in FCFA. They are free during the launch period. Any future price change will be shown here in advance.</p>
+  <p class="placeholder-text" style="font-size:.85rem;">[State the basis for these prices here, for example: cost of delivery or a pilot test.]</p>
+  <p class="placeholder-text" style="font-size:.85rem;">12-Week Team Rollout contact: [contact email or form to add]</p>
 
   <div class="pay-badge"><span class="dot"></span> Once paid pricing begins, payment will be via MTN Mobile Money or Orange Money — no bank card needed.</div>
 
   <div class="cta-box">
     <strong style="font-size:1.05rem;">Ready to start?</strong>
     <p class="placeholder">Free during launch · No payment, no signup · Standard price shown above applies later</p>
+    <p class="placeholder-text" style="font-size:.82rem; margin:6px 0 0;">[Add the date the free period ends, or write "until further notice".]</p>
     <a class="btn" style="background:var(--gradient); color:#fff; margin-top:10px;" href="site/index.html">Start free now</a>
   </div>
 
@@ -226,28 +249,50 @@
   <div class="faq-item"><strong>Will I have to pay later?</strong><p>Possibly. The prices shown above are what this course is intended to cost once the free launch period ends. If that happens, it will be announced clearly in advance — never sprung on anyone already using the course without notice.</p></div>
   <div class="faq-item"><strong>How will I pay, once pricing starts?</strong><p>Via MTN Mobile Money or Orange Money — no bank card needed.</p></div>
   <div class="faq-item"><strong>What does the certificate actually mean?</strong><p>It certifies that you completed the course. It is not a professional licence.</p></div>
-  <div class="faq-item"><strong>Is my data safe?</strong><p>Your course progress is stored only on your own device. We don't collect or store your personal data.</p></div>
+  <div class="faq-item"><strong>Is my data safe?</strong><p>This course does not collect or store your personal data. Your progress is saved only on your device. The site is hosted on GitHub Pages, which keeps standard server logs. We do not use those logs to identify learners.</p></div>
 
   <div class="trust">
     <strong>What we want you to know:</strong>
     <ul>
       <li>We do not promise outcomes we haven't measured — no invented statistics, no fake testimonials.</li>
       <li>The certificate states completion of the course. It is not a professional licence.</li>
-      <li>Your progress is stored only on your device. Nothing is sent anywhere.</li>
+      <li>Your progress is stored only on your device. The site (hosted on GitHub Pages) keeps standard server logs, as any website does; we don't use them to identify you.</li>
       <li>Access is free right now. If that ever changes, the new price will be shown clearly in advance — never hidden behind a quiz.</li>
     </ul>
   </div>
+
+  <h2 class="section-title">How we will measure results</h2>
+  <div class="card">
+    <ul class="measure-list">
+      <li>Completion rate</li>
+      <li>Quiz pass rate</li>
+      <li>Time saved per task (self-reported, compared against a baseline measured before the course)</li>
+      <li>Pilot-to-paid conversion</li>
+    </ul>
+    <p style="margin:0; font-size:.85rem; color:var(--muted);">Results will be published only once they have actually been measured.</p>
+  </div>
+
+  <h2 class="section-title">Sources</h2>
+  <p class="fineprint" style="color:var(--muted); opacity:1;">Not checked live. Confirm each link before publishing.</p>
+  <ul class="sources-list">
+    <li>EU AI Act, Article 4 (AI literacy) — European Union — 2024 — <a href="https://artificialintelligenceact.eu/article/4/">artificialintelligenceact.eu/article/4</a></li>
+    <li>NIST, AI Risk Management Framework 1.0 — National Institute of Standards and Technology — January 2023 — <a href="https://www.nist.gov/itl/ai-risk-management-framework">nist.gov/itl/ai-risk-management-framework</a></li>
+    <li>UNESCO, AI competency frameworks — UNESCO — 2024 — <a href="https://www.unesco.org">unesco.org</a></li>
+    <li>Elements of AI — University of Helsinki and MinnaLearn — <a href="https://www.elementsofai.com">elementsofai.com</a></li>
+    <li>AI for Everyone — DeepLearning.AI / Coursera — <a href="https://www.coursera.org/learn/ai-for-everyone">coursera.org/learn/ai-for-everyone</a></li>
+  </ul>
 </section>
 
 <!-- FRANÇAIS -->
 <section class="lang-block" data-lang="fr" hidden>
   <div class="hero">
     <span class="eyebrow">28 Leçons · EN/FR · Pensé pour mobile</span>
-    <h1>Arrêtez de perdre des heures sur des tâches répétitives.<br>Apprenez l'IA en leçons adaptées à votre journée.</h1>
+    <h1>Pratiquez les tâches répétitives avec l'IA.<br>Apprenez en leçons adaptées à votre journée.</h1>
     <p class="sub">Des compétences IA pratiques pour toute personne qui utilise un ordinateur au travail — en anglais et en français, à votre rythme.</p>
     <span class="free-chip">ACCÈS GRATUIT PENDANT LE LANCEMENT</span><br>
     <a class="btn" href="site/index.html">Commencer gratuitement</a>
     <p class="fineprint">Les durées indiquées décrivent le format de leçon prévu, pas un temps de complétion garanti pour chaque apprenant.</p>
+    <p class="fineprint">Nous publierons les résultats mesurés de notre cohorte pilote, et uniquement ceux-là.</p>
   </div>
 
   <h2 class="section-title">Pourquoi ce cours</h2>
@@ -261,12 +306,19 @@
   <h2 class="section-title">Comment ça marche</h2>
   <div class="steps">
     <div class="step"><span class="num">1</span><div><strong>Choisissez votre rythme</strong><p>Tapotez votre rythme directement sur l'écran d'accueil — gratuit pendant le lancement, prix standard indiqué d'emblée pour plus tard.</p></div></div>
-    <div class="step"><span class="num">2</span><div><strong>Apprenez en pratiquant</strong><p>Des leçons courtes (15 à 25 minutes) avec des prompts prêts à l'emploi pour votre travail réel.</p></div></div>
+    <div class="step"><span class="num">2</span><div><strong>Apprenez en pratiquant</strong><p>Des leçons courtes (15 à 25 minutes par leçon) avec des prompts prêts à l'emploi pour votre travail réel.</p></div></div>
     <div class="step"><span class="num">3</span><div><strong>Construisez votre carnet</strong><p>Terminez avec cinq prompts testés, une fiche personnelle de règles de données, et un plan à 30 jours.</p></div></div>
   </div>
 
   <h2 class="section-title">Le contenu</h2>
   <p class="modules"><strong>A</strong> Fondamentaux de l'IA · <strong>B</strong> Tâches quotidiennes · <strong>C</strong> Travailler avec les outils d'IA · <strong>D</strong> Qualité et confiance · <strong>E</strong> Travail d'équipe · <strong>F</strong> Votre carnet IA</p>
+
+  <h2 class="section-title">À propos du formateur</h2>
+  <div class="card">
+    <p style="margin:0 0 6px;"><strong class="placeholder-text">[Nom complet]</strong><br><span class="placeholder-text">[Rôle et organisation]</span></p>
+    <p style="margin:0 0 6px;" class="placeholder-text">[Expérience pertinente, en une ou deux phrases factuelles]</p>
+    <p style="margin:0;" class="placeholder-text">[Qualifications, le cas échéant, avec l'organisme émetteur]</p>
+  </div>
 
   <h2 class="section-title">Ce que disent les apprenants</h2>
   <div class="testimonial-card">De vrais témoignages apparaîtront ici une fois notre cohorte pilote ayant terminé le cours. Nous ne publions aucun avis que nous n'avons pas réellement recueilli.</div>
@@ -279,15 +331,19 @@
     <tr><td>Sprint de 7 jours</td><td>1 semaine</td><td>Aucune</td><td class="price-cell"><span class="price-was">2 000 FCFA</span><span class="price-free">GRATUIT</span><span class="per-day">standard ≈286 FCFA/jour</span></td></tr>
     <tr><td>Standard de 14 jours</td><td>2 semaines</td><td>Point de contact asynchrone optionnel</td><td class="price-cell"><span class="price-was">3 500 FCFA</span><span class="price-free">GRATUIT</span><span class="per-day">standard 250 FCFA/jour</span></td></tr>
     <tr><td>Complet de 28 jours</td><td>4 semaines</td><td>Atelier en direct de 90 minutes</td><td class="price-cell"><span class="price-was">5 000 FCFA</span><span class="price-free">GRATUIT</span><span class="per-day">standard ≈179 FCFA/jour</span></td></tr>
-    <tr><td>Déploiement d'équipe 12 semaines (B2B)</td><td>12 semaines</td><td>3 points de contact en direct</td><td class="price-cell">Nous contacter</td></tr>
+    <tr><td>Déploiement d'équipe 12 semaines (B2B)</td><td>12 semaines</td><td>3 points de contact en direct</td><td class="price-cell">Nous contacter pour un tarif</td></tr>
   </table>
   </div>
+  <p class="fineprint" style="color:var(--muted); opacity:1; margin-top:8px;">Les prix sont indiqués en FCFA. Ils sont gratuits pendant la période de lancement. Tout changement de prix futur sera annoncé ici à l'avance.</p>
+  <p class="placeholder-text" style="font-size:.85rem;">[Indiquez ici la base de ces prix, par exemple : coût de la prestation ou un test pilote.]</p>
+  <p class="placeholder-text" style="font-size:.85rem;">Contact pour le déploiement d'équipe 12 semaines : [email ou formulaire de contact à ajouter]</p>
 
   <div class="pay-badge"><span class="dot"></span> Une fois la tarification payante en vigueur, le paiement se fera via MTN Mobile Money ou Orange Money — sans carte bancaire.</div>
 
   <div class="cta-box">
     <strong style="font-size:1.05rem;">Prêt à commencer ?</strong>
     <p class="placeholder">Gratuit pendant le lancement · Aucun paiement, aucune inscription · Le prix standard ci-dessus s'appliquera plus tard</p>
+    <p class="placeholder-text" style="font-size:.82rem; margin:6px 0 0;">[Ajoutez la date de fin de la période gratuite, ou écrivez « jusqu'à nouvel ordre ».]</p>
     <a class="btn" style="background:var(--gradient); color:#fff; margin-top:10px;" href="site/index.html">Commencer gratuitement</a>
   </div>
 
@@ -303,17 +359,38 @@
   <div class="faq-item"><strong>Devrai-je payer plus tard ?</strong><p>Peut-être. Les prix indiqués ci-dessus sont ce que ce cours est destiné à coûter une fois la période de lancement gratuite terminée. Si cela arrive, ce sera annoncé clairement à l'avance — jamais imposé sans préavis à quelqu'un qui utilise déjà le cours.</p></div>
   <div class="faq-item"><strong>Comment paierai-je, une fois la tarification en vigueur ?</strong><p>Via MTN Mobile Money ou Orange Money — sans carte bancaire.</p></div>
   <div class="faq-item"><strong>Que signifie vraiment le certificat ?</strong><p>Il atteste que vous avez terminé le cours. Ce n'est pas une licence professionnelle.</p></div>
-  <div class="faq-item"><strong>Mes données sont-elles en sécurité ?</strong><p>Votre progression dans le cours est enregistrée uniquement sur votre propre appareil. Nous ne collectons ni ne stockons vos données personnelles.</p></div>
+  <div class="faq-item"><strong>Mes données sont-elles en sécurité ?</strong><p>Ce cours ne collecte ni ne stocke vos données personnelles. Votre progression est enregistrée uniquement sur votre appareil. Le site est hébergé sur GitHub Pages, qui conserve des journaux serveur standards. Nous n'utilisons pas ces journaux pour identifier les apprenants.</p></div>
 
   <div class="trust">
     <strong>Ce que nous voulons que vous sachiez :</strong>
     <ul>
       <li>Nous ne promettons aucun résultat non mesuré — pas de statistiques inventées, pas de faux témoignages.</li>
       <li>Le certificat atteste la fin de la formation. Ce n'est pas une licence professionnelle.</li>
-      <li>Votre progression est enregistrée uniquement sur votre appareil. Rien n'est envoyé ailleurs.</li>
+      <li>Votre progression est enregistrée uniquement sur votre appareil. Le site (hébergé sur GitHub Pages) conserve des journaux serveur standards, comme tout site web ; nous ne les utilisons pas pour vous identifier.</li>
       <li>L'accès est gratuit en ce moment. Si cela change un jour, le nouveau prix sera annoncé clairement à l'avance — jamais caché derrière un quiz.</li>
     </ul>
   </div>
+
+  <h2 class="section-title">Comment nous mesurerons les résultats</h2>
+  <div class="card">
+    <ul class="measure-list">
+      <li>Taux de complétion</li>
+      <li>Taux de réussite aux quiz</li>
+      <li>Temps gagné par tâche (autodéclaré, comparé à une situation de départ mesurée avant le cours)</li>
+      <li>Conversion pilote-vers-payant</li>
+    </ul>
+    <p style="margin:0; font-size:.85rem; color:var(--muted);">Les résultats ne seront publiés qu'une fois réellement mesurés.</p>
+  </div>
+
+  <h2 class="section-title">Sources</h2>
+  <p class="fineprint" style="color:var(--muted); opacity:1;">Non vérifiées en direct. Confirmez chaque lien avant publication.</p>
+  <ul class="sources-list">
+    <li>EU AI Act, Article 4 (littératie IA) — Union européenne — 2024 — <a href="https://artificialintelligenceact.eu/article/4/">artificialintelligenceact.eu/article/4</a></li>
+    <li>NIST, AI Risk Management Framework 1.0 — National Institute of Standards and Technology — janvier 2023 — <a href="https://www.nist.gov/itl/ai-risk-management-framework">nist.gov/itl/ai-risk-management-framework</a></li>
+    <li>UNESCO, cadres de compétences en IA — UNESCO — 2024 — <a href="https://www.unesco.org">unesco.org</a></li>
+    <li>Elements of AI — Université d'Helsinki et MinnaLearn — <a href="https://www.elementsofai.com">elementsofai.com</a></li>
+    <li>AI for Everyone — DeepLearning.AI / Coursera — <a href="https://www.coursera.org/learn/ai-for-everyone">coursera.org/learn/ai-for-everyone</a></li>
+  </ul>
 </section>
 
 <script>
