@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI at Work — Pitch</title>
+<style>
+  :root {
+    --bg: #f6f4fb;
+    --card-bg: #ffffff;
+    --text: #1a1726;
+    --muted: #6b6478;
+    --accent: #7c3aed;
+    --accent-2: #06b6d4;
+    --accent-contrast: #ffffff;
+    --border: #e8e3f5;
+    --success: #0e9f6e;
+    --success-bg: #e4f8f0;
+    --shadow-sm: 0 1px 2px rgba(26,23,38,.06), 0 1px 3px rgba(26,23,38,.08);
+    --shadow-md: 0 4px 14px rgba(26,23,38,.10), 0 2px 6px rgba(26,23,38,.06);
+    --gradient: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.5;
+  }
+  body { max-width: 760px; margin: 0 auto; padding: 0 20px 40px; }
+  .lang-block { margin-bottom: 0; }
+
+  .topbar {
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    z-index: 10;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 8px;
+    padding: 14px 0;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+  }
+  .topbar .wordmark {
+    font-weight: 800; font-size: 1rem; letter-spacing: -.01em;
+    background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .langbtn {
+    background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px;
+    padding: 7px 14px; font-weight: 700; font-size: .9rem; color: var(--accent);
+    cursor: pointer; box-shadow: var(--shadow-sm);
+  }
+  .langbtn:active { transform: scale(.95); }
+
+  .hero {
+    position: relative;
+    border-radius: 20px;
+    padding: 32px 26px;
+    margin-bottom: 20px;
+    background: radial-gradient(circle at 15% 15%, rgba(255,255,255,.22), transparent 55%), var(--gradient);
+    color: #fff;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+  }
+  .hero .eyebrow {
+    display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .08em;
+    text-transform: uppercase; background: rgba(255,255,255,.2); padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 14px;
+  }
+  .hero h1 { margin: 0 0 10px; font-size: 1.7rem; font-weight: 800; letter-spacing: -.01em; line-height: 1.25; }
+  .hero p.sub { margin: 0 auto 18px; max-width: 46ch; font-size: 1rem; opacity: .95; }
+  .btn {
+    display: inline-block; background: #fff; color: var(--accent); border: none; border-radius: 12px;
+    padding: 13px 24px; font-size: 1rem; font-weight: 800; text-decoration: none; box-shadow: var(--shadow-sm);
+  }
+  .hero .fineprint { margin-top: 12px; font-size: .78rem; opacity: .85; }
+
+  h2.section-title { font-size: 1.15rem; font-weight: 800; margin: 30px 0 14px; letter-spacing: -.01em; }
+
+  .grid4 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  @media (max-width: 480px) { .grid4 { grid-template-columns: 1fr; } }
+  .card {
+    background: var(--card-bg); border: 1px solid var(--border); border-radius: 14px; padding: 16px;
+    box-shadow: var(--shadow-sm);
+  }
+  .card .icon {
+    width: 34px; height: 34px; border-radius: 10px; background: var(--gradient); color: #fff;
+    display: flex; align-items: center; justify-content: center; font-weight: 800; margin-bottom: 10px;
+  }
+  .card h3 { margin: 0 0 4px; font-size: .98rem; }
+  .card p { margin: 0; font-size: .85rem; color: var(--muted); }
+
+  .steps { display: flex; flex-direction: column; gap: 10px; }
+  .step { display: flex; gap: 12px; align-items: flex-start; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; box-shadow: var(--shadow-sm); }
+  .step .num { flex: none; width: 28px; height: 28px; border-radius: 999px; background: var(--gradient); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: .88rem; }
+  .step div p { margin: 2px 0 0; font-size: .85rem; color: var(--muted); }
+  .step div strong { font-size: .95rem; }
+
+  .modules { font-size: .88rem; color: var(--muted); background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; box-shadow: var(--shadow-sm); }
+  .modules strong { color: var(--text); }
+
+  .table-scroll { overflow-x: auto; border-radius: 12px; box-shadow: var(--shadow-sm); }
+  table.pace { width: 100%; min-width: 520px; border-collapse: collapse; font-size: .85rem; background: var(--card-bg); }
+  table.pace th, table.pace td { padding: 9px 10px; text-align: left; border-bottom: 1px solid var(--border); }
+  table.pace th { background: #f1edfb; font-size: .78rem; text-transform: uppercase; letter-spacing: .03em; color: var(--muted); }
+  table.pace tr:last-child td { border-bottom: none; }
+  .price-cell { font-weight: 700; color: var(--accent); white-space: nowrap; }
+  .per-day { display: block; font-size: .72rem; font-weight: 500; color: var(--muted); white-space: nowrap; }
+  .price-was { text-decoration: line-through; color: var(--muted); font-weight: 500; margin-right: 6px; }
+  .price-free { color: var(--success); font-weight: 800; }
+
+  .free-banner {
+    display: flex; align-items: center; gap: 10px; background: var(--success-bg); color: var(--success);
+    border-radius: 12px; padding: 12px 14px; font-size: .9rem; font-weight: 700; margin-bottom: 14px;
+  }
+  .free-banner .dot { width: 8px; height: 8px; border-radius: 999px; background: var(--success); flex: none; }
+  .hero .free-chip {
+    display: inline-block; background: #fff; color: var(--success); font-weight: 800; font-size: .82rem;
+    padding: 5px 14px; border-radius: 999px; margin-bottom: 14px; box-shadow: var(--shadow-sm);
+  }
+
+  .testimonial-card {
+    background: var(--card-bg); border: 1.5px dashed var(--border); border-radius: 14px;
+    padding: 18px; text-align: center; color: var(--muted); font-size: .88rem;
+  }
+
+  .faq-item { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; margin-bottom: 8px; box-shadow: var(--shadow-sm); }
+  .faq-item strong { display: block; font-size: .92rem; margin-bottom: 4px; }
+  .faq-item p { margin: 0; font-size: .85rem; color: var(--muted); }
+
+  .pay-badge {
+    display: flex; align-items: center; gap: 10px; background: var(--success-bg); color: var(--success);
+    border-radius: 12px; padding: 12px 14px; font-size: .88rem; font-weight: 700; margin-top: 14px;
+  }
+  .pay-badge .dot { width: 8px; height: 8px; border-radius: 999px; background: var(--success); flex: none; }
+
+  .cta-box {
+    text-align: center; border-radius: 16px; padding: 22px; margin-top: 18px;
+    background: linear-gradient(var(--card-bg), var(--card-bg)) padding-box, var(--gradient) border-box;
+    border: 2px solid transparent; box-shadow: var(--shadow-md);
+  }
+  .cta-box p.placeholder { font-size: .85rem; color: var(--muted); margin: 10px 0 0; }
+
+  .trust { font-size: .8rem; color: var(--muted); border-top: 1px solid var(--border); margin-top: 30px; padding-top: 16px; }
+  .trust ul { margin: 6px 0 0; padding-left: 1.1rem; }
+  .trust li { margin-bottom: 4px; }
+
+  @media print {
+    body { max-width: 100%; padding: 10mm; }
+    .hero { break-inside: avoid; }
+    .card, .step, table.pace, .cta-box, .faq-item, .testimonial-card { break-inside: avoid; }
+  }
+  @page { size: A4; margin: 12mm; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="wordmark">AI at Work</span>
+  <button class="langbtn" id="langToggle" type="button" aria-label="Switch language">FR</button>
+</div>
+
+<!-- ENGLISH -->
+<section class="lang-block" data-lang="en">
+  <div class="hero">
+    <span class="eyebrow">28 Lessons · EN/FR · Mobile-First</span>
+    <h1>Stop Losing Hours to Repetitive Work.<br>Learn AI in Lessons That Fit Your Day.</h1>
+    <p class="sub">Practical AI skills for anyone who uses a computer at work — in English and French, at your own pace.</p>
+    <span class="free-chip">FREE ACCESS DURING LAUNCH</span><br>
+    <a class="btn" href="site/index.html">Start free now</a>
+    <p class="fineprint">Duration descriptions are the intended lesson format, not a guaranteed completion time for every learner.</p>
+  </div>
+
+  <h2 class="section-title">Why this course</h2>
+  <div class="grid4">
+    <div class="card"><div class="icon">28</div><h3>28 lessons, 6 modules</h3><p>Prompting, confidentiality, AI tools, bias and trust, team use, and your own AI playbook.</p></div>
+    <div class="card"><div class="icon">🌍</div><h3>Bilingual, built for you</h3><p>Every lesson in English and French, written to read comfortably on a phone.</p></div>
+    <div class="card"><div class="icon">⏱</div><h3>Choose your pace</h3><p>7-day sprint, 14-day standard, or 28-day complete with a live workshop.</p></div>
+    <div class="card"><div class="icon">✓</div><h3>An honest certificate</h3><p>States completion of the course — never inflated into a professional licence.</p></div>
+  </div>
+
+  <h2 class="section-title">How it works</h2>
+  <div class="steps">
+    <div class="step"><span class="num">1</span><div><strong>Pick your pace</strong><p>Tap your pace right on the home screen — free during launch, standard price shown up front for later.</p></div></div>
+    <div class="step"><span class="num">2</span><div><strong>Learn by doing</strong><p>Short lessons (15–25 minutes) with copy-ready prompts for the work you already do.</p></div></div>
+    <div class="step"><span class="num">3</span><div><strong>Build your playbook</strong><p>Finish with five tested prompts, a personal data-rule sheet, and a 30-day plan.</p></div></div>
+  </div>
+
+  <h2 class="section-title">What's inside</h2>
+  <p class="modules"><strong>A</strong> AI Foundations · <strong>B</strong> Everyday AI Tasks · <strong>C</strong> Working with AI Tools · <strong>D</strong> Quality and Trust · <strong>E</strong> Team and Workplace Use · <strong>F</strong> Your AI Playbook</p>
+
+  <h2 class="section-title">What learners say</h2>
+  <div class="testimonial-card">Real testimonials will appear here once our pilot cohort completes the course. We don't publish feedback we haven't actually collected.</div>
+
+  <h2 class="section-title" id="pricing-en">Pick your plan</h2>
+  <div class="free-banner"><span class="dot"></span> Free access during our launch period — pay nothing today. Prices below are what this course is worth, and what it will cost once the free launch period ends.</div>
+  <div class="table-scroll">
+  <table class="pace">
+    <tr><th>Plan</th><th>Length</th><th>Live component</th><th>Price</th></tr>
+    <tr><td>7-Day Sprint</td><td>1 week</td><td>None</td><td class="price-cell"><span class="price-was">2 000 FCFA</span><span class="price-free">FREE</span><span class="per-day">standard ≈286 FCFA/day</span></td></tr>
+    <tr><td>14-Day Standard</td><td>2 weeks</td><td>Optional async check-in</td><td class="price-cell"><span class="price-was">3 500 FCFA</span><span class="price-free">FREE</span><span class="per-day">standard 250 FCFA/day</span></td></tr>
+    <tr><td>28-Day Complete</td><td>4 weeks</td><td>90-minute live workshop</td><td class="price-cell"><span class="price-was">5 000 FCFA</span><span class="price-free">FREE</span><span class="per-day">standard ≈179 FCFA/day</span></td></tr>
+    <tr><td>12-Week Team Rollout (B2B)</td><td>12 weeks</td><td>3 live check-ins</td><td class="price-cell">Contact us</td></tr>
+  </table>
+  </div>
+
+  <div class="pay-badge"><span class="dot"></span> Once paid pricing begins, payment will be via MTN Mobile Money or Orange Money — no bank card needed.</div>
+
+  <div class="cta-box">
+    <strong style="font-size:1.05rem;">Ready to start?</strong>
+    <p class="placeholder">Free during launch · No payment, no signup · Standard price shown above applies later</p>
+    <a class="btn" style="background:var(--gradient); color:#fff; margin-top:10px;" href="site/index.html">Start free now</a>
+  </div>
+
+  <h2 class="section-title">How to start</h2>
+  <div class="steps">
+    <div class="step"><span class="num">1</span><div><strong>Open the course site</strong><p>No signup, no payment — just open it and you're in.</p></div></div>
+    <div class="step"><span class="num">2</span><div><strong>Pick your pace</strong><p>Tap the 7-day, 14-day, or 28-day card on the home screen.</p></div></div>
+    <div class="step"><span class="num">3</span><div><strong>Start your first lesson</strong><p>Right away — free, for as long as the launch period lasts.</p></div></div>
+  </div>
+
+  <h2 class="section-title">Common questions</h2>
+  <div class="faq-item"><strong>Do I need to pay right now?</strong><p>No. Access is completely free during our launch period.</p></div>
+  <div class="faq-item"><strong>Will I have to pay later?</strong><p>Possibly. The prices shown above are what this course is intended to cost once the free launch period ends. If that happens, it will be announced clearly in advance — never sprung on anyone already using the course without notice.</p></div>
+  <div class="faq-item"><strong>How will I pay, once pricing starts?</strong><p>Via MTN Mobile Money or Orange Money — no bank card needed.</p></div>
+  <div class="faq-item"><strong>What does the certificate actually mean?</strong><p>It certifies that you completed the course. It is not a professional licence.</p></div>
+  <div class="faq-item"><strong>Is my data safe?</strong><p>Your course progress is stored only on your own device. We don't collect or store your personal data.</p></div>
+
+  <div class="trust">
+    <strong>What we want you to know:</strong>
+    <ul>
+      <li>We do not promise outcomes we haven't measured — no invented statistics, no fake testimonials.</li>
+      <li>The certificate states completion of the course. It is not a professional licence.</li>
+      <li>Your progress is stored only on your device. Nothing is sent anywhere.</li>
+      <li>Access is free right now. If that ever changes, the new price will be shown clearly in advance — never hidden behind a quiz.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- FRANÇAIS -->
+<section class="lang-block" data-lang="fr" hidden>
+  <div class="hero">
+    <span class="eyebrow">28 Leçons · EN/FR · Pensé pour mobile</span>
+    <h1>Arrêtez de perdre des heures sur des tâches répétitives.<br>Apprenez l'IA en leçons adaptées à votre journée.</h1>
+    <p class="sub">Des compétences IA pratiques pour toute personne qui utilise un ordinateur au travail — en anglais et en français, à votre rythme.</p>
+    <span class="free-chip">ACCÈS GRATUIT PENDANT LE LANCEMENT</span><br>
+    <a class="btn" href="site/index.html">Commencer gratuitement</a>
+    <p class="fineprint">Les durées indiquées décrivent le format de leçon prévu, pas un temps de complétion garanti pour chaque apprenant.</p>
+  </div>
+
+  <h2 class="section-title">Pourquoi ce cours</h2>
+  <div class="grid4">
+    <div class="card"><div class="icon">28</div><h3>28 leçons, 6 modules</h3><p>Prompting, confidentialité, outils d'IA, biais et confiance, travail d'équipe, et votre propre carnet IA.</p></div>
+    <div class="card"><div class="icon">🌍</div><h3>Bilingue, pensé pour vous</h3><p>Chaque leçon en anglais et en français, écrite pour se lire confortablement sur un téléphone.</p></div>
+    <div class="card"><div class="icon">⏱</div><h3>Choisissez votre rythme</h3><p>Sprint de 7 jours, standard de 14 jours, ou complet de 28 jours avec atelier en direct.</p></div>
+    <div class="card"><div class="icon">✓</div><h3>Un certificat honnête</h3><p>Atteste la fin de la formation — jamais présenté comme une licence professionnelle.</p></div>
+  </div>
+
+  <h2 class="section-title">Comment ça marche</h2>
+  <div class="steps">
+    <div class="step"><span class="num">1</span><div><strong>Choisissez votre rythme</strong><p>Tapotez votre rythme directement sur l'écran d'accueil — gratuit pendant le lancement, prix standard indiqué d'emblée pour plus tard.</p></div></div>
+    <div class="step"><span class="num">2</span><div><strong>Apprenez en pratiquant</strong><p>Des leçons courtes (15 à 25 minutes) avec des prompts prêts à l'emploi pour votre travail réel.</p></div></div>
+    <div class="step"><span class="num">3</span><div><strong>Construisez votre carnet</strong><p>Terminez avec cinq prompts testés, une fiche personnelle de règles de données, et un plan à 30 jours.</p></div></div>
+  </div>
+
+  <h2 class="section-title">Le contenu</h2>
+  <p class="modules"><strong>A</strong> Fondamentaux de l'IA · <strong>B</strong> Tâches quotidiennes · <strong>C</strong> Travailler avec les outils d'IA · <strong>D</strong> Qualité et confiance · <strong>E</strong> Travail d'équipe · <strong>F</strong> Votre carnet IA</p>
+
+  <h2 class="section-title">Ce que disent les apprenants</h2>
+  <div class="testimonial-card">De vrais témoignages apparaîtront ici une fois notre cohorte pilote ayant terminé le cours. Nous ne publions aucun avis que nous n'avons pas réellement recueilli.</div>
+
+  <h2 class="section-title" id="pricing-fr">Choisissez votre formule</h2>
+  <div class="free-banner"><span class="dot"></span> Accès gratuit pendant notre période de lancement — ne payez rien aujourd'hui. Les prix ci-dessous indiquent la valeur de ce cours, et ce qu'il coûtera une fois la période de lancement gratuite terminée.</div>
+  <div class="table-scroll">
+  <table class="pace">
+    <tr><th>Formule</th><th>Durée</th><th>Composante en direct</th><th>Prix</th></tr>
+    <tr><td>Sprint de 7 jours</td><td>1 semaine</td><td>Aucune</td><td class="price-cell"><span class="price-was">2 000 FCFA</span><span class="price-free">GRATUIT</span><span class="per-day">standard ≈286 FCFA/jour</span></td></tr>
+    <tr><td>Standard de 14 jours</td><td>2 semaines</td><td>Point de contact asynchrone optionnel</td><td class="price-cell"><span class="price-was">3 500 FCFA</span><span class="price-free">GRATUIT</span><span class="per-day">standard 250 FCFA/jour</span></td></tr>
+    <tr><td>Complet de 28 jours</td><td>4 semaines</td><td>Atelier en direct de 90 minutes</td><td class="price-cell"><span class="price-was">5 000 FCFA</span><span class="price-free">GRATUIT</span><span class="per-day">standard ≈179 FCFA/jour</span></td></tr>
+    <tr><td>Déploiement d'équipe 12 semaines (B2B)</td><td>12 semaines</td><td>3 points de contact en direct</td><td class="price-cell">Nous contacter</td></tr>
+  </table>
+  </div>
+
+  <div class="pay-badge"><span class="dot"></span> Une fois la tarification payante en vigueur, le paiement se fera via MTN Mobile Money ou Orange Money — sans carte bancaire.</div>
+
+  <div class="cta-box">
+    <strong style="font-size:1.05rem;">Prêt à commencer ?</strong>
+    <p class="placeholder">Gratuit pendant le lancement · Aucun paiement, aucune inscription · Le prix standard ci-dessus s'appliquera plus tard</p>
+    <a class="btn" style="background:var(--gradient); color:#fff; margin-top:10px;" href="site/index.html">Commencer gratuitement</a>
+  </div>
+
+  <h2 class="section-title">Comment commencer</h2>
+  <div class="steps">
+    <div class="step"><span class="num">1</span><div><strong>Ouvrez le site du cours</strong><p>Aucune inscription, aucun paiement — ouvrez-le et c'est parti.</p></div></div>
+    <div class="step"><span class="num">2</span><div><strong>Choisissez votre rythme</strong><p>Tapotez la carte 7, 14 ou 28 jours sur l'écran d'accueil.</p></div></div>
+    <div class="step"><span class="num">3</span><div><strong>Démarrez votre première leçon</strong><p>Immédiatement — gratuit, tant que dure la période de lancement.</p></div></div>
+  </div>
+
+  <h2 class="section-title">Questions fréquentes</h2>
+  <div class="faq-item"><strong>Dois-je payer maintenant ?</strong><p>Non. L'accès est entièrement gratuit pendant notre période de lancement.</p></div>
+  <div class="faq-item"><strong>Devrai-je payer plus tard ?</strong><p>Peut-être. Les prix indiqués ci-dessus sont ce que ce cours est destiné à coûter une fois la période de lancement gratuite terminée. Si cela arrive, ce sera annoncé clairement à l'avance — jamais imposé sans préavis à quelqu'un qui utilise déjà le cours.</p></div>
+  <div class="faq-item"><strong>Comment paierai-je, une fois la tarification en vigueur ?</strong><p>Via MTN Mobile Money ou Orange Money — sans carte bancaire.</p></div>
+  <div class="faq-item"><strong>Que signifie vraiment le certificat ?</strong><p>Il atteste que vous avez terminé le cours. Ce n'est pas une licence professionnelle.</p></div>
+  <div class="faq-item"><strong>Mes données sont-elles en sécurité ?</strong><p>Votre progression dans le cours est enregistrée uniquement sur votre propre appareil. Nous ne collectons ni ne stockons vos données personnelles.</p></div>
+
+  <div class="trust">
+    <strong>Ce que nous voulons que vous sachiez :</strong>
+    <ul>
+      <li>Nous ne promettons aucun résultat non mesuré — pas de statistiques inventées, pas de faux témoignages.</li>
+      <li>Le certificat atteste la fin de la formation. Ce n'est pas une licence professionnelle.</li>
+      <li>Votre progression est enregistrée uniquement sur votre appareil. Rien n'est envoyé ailleurs.</li>
+      <li>L'accès est gratuit en ce moment. Si cela change un jour, le nouveau prix sera annoncé clairement à l'avance — jamais caché derrière un quiz.</li>
+    </ul>
+  </div>
+</section>
+
+<script>
+(function () {
+  "use strict";
+  var btn = document.getElementById("langToggle");
+  var blocks = document.querySelectorAll("[data-lang]");
+
+  function safeGet(key) { try { return localStorage.getItem(key); } catch (e) { return null; } }
+  function safeSet(key, val) { try { localStorage.setItem(key, val); } catch (e) {} }
+
+  function setLang(lang) {
+    blocks.forEach(function (el) { el.hidden = el.getAttribute("data-lang") !== lang; });
+    btn.textContent = lang === "en" ? "FR" : "EN";
+    document.documentElement.lang = lang;
+    safeSet("aiw_pitch_lang", lang);
+  }
+
+  btn.addEventListener("click", function () {
+    var current = document.querySelector('[data-lang="en"]').hidden ? "fr" : "en";
+    setLang(current === "en" ? "fr" : "en");
+  });
+
+  setLang(safeGet("aiw_pitch_lang") === "fr" ? "fr" : "en");
+})();
+</script>
+</body>
+</html>
