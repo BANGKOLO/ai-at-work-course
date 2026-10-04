@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AI at Work / L'IA au travail — Workbook</title>
+<style>
+  :root {
+    --text: #1f2430;
+    --muted: #5b6270;
+    --accent: #1f6f5c;
+    --border: #999;
+    --rule: #ccc;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--text);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+    line-height: 1.5;
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  h1 .fr { font-size: 1.1rem; color: var(--muted); display: block; font-weight: normal; }
+  h2.unit-title { font-size: 1.3rem; border-bottom: 2px solid var(--accent); padding-bottom: 4px; margin-top: 0; }
+  h3 { font-size: 1.05rem; margin-bottom: 4px; }
+  .duration { color: var(--muted); font-size: 0.9rem; margin-top: 0; }
+  .unit-page { page-break-after: always; padding-top: 8px; }
+  .unit-page:last-of-type { page-break-after: auto; }
+  .cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .col h4 { color: var(--accent); margin-bottom: 4px; }
+  blockquote {
+    border-left: 3px solid var(--accent);
+    margin: 0 0 10px;
+    padding: 6px 12px;
+    background: #f7f7f2;
+    font-size: 0.92rem;
+  }
+  .write-lines {
+    border-bottom: 1px solid var(--rule);
+    height: 1.6em;
+    margin-bottom: 2px;
+  }
+  .write-block { margin: 10px 0 18px; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 12px; font-size: 0.9rem; }
+  th, td { border: 1px solid var(--border); padding: 5px 8px; text-align: left; vertical-align: top; }
+  .cover {
+    text-align: center;
+    page-break-after: always;
+    padding-top: 30%;
+  }
+  .cover h1 { font-size: 2rem; }
+  .toc { page-break-after: always; }
+  .toc ol { line-height: 2; }
+  .small { font-size: 0.85rem; color: var(--muted); }
+  .playbook-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+  @media print {
+    body { padding: 0; }
+    a { color: inherit; text-decoration: none; }
+    .no-print { display: none; }
+  }
+  @page { size: A4; margin: 18mm 16mm; }
+</style>
+</head>
+<body>
+
+<section class="cover">
+  <h1>AI at Work: From First Prompt to Daily Workflow<br><span style="font-size:1.1rem; color:#5b6270;">L'IA au travail : du premier prompt à la routine quotidienne</span></h1>
+  <p class="small">Printable workbook — EN/FR · Cahier d'exercices imprimable — EN/FR</p>
+</section>
+
+<section class="toc">
+  <h2>Contents / Sommaire</h2>
+  <ol>
+    <li>Module A — AI Foundations (lessons 1-4) / Fondamentaux de l'IA</li>
+    <li>Module B — Everyday AI Tasks (lessons 5-11) / Tâches quotidiennes</li>
+    <li>Module C — Working with AI Tools (lessons 12-16) / Travailler avec les outils d'IA</li>
+    <li>Module D — Quality and Trust (lessons 17-19) / Qualité et confiance</li>
+    <li>Module E — Team and Workplace Use (lessons 20-23) / Travail d'équipe</li>
+    <li>Module F — Your AI Playbook (lessons 24-28) / Votre carnet IA</li>
+    <li>Choose your plan / Choisissez votre formule</li>
+    <li>Playbook template / Modèle de carnet</li>
+  </ol>
+  <p class="small">This course now has 28 lessons — full text for every lesson is in content/*.md and the online site. This workbook gives one page per module (not per lesson) for printing and writing by hand. / Ce cours compte désormais 28 leçons — le texte complet de chaque leçon se trouve dans content/*.md et sur le site en ligne. Ce cahier propose une page par module (pas par leçon) pour l'impression et l'écriture à la main.</p>
+</section>
+
+<!-- MODULE A -->
+<section class="unit-page">
+  <h2 class="unit-title">Module A — AI Foundations / Fondamentaux de l'IA</h2>
+  <div class="cols">
+    <div class="col">
+      <h4>English</h4>
+      <p><strong>1. Understanding generative AI</strong> — predicts likely text, does not look up facts by default; strengths: drafting/summarising; limits: invented facts, bias.</p>
+      <p><strong>2. The structured prompt (RCTFC)</strong> — Role, Context, Task, Format, Constraints.</p>
+      <p><strong>3. Confidentiality and compliance</strong> — four data classes: Public, Internal, Confidential, Personal.</p>
+      <p><strong>4. Picking the right AI tool for the job</strong> — match the task to a tool category; free/paid tiers change often, check yourself.</p>
+    </div>
+    <div class="col">
+      <h4>Français</h4>
+      <p><strong>1. Comprendre l'IA générative</strong> — prédit un texte probable, ne consulte pas une base de faits par défaut ; points forts : rédiger/résumer ; limites : faits inventés, biais.</p>
+      <p><strong>2. Le prompt structuré (RCTFC)</strong> — Rôle, Contexte, Tâche, Format, Contraintes.</p>
+      <p><strong>3. Confidentialité et conformité</strong> — quatre classes de données : Publique, Interne, Confidentielle, Personnelle.</p>
+      <p><strong>4. Choisir le bon outil d'IA pour la tâche</strong> — faire correspondre la tâche à une catégorie d'outil ; les niveaux gratuits/payants changent souvent, à vérifier soi-même.</p>
+    </div>
+  </div>
+  <h4>RCTFC practice / Pratique RCTFC</h4>
+  <blockquote>
+    Role/Rôle: ___________________________________<br>
+    Context/Contexte: _____________________________<br>
+    Task/Tâche: ___________________________________<br>
+    Format: _______________________________________<br>
+    Constraints/Contraintes: ______________________
+  </blockquote>
+  <h4>Sort these documents / Classez ces documents (Public / Internal / Confidential / Personal)</h4>
+  <table>
+    <tr><th>Document</th><th>Your answer / Votre réponse</th></tr>
+    <tr><td>Press release already published / Communiqué déjà publié</td><td></td></tr>
+    <tr><td>Client name + phone + invoice / Nom client + téléphone + facture</td><td></td></tr>
+    <tr><td>Unpublished pricing strategy / Stratégie de prix non publiée</td><td></td></tr>
+    <tr><td>Signed supplier contract / Contrat fournisseur signé</td><td></td></tr>
+  </table>
+  <p class="small">Full 10-item version and answer key / Version complète à 10 éléments et corrigé : content/unit-03.md.</p>
+</section>
+
+<!-- MODULE B -->
+<section class="unit-page">
+  <h2 class="unit-title">Module B — Everyday AI Tasks / Tâches quotidiennes</h2>
+  <p>5. Clear messages &amp; emails &nbsp;·&nbsp; 6. Meeting summaries &nbsp;·&nbsp; 7. Data into a report &nbsp;·&nbsp; 8. Translation with context &nbsp;·&nbsp; 9. Preparing for an important conversation &nbsp;·&nbsp; 10. Planning your day/week &nbsp;·&nbsp; 11. Research &amp; fact-finding</p>
+  <p class="small">5. Messages et emails clairs &nbsp;·&nbsp; 6. Résumés de réunion &nbsp;·&nbsp; 7. Données en rapport &nbsp;·&nbsp; 8. Traduction avec contexte &nbsp;·&nbsp; 9. Se préparer à une conversation importante &nbsp;·&nbsp; 10. Planifier sa journée/semaine &nbsp;·&nbsp; 11. Recherche et vérification des faits</p>
+  <p class="small">Full copy-ready prompts for all seven lessons are in content/unit-05.md through unit-11.md and the online site.</p>
+  <div class="write-block">
+    <p><strong>Choose three of these to apply this week / Choisissez trois de ces tâches à appliquer cette semaine :</strong></p>
+    <div class="write-lines"></div><div class="write-lines"></div><div class="write-lines"></div>
+  </div>
+</section>
+
+<!-- MODULE C -->
+<section class="unit-page">
+  <h2 class="unit-title">Module C — Working with AI Tools / Travailler avec les outils d'IA</h2>
+  <p>12. Text/chat assistants &nbsp;·&nbsp; 13. Image tools &nbsp;·&nbsp; 14. Spreadsheets and data &nbsp;·&nbsp; 15. Meeting/voice transcription &nbsp;·&nbsp; 16. Simple automations</p>
+  <p class="small">12. Assistants conversationnels &nbsp;·&nbsp; 13. Outils image &nbsp;·&nbsp; 14. Tableurs et données &nbsp;·&nbsp; 15. Transcription de réunions/voix &nbsp;·&nbsp; 16. Automatisations simples</p>
+  <p class="small">These lessons cover tool categories, not specific products — always verify current features and terms yourself. / Ces leçons couvrent des catégories d'outils, pas des produits précis — vérifiez toujours vous-même les fonctionnalités et conditions actuelles.</p>
+  <div class="write-block">
+    <p><strong>For one task this week, which tool category fits? / Pour une tâche cette semaine, quelle catégorie d'outil convient ?</strong></p>
+    <div class="write-lines"></div><div class="write-lines"></div>
+  </div>
+</section>
+
+<!-- MODULE D -->
+<section class="unit-page">
+  <h2 class="unit-title">Module D — Quality and Trust / Qualité et confiance</h2>
+  <div class="cols">
+    <div class="col">
+      <h4>17. VERIFY</h4>
+      <p><strong>V</strong>alidate figures<br><strong>E</strong>xamine names/dates/codes<br><strong>R</strong>emove invented citations<br><strong>I</strong>nspect tone<br><strong>F</strong>act-check regulation/law claims<br><strong>Y</strong>our initials — you own it</p>
+    </div>
+    <div class="col">
+      <h4>17. VERIFY (FR)</h4>
+      <p><strong>V</strong>érifier les chiffres<br><strong>E</strong>xaminer noms/dates/codes<br><strong>R</strong>etirer les citations inventées<br><strong>I</strong>nspecter le ton<br><strong>F</strong>act-checker réglementation/loi<br><strong>I</strong>nitialer — vous êtes responsable</p>
+    </div>
+  </div>
+  <p class="small">18. Recognising and reducing bias &nbsp;·&nbsp; 19. When not to use AI / 18. Reconnaître et réduire les biais &nbsp;·&nbsp; 19. Quand ne pas utiliser l'IA</p>
+  <h4>Find three errors / Trouvez trois erreurs</h4>
+  <blockquote>
+    Dear Ets Mbarga Fils, thank you for your order of 80 units of product DX-402, placed on 12 April.
+    Please note this product is certified under ISO 9001 for your market, so no further compliance steps are needed. Best regards.
+  </blockquote>
+  <p class="small">Source data / Données source: product DX-204, ordered 12 March, 80 units, no certification mentioned.</p>
+  <div class="write-block">
+    <div class="write-lines"></div><div class="write-lines"></div>
+  </div>
+  <p class="small">Answer key / Corrigé: code reversed (DX-204, not DX-402); date wrong (12 March, not 12 April); invented ISO 9001 claim never in the source notes.</p>
+</section>
+
+<!-- MODULE E -->
+<section class="unit-page">
+  <h2 class="unit-title">Module E — Team and Workplace Use / Travail d'équipe et au bureau</h2>
+  <p>20. Meetings &amp; team collaboration &nbsp;·&nbsp; 21. People-manager tasks &nbsp;·&nbsp; 22. Customer-facing &amp; support work &nbsp;·&nbsp; 23. Your own learning &amp; development</p>
+  <p class="small">20. Réunions et collaboration d'équipe &nbsp;·&nbsp; 21. Tâches de management &nbsp;·&nbsp; 22. Travail en contact avec la clientèle &nbsp;·&nbsp; 23. Votre propre développement</p>
+  <p class="small">Reminder: hiring, performance, disciplinary, and compensation decisions must never be delegated to AI — follow your organisation's actual HR policy and local law. / Rappel : les décisions d'embauche, d'évaluation, disciplinaires et de rémunération ne doivent jamais être déléguées à l'IA — suivez la politique RH réelle de votre organisation et la loi locale.</p>
+  <div class="write-block">
+    <p><strong>One team guideline you'd propose / Une règle d'équipe que vous proposeriez :</strong></p>
+    <div class="write-lines"></div><div class="write-lines"></div>
+  </div>
+</section>
+
+<!-- CHOOSE YOUR PLAN -->
+<section class="unit-page">
+  <h2 class="unit-title">Choose your plan / Choisissez votre formule</h2>
+  <div class="cols">
+    <div class="col">
+      <h4>English — pick one</h4>
+      <p>&#9633; <strong>7-Day Sprint</strong> — about a week, I want to move fast. No live workshop.</p>
+      <p>&#9633; <strong>14-Day Standard</strong> — about two weeks, steady, around my workload.</p>
+      <p>&#9633; <strong>28-Day Complete</strong> — about a month, with the 90-minute live workshop.</p>
+    </div>
+    <div class="col">
+      <h4>Français — cochez une case</h4>
+      <p>&#9633; <strong>Sprint de 7 jours</strong> — environ une semaine, je veux aller vite. Pas d'atelier en direct.</p>
+      <p>&#9633; <strong>Standard de 14 jours</strong> — environ deux semaines, à mon rythme.</p>
+      <p>&#9633; <strong>Complet de 28 jours</strong> — environ un mois, avec l'atelier en direct de 90 minutes.</p>
+    </div>
+  </div>
+  <p class="small">A 12-Week Team Rollout also exists for large organisations (B2B only) — see content/plans.md. / Un déploiement d'équipe sur 12 semaines existe aussi pour les grandes organisations (B2B uniquement) — voir content/plans.md.</p>
+  <h4>Baseline / Situation de départ</h4>
+  <p class="small">One task I do often, and how long it takes me today / Une tâche que je fais souvent, et le temps qu'elle me prend aujourd'hui :</p>
+  <div class="write-lines"></div>
+  <p class="small">Full day-by-day schedules for each plan are in content/plans.md and on the lesson site ("Choose your pace").</p>
+</section>
+
+<!-- PLAYBOOK TEMPLATE -->
+<section class="unit-page">
+  <h2 class="unit-title">Playbook template / Modèle de carnet</h2>
+  <p class="small">Module F, lessons 24-28: 24 Five tested prompts · 25 Your data-rule sheet · 26 Your 30-day plan · 27 Measuring your progress · 28 Live workshop / Module F, leçons 24 à 28 : 24 Cinq prompts testés · 25 Votre fiche de règles de données · 26 Votre plan à 30 jours · 27 Mesurer vos progrès · 28 Atelier en direct</p>
+
+  <h3>1. Five tested prompts / Cinq prompts testés</h3>
+  <div class="playbook-grid">
+    <div>
+      <p><strong>Task / Tâche:</strong> ______________________________</p>
+      <div class="write-lines"></div><div class="write-lines"></div>
+      <p class="small">What to double-check / À vérifier (VERIFY): ________________________</p>
+    </div>
+    <div>
+      <p><strong>Task / Tâche:</strong> ______________________________</p>
+      <div class="write-lines"></div><div class="write-lines"></div>
+      <p class="small">What to double-check / À vérifier (VERIFY): ________________________</p>
+    </div>
+    <div>
+      <p><strong>Task / Tâche:</strong> ______________________________</p>
+      <div class="write-lines"></div><div class="write-lines"></div>
+      <p class="small">What to double-check / À vérifier (VERIFY): ________________________</p>
+    </div>
+    <div>
+      <p><strong>Task / Tâche:</strong> ______________________________</p>
+      <div class="write-lines"></div><div class="write-lines"></div>
+      <p class="small">What to double-check / À vérifier (VERIFY): ________________________</p>
+    </div>
+    <div>
+      <p><strong>Task / Tâche:</strong> ______________________________</p>
+      <div class="write-lines"></div><div class="write-lines"></div>
+      <p class="small">What to double-check / À vérifier (VERIFY): ________________________</p>
+    </div>
+  </div>
+
+  <h3>2. Personal data-rule sheet / Fiche personnelle de règles de données</h3>
+  <p class="small">Public / Publique — Internal / Interne — Confidential / Confidentielle — Personal / Personnelle</p>
+  <div class="write-lines"></div><div class="write-lines"></div><div class="write-lines"></div>
+
+  <h3>3. 30-day plan / Plan à 30 jours</h3>
+  <table>
+    <tr><th>Goal / Objectif</th><td></td></tr>
+    <tr><th>Baseline (measured) / Situation de départ (mesurée)</th><td></td></tr>
+    <tr><th>Target / Cible</th><td></td></tr>
+    <tr><th>Prompts/habits used / Prompts-habitudes utilisés</th><td></td></tr>
+  </table>
+
+  <h3>4. Measuring your progress (lesson 27) / Mesurer vos progrès (leçon 27)</h3>
+  <table>
+    <tr><th>Date</th><th>Task / Tâche</th><th>Time taken / Temps pris</th><th>Note</th></tr>
+    <tr><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td></tr>
+  </table>
+  <p class="small">Only share a result you have actually measured yourself. / Ne partagez qu'un résultat que vous avez réellement mesuré vous-même.</p>
+</section>
+
+</body>
+</html>
