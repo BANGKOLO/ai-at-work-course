@@ -8,7 +8,7 @@ The course has 24 lessons in four tracks:
 
 | Track | Lessons | What it covers |
 |---|---|---|
-| Foundations refresher | 1–5 | How AI works, structured prompts, data confidentiality, verification, when not to use AI |
+| Foundations | 1–5 | How AI works, structured prompts, data confidentiality, verification, when not to use AI |
 | Claude in practice | 6–11 | Setup, long documents, Projects, artifacts and files, research and connectors, thinking work |
 | ChatGPT in practice | 12–17 | Setup, data analysis, Canvas, Projects and custom GPTs, deep research, voice and agent mode |
 | Advanced daily workflows | 18–24 | Advanced prompting, daily routine, reporting pipeline, choosing and cross-checking tools, automation, your playbook, live workshop |
@@ -110,7 +110,7 @@ Le cours compte 24 leçons réparties en quatre parcours :
 
 | Parcours | Leçons | Contenu |
 |---|---|---|
-| Fondamentaux : remise à niveau | 1–5 | Fonctionnement de l'IA, prompts structurés, confidentialité des données, vérification, quand ne pas utiliser l'IA |
+| Fondamentaux | 1–5 | Fonctionnement de l'IA, prompts structurés, confidentialité des données, vérification, quand ne pas utiliser l'IA |
 | Claude en pratique | 6–11 | Configuration, documents longs, Projets, artefacts et fichiers, recherche et connecteurs, réflexion |
 | ChatGPT en pratique | 12–17 | Configuration, analyse de données, Canvas, Projets et GPT personnalisés, recherche approfondie, voix et mode agent |
 | Flux de travail avancés | 18–24 | Prompts avancés, routine quotidienne, chaîne de reporting, choix et contre-vérification des outils, automatisation, votre guide, atelier en direct |

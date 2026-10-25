@@ -14,9 +14,9 @@
 
   // Learning tracks shown as sections on the home screen. Foundations reuses five of the original units.
   var TRACKS = [
-    { id: "foundations", titleEn: "Foundations refresher", titleFr: "Fondamentaux : remise à niveau",
-      descEn: "Already use AI weekly? Take each quiz directly. Pass it and move on.",
-      descFr: "Vous utilisez déjà l'IA chaque semaine ? Passez directement chaque quiz. Réussi, vous continuez." },
+    { id: "foundations", titleEn: "Foundations", titleFr: "Fondamentaux",
+      descEn: "New to AI? Start here. Already use it? Take each quiz directly to skip ahead.",
+      descFr: "Débutant avec l'IA ? Commencez ici. Vous l'utilisez déjà ? Passez directement chaque quiz pour avancer." },
     { id: "claude", titleEn: "Claude in practice", titleFr: "Claude en pratique",
       descEn: "Setup, long documents, Projects, artifacts and files, research and connectors, thinking work.",
       descFr: "Configuration, documents longs, Projets, artefacts et fichiers, recherche et connecteurs, réflexion." },
@@ -86,7 +86,7 @@
     en: {
       siteTitle: "AI for All",
       heroEyebrow: "24 lessons · 4 tracks · Claude + ChatGPT · EN/FR",
-      heroTagline: "Hands-on Claude and ChatGPT training for professionals: real workflows, real checks, measurable results.",
+      heroTagline: "AI is for everyone. Take the mystery out of it with hands-on Claude and ChatGPT lessons, at your own pace.",
       footerNote: "Progress is stored only in this browser. Nothing is sent anywhere.",
       units: "Lessons",
       notStarted: "Not started",
@@ -143,7 +143,7 @@
       certCardLocked: "Pass all {total} lesson quizzes to unlock it. Passed so far: {done}.",
       certCardReady: "Unlocked. Add your name, then print it or save it as a PDF.",
       certTitle: "Certificate of completion",
-      certCourse: "AI for All — Claude and ChatGPT for professional work",
+      certCourse: "AI for All — understanding and using AI with confidence",
       certPresented: "This certifies that",
       certBody: "has completed all {total} lessons of the course and passed every lesson quiz with a score of 80% or more.",
       certDate: "Completed on {date}",
@@ -157,7 +157,7 @@
     fr: {
       siteTitle: "L'IA pour tous",
       heroEyebrow: "24 leçons · 4 parcours · Claude + ChatGPT · FR/EN",
-      heroTagline: "Une formation pratique à Claude et ChatGPT pour les professionnels : de vrais flux de travail, de vrais contrôles, des résultats mesurables.",
+      heroTagline: "L'IA, c'est pour tout le monde. Levez le mystère avec des leçons pratiques de Claude et ChatGPT, à votre rythme.",
       footerNote: "La progression est enregistrée uniquement dans ce navigateur. Rien n'est envoyé ailleurs.",
       units: "Leçons",
       notStarted: "Non commencé",
@@ -214,7 +214,7 @@
       certCardLocked: "Réussissez les {total} quiz de leçon pour la débloquer. Réussis à ce jour : {done}.",
       certCardReady: "Débloquée. Ajoutez votre nom, puis imprimez-la ou enregistrez-la en PDF.",
       certTitle: "Attestation de fin de formation",
-      certCourse: "L'IA pour tous — Claude et ChatGPT pour le travail professionnel",
+      certCourse: "L'IA pour tous — comprendre et utiliser l'IA en toute confiance",
       certPresented: "Nous attestons que",
       certBody: "a suivi les {total} leçons de la formation et réussi chaque quiz de leçon avec un score d'au moins 80 %.",
       certDate: "Terminée le {date}",
@@ -611,7 +611,7 @@
           '<span class="badge ' + statusClass + '">' + statusLabel + "</span> " +
           '<span class="badge ' + quizClass + '">' + quizLabel + "</span>" +
           "</div></div></button>";
-        // Foundations is a refresher: confident users can go straight to the quiz.
+        // Foundations: learners who already use AI can test out by going straight to the quiz.
         if (tr.id === "foundations" && !p.quizPassed) {
           html += '<button class="testout-link" data-testout="' + u.id + '">' + t("testOut") + "</button>";
         }

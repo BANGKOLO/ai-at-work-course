@@ -1,8 +1,8 @@
 # AI for All / L'IA pour tous
 
-A free, bilingual (English/French) course that teaches professionals to use Claude and ChatGPT for real work. It has 24 lessons in four tracks:
+A free, bilingual (English/French) course that takes the mystery out of AI, for everyone: the time to run away from AI is over. It teaches people to use Claude and ChatGPT with confidence, in daily life and at work. It has 24 lessons in four tracks:
 
-1. **Foundations refresher** (5 lessons). Learners who pass a lesson's quiz can skip it ("test out").
+1. **Foundations** (5 lessons). Learners who pass a lesson's quiz can skip it ("test out").
 2. **Claude in practice** (6): setup and privacy, long documents, Projects, artifacts and file creation, web search/Research/connectors, Claude as a thinking partner.
 3. **ChatGPT in practice** (6): setup and data controls, data analysis, Canvas, Projects and custom GPTs, search and deep research, voice/images/tasks/agent mode.
 4. **Advanced daily workflows** (7): prompt chaining and self-checks, a daily AI routine, a data → report → slides pipeline, choosing and cross-checking tools, automation with a human in the loop, a measured AI playbook, and a live workshop.
