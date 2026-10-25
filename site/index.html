@@ -24,12 +24,23 @@
   <button id="langToggle" class="langbtn" aria-label="Switch language / Changer de langue">FR</button>
 </header>
 
-<main id="app"></main>
+<main id="app"><div class="card" id="appLoading"><p>Loading the course…<br>Chargement du cours…</p></div></main>
 
 <footer class="footer">
   <p id="footerNote">Progress is saved in this browser. We count anonymous visits, without cookies. Nothing personal is sent unless you sign up.</p>
 </footer>
 
+<script>
+  // On slow or dropped mobile connections the course files may take long or fail to arrive.
+  // If the app has not replaced the loading card after 15 seconds, offer a retry instead of a blank wait.
+  setTimeout(function () {
+    var card = document.getElementById("appLoading");
+    if (!card) return;
+    card.innerHTML = '<p>The course is taking a while to load. Your connection may be slow.<br>' +
+      'Le cours met du temps à charger. Votre connexion est peut-être lente.</p>' +
+      '<button class="btn" onclick="location.reload()">Try again / Réessayer</button>';
+  }, 15000);
+</script>
 <script src="config.js?v=6" defer></script>
 <script src="content-data.js?v=6" defer></script>
 <script src="quiz-data.js?v=6" defer></script>
