@@ -1,0 +1,614 @@
+{
+  "claude-01": [
+    {
+      "id": "c1q1",
+      "question_en": "You use a personal Claude Pro account. A colleague says \"Claude never trains on your chats, so anything is fine to paste.\" What is the most accurate response?",
+      "question_fr": "Vous utilisez un compte Claude Pro personnel. Un collègue affirme : « Claude ne s'entraîne jamais sur vos conversations, donc on peut tout coller. » Quelle est la réponse la plus juste ?",
+      "options_en": [
+        "Correct, personal plans never use chats for training",
+        "On personal plans you choose the training setting yourself, and in any case company data policy decides what may be pasted",
+        "Correct, as long as you delete the chat afterwards",
+        "Training only applies to the free plan, so Pro is always safe"
+      ],
+      "options_fr": [
+        "Exact, les offres personnelles n'utilisent jamais les conversations pour l'entraînement",
+        "Sur les offres personnelles, c'est vous qui choisissez le réglage d'entraînement, et de toute façon c'est la politique de l'entreprise qui décide de ce qu'on peut coller",
+        "Exact, à condition de supprimer la conversation ensuite",
+        "L'entraînement ne concerne que l'offre gratuite, donc Pro est toujours sûr"
+      ],
+      "answer_index": 1,
+      "explanation_en": "On personal plans the training choice is a setting you control, and settings never override your organisation's data policy. Deleting a chat afterwards does not make pasting confidential data acceptable.",
+      "explanation_fr": "Sur les offres personnelles, l'entraînement est un réglage que vous contrôlez, et aucun réglage ne remplace la politique de données de votre organisation. Supprimer une conversation après coup ne rend pas acceptable le fait d'y avoir collé des données confidentielles."
+    },
+    {
+      "id": "c1q2",
+      "question_en": "Which profile-preference line is likely to improve the most answers?",
+      "question_fr": "Quelle ligne de préférences de profil améliorera probablement le plus de réponses ?",
+      "options_en": [
+        "\"I am a very experienced professional.\"",
+        "\"Please always be helpful and accurate.\"",
+        "\"If my request is ambiguous, ask me one clarifying question before answering.\"",
+        "\"I like AI and use it often.\""
+      ],
+      "options_fr": [
+        "« Je suis un professionnel très expérimenté. »",
+        "« Sois toujours utile et précis. »",
+        "« Si ma demande est ambiguë, pose-moi une question de clarification avant de répondre. »",
+        "« J'aime l'IA et je l'utilise souvent. »"
+      ],
+      "answer_index": 2,
+      "explanation_en": "It changes how Claude behaves in a concrete, checkable way, and prevents long answers built on a wrong guess. \"Be helpful and accurate\" adds nothing Claude was not already trying to do.",
+      "explanation_fr": "Elle modifie le comportement de Claude de façon concrète et vérifiable, et évite de longues réponses fondées sur une mauvaise supposition. « Sois utile et précis » n'ajoute rien à ce que Claude essaie déjà de faire."
+    },
+    {
+      "id": "c1q3",
+      "question_en": "Claude keeps referring to you as \"project coordinator\", your old job title. What should you do?",
+      "question_fr": "Claude continue de vous désigner comme « coordinateur de projet », votre ancien poste. Que faire ?",
+      "options_en": [
+        "Review Claude's memory in Settings and delete or correct the outdated item",
+        "Start every chat by saying your new title",
+        "Switch to a different AI tool",
+        "Nothing; it does not affect answers"
+      ],
+      "options_fr": [
+        "Relire la mémoire de Claude dans les Paramètres et supprimer ou corriger l'élément périmé",
+        "Commencer chaque conversation en indiquant votre nouveau poste",
+        "Passer à un autre outil d'IA",
+        "Rien ; cela n'a pas d'effet sur les réponses"
+      ],
+      "answer_index": 0,
+      "explanation_en": "Outdated memories quietly shape every answer. Fixing the memory once is better than correcting it in every chat.",
+      "explanation_fr": "Un souvenir périmé influence discrètement chaque réponse. Le corriger une fois vaut mieux que le rectifier dans chaque conversation."
+    },
+    {
+      "id": "c1q4",
+      "question_en": "You must reconcile two supplier statements that disagree on five invoices. Which setup fits best?",
+      "question_fr": "Vous devez rapprocher deux relevés fournisseurs qui divergent sur cinq factures. Quelle configuration convient le mieux ?",
+      "options_en": [
+        "The fastest model, to save time",
+        "The most capable model with extended thinking on",
+        "Any model, with a custom writing style",
+        "An incognito chat with the fastest model"
+      ],
+      "options_fr": [
+        "Le modèle le plus rapide, pour gagner du temps",
+        "Le modèle le plus puissant avec la réflexion approfondie activée",
+        "N'importe quel modèle, avec un style d'écriture personnalisé",
+        "Une conversation incognito avec le modèle le plus rapide"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Reconciliation is multi-step reasoning where a mistake is costly. That is exactly what the most capable model with extended thinking is for. Styles change tone, not accuracy.",
+      "explanation_fr": "Un rapprochement est un raisonnement en plusieurs étapes où l'erreur coûte cher : c'est exactement l'usage du modèle le plus puissant avec réflexion approfondie. Les styles changent le ton, pas l'exactitude."
+    },
+    {
+      "id": "c1q5",
+      "question_en": "When is a custom Style the wrong choice?",
+      "question_fr": "Dans quel cas un style personnalisé est-il le mauvais choix ?",
+      "options_en": [
+        "Drafting routine client emails",
+        "Writing internal announcements",
+        "Detailed analysis where completeness matters more than polish",
+        "Replying to colleagues in your usual tone"
+      ],
+      "options_fr": [
+        "Rédiger des emails clients courants",
+        "Écrire des annonces internes",
+        "Une analyse détaillée où l'exhaustivité compte plus que l'élégance",
+        "Répondre à des collègues dans votre ton habituel"
+      ],
+      "answer_index": 2,
+      "explanation_en": "A concise house style can cut content you need in an analysis. The lesson recommends switching back to the default for analysis work.",
+      "explanation_fr": "Un style maison concis peut couper du contenu dont vous avez besoin dans une analyse. La leçon recommande de revenir au style par défaut pour l'analyse."
+    }
+  ],
+  "claude-02": [
+    {
+      "id": "c2q1",
+      "question_en": "What is the main benefit of asking Claude to quote the exact clauses before explaining a contract?",
+      "question_fr": "Quel est le principal intérêt de demander à Claude de citer les clauses exactes avant d'expliquer un contrat ?",
+      "options_en": [
+        "It makes the answer longer and more impressive",
+        "It lets you verify the explanation quickly against the quotes, and the quotes against the document",
+        "It guarantees the explanation is legally correct",
+        "It reduces the cost of the request"
+      ],
+      "options_fr": [
+        "La réponse est plus longue et plus impressionnante",
+        "Vous pouvez vérifier rapidement l'explication avec les citations, et les citations avec le document",
+        "Cela garantit que l'explication est juridiquement exacte",
+        "Cela réduit le coût de la demande"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Quotes-first makes the answer checkable in seconds. It does not guarantee legal correctness; that still needs the accountable person.",
+      "explanation_fr": "La méthode « citations d'abord » rend la réponse vérifiable en quelques secondes. Elle ne garantit pas l'exactitude juridique, qui relève toujours de la personne responsable."
+    },
+    {
+      "id": "c2q2",
+      "question_en": "You compare three tender responses in a table. Which instruction most reduces the risk of invented content?",
+      "question_fr": "Vous comparez trois réponses à un appel d'offres dans un tableau. Quelle consigne réduit le plus le risque de contenu inventé ?",
+      "options_en": [
+        "\"Be accurate.\"",
+        "\"Use a professional tone.\"",
+        "\"Write 'not stated' where a document is silent, and give the source section for each cell.\"",
+        "\"Make the table as complete as possible.\""
+      ],
+      "options_fr": [
+        "« Sois précis. »",
+        "« Utilise un ton professionnel. »",
+        "« Écris « non précisé » quand un document ne dit rien, et donne la section source de chaque cellule. »",
+        "« Rends le tableau aussi complet que possible. »"
+      ],
+      "answer_index": 2,
+      "explanation_en": "\"Not stated\" gives Claude an honest option instead of guessing, and source sections make every cell checkable. \"As complete as possible\" actually encourages filling gaps.",
+      "explanation_fr": "« Non précisé » donne à Claude une option honnête au lieu de deviner, et les sections sources rendent chaque cellule vérifiable. « Aussi complet que possible » pousse au contraire à combler les vides."
+    },
+    {
+      "id": "c2q3",
+      "question_en": "Claude analyses your uploaded spreadsheet and reports 2,480 rows. Excel shows 2,512 data rows. What should you do first?",
+      "question_fr": "Claude analyse votre tableur et annonce 2 480 lignes. Excel affiche 2 512 lignes de données. Que faire en premier ?",
+      "options_en": [
+        "Resolve the difference before trusting any analysis",
+        "Continue; a 1% difference does not matter",
+        "Ask Claude to round all results",
+        "Switch to a faster model"
+      ],
+      "options_fr": [
+        "Résoudre l'écart avant de se fier à toute analyse",
+        "Continuer ; un écart de 1 % n'a pas d'importance",
+        "Demander à Claude d'arrondir tous les résultats",
+        "Passer à un modèle plus rapide"
+      ],
+      "answer_index": 0,
+      "explanation_en": "If the row count is wrong, every total built on it may be wrong. Missing rows could be one region or one month.",
+      "explanation_fr": "Si le nombre de lignes est faux, chaque total construit dessus peut l'être aussi. Les lignes manquantes peuvent correspondre à une région ou à un mois entier."
+    },
+    {
+      "id": "c2q4",
+      "question_en": "You photograph a handwritten delivery note with quantities and prices. What is the safest workflow?",
+      "question_fr": "Vous photographiez un bon de livraison manuscrit avec quantités et prix. Quelle est la méthode la plus sûre ?",
+      "options_en": [
+        "Ask directly for the invoice total",
+        "Ask Claude to transcribe the figures into a table, check the table yourself, then ask for analysis",
+        "Ask Claude to correct any figures that look wrong",
+        "Use web search to confirm the prices"
+      ],
+      "options_fr": [
+        "Demander directement le total de la facture",
+        "Demander à Claude de retranscrire les chiffres dans un tableau, vérifier vous-même le tableau, puis demander l'analyse",
+        "Demander à Claude de corriger les chiffres qui semblent faux",
+        "Utiliser la recherche web pour confirmer les prix"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Handwriting causes misreads, especially in numbers. Checking the transcription before analysis stops a misread digit from flowing into totals.",
+      "explanation_fr": "L'écriture manuscrite provoque des erreurs de lecture, surtout sur les chiffres. Vérifier la transcription avant l'analyse empêche un chiffre mal lu de se propager dans les totaux."
+    },
+    {
+      "id": "c2q5",
+      "question_en": "For a 150-page policy manual, where should you put your question?",
+      "question_fr": "Pour un manuel de procédures de 150 pages, où placer votre question ?",
+      "options_en": [
+        "Before the document, so Claude knows what to look for",
+        "In a separate chat",
+        "After the document, at the end of the prompt",
+        "It makes no difference"
+      ],
+      "options_fr": [
+        "Avant le document, pour que Claude sache quoi chercher",
+        "Dans une autre conversation",
+        "Après le document, à la fin du prompt",
+        "Cela ne change rien"
+      ],
+      "answer_index": 2,
+      "explanation_en": "With long material, placing the question after the document gives noticeably more accurate answers.",
+      "explanation_fr": "Avec un long document, placer la question après celui-ci donne des réponses nettement plus exactes."
+    }
+  ],
+  "claude-03": [
+    {
+      "id": "c3q1",
+      "question_en": "Which is the best scope for a Claude Project?",
+      "question_fr": "Quel est le meilleur périmètre pour un Projet Claude ?",
+      "options_en": [
+        "\"Finance\": all finance work",
+        "\"Everything I do at work\"",
+        "\"Monthly board operations report\"",
+        "One Project per chat"
+      ],
+      "options_fr": [
+        "« Finance » : tout le travail financier",
+        "« Tout ce que je fais au travail »",
+        "« Rapport mensuel d'exploitation au conseil »",
+        "Un Projet par conversation"
+      ],
+      "answer_index": 2,
+      "explanation_en": "One Project per recurring job keeps instructions consistent. Broad topics accumulate contradictory instructions.",
+      "explanation_fr": "Un Projet par tâche récurrente garde des instructions cohérentes. Les thèmes larges accumulent des instructions contradictoires."
+    },
+    {
+      "id": "c3q2",
+      "question_en": "Your leave policy changed. The old PDF is in your Project's knowledge. What should you do?",
+      "question_fr": "Votre politique de congés a changé. L'ancien PDF est dans les connaissances du Projet. Que faire ?",
+      "options_en": [
+        "Add the new PDF next to the old one",
+        "Replace the old file with the new one, clearly labelled as current",
+        "Tell Claude in each chat to ignore the old one",
+        "Delete the Project and start again"
+      ],
+      "options_fr": [
+        "Ajouter le nouveau PDF à côté de l'ancien",
+        "Remplacer l'ancien fichier par le nouveau, clairement étiqueté comme en vigueur",
+        "Dire à Claude dans chaque conversation d'ignorer l'ancien",
+        "Supprimer le Projet et recommencer"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Claude cannot reliably tell an old policy from a current one. Keeping both invites answers that mix them.",
+      "explanation_fr": "Claude ne peut pas distinguer de façon fiable une ancienne politique de l'actuelle. Garder les deux expose à des réponses qui les mélangent."
+    },
+    {
+      "id": "c3q3",
+      "question_en": "Why add \"Before drafting, list the three most important changes and wait for my confirmation\" to project instructions?",
+      "question_fr": "Pourquoi ajouter « Avant de rédiger, liste les trois changements les plus importants et attends ma confirmation » aux instructions du projet ?",
+      "options_en": [
+        "To make Claude slower and more careful in general",
+        "It builds a checkpoint that catches a wrong reading before a full draft is built on it",
+        "Because Claude cannot write long documents otherwise",
+        "To reduce the number of messages"
+      ],
+      "options_fr": [
+        "Pour rendre Claude plus lent et plus prudent en général",
+        "Cela crée un point de contrôle qui intercepte une mauvaise lecture avant qu'un brouillon complet soit construit dessus",
+        "Parce que sinon Claude ne peut pas écrire de longs documents",
+        "Pour réduire le nombre de messages"
+      ],
+      "answer_index": 1,
+      "explanation_en": "A cheap check at the start avoids an expensive rewrite at the end.",
+      "explanation_fr": "Un contrôle peu coûteux au début évite une réécriture coûteuse à la fin."
+    },
+    {
+      "id": "c3q4",
+      "question_en": "What is the recommended way to validate a new Project before relying on it?",
+      "question_fr": "Quelle est la méthode recommandée pour valider un nouveau Projet avant de s'y fier ?",
+      "options_en": [
+        "Run past cases where you already know the right output, compare, and fix the instructions",
+        "Ask Claude whether the Project is set up correctly",
+        "Use it on a live deadline and see what happens",
+        "Add more knowledge files until it works"
+      ],
+      "options_fr": [
+        "Faire passer des cas passés dont vous connaissez déjà le bon résultat, comparer et corriger les instructions",
+        "Demander à Claude si le Projet est bien configuré",
+        "L'utiliser sur une vraie échéance et voir ce qui se passe",
+        "Ajouter des fichiers de connaissances jusqu'à ce que ça marche"
+      ],
+      "answer_index": 0,
+      "explanation_en": "Known past cases give you an answer key. More files often add noise rather than accuracy.",
+      "explanation_fr": "Des cas passés connus vous donnent un corrigé. Plus de fichiers ajoutent souvent du bruit plutôt que de l'exactitude."
+    },
+    {
+      "id": "c3q5",
+      "question_en": "How does a Skill differ from a Project?",
+      "question_fr": "En quoi un Skill diffère-t-il d'un Projet ?",
+      "options_en": [
+        "They are the same thing with different names",
+        "A Skill is a packaged capability Claude loads when a task needs it; a Project is the workspace where a recurring job lives",
+        "A Skill is only for programmers",
+        "A Project is temporary and a Skill is permanent"
+      ],
+      "options_fr": [
+        "C'est la même chose sous deux noms",
+        "Un Skill est une compétence packagée que Claude charge quand une tâche en a besoin ; un Projet est l'espace où vit une tâche récurrente",
+        "Un Skill est réservé aux programmeurs",
+        "Un Projet est temporaire et un Skill est permanent"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Projects answer \"where does this job live?\"; Skills answer \"what capability can Claude use anywhere?\", such as applying brand guidelines.",
+      "explanation_fr": "Le Projet répond à « où vit ce travail ? » ; le Skill répond à « quelle compétence Claude peut-il utiliser partout ? », par exemple appliquer une charte graphique."
+    }
+  ],
+  "claude-04": [
+    {
+      "id": "c4q1",
+      "question_en": "Why ask for Excel formulas rather than typed values in a generated summary sheet?",
+      "question_fr": "Pourquoi demander des formules Excel plutôt que des valeurs saisies dans une feuille de synthèse générée ?",
+      "options_en": [
+        "Formulas make the file smaller",
+        "Anyone can audit the calculation, and totals stay correct when a data row is fixed",
+        "Typed values cannot be formatted",
+        "Claude cannot type values"
+      ],
+      "options_fr": [
+        "Les formules rendent le fichier plus léger",
+        "Chacun peut auditer le calcul, et les totaux restent justes quand on corrige une ligne",
+        "Les valeurs saisies ne peuvent pas être mises en forme",
+        "Claude ne sait pas saisir de valeurs"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Formulas make the work auditable and keep it live. Typed values hide the method and go stale.",
+      "explanation_fr": "Les formules rendent le travail vérifiable et le gardent à jour. Les valeurs saisies cachent la méthode et se périment."
+    },
+    {
+      "id": "c4q2",
+      "question_en": "A generated PowerPoint looks polished in the preview. What must you still do before sending it?",
+      "question_fr": "Une présentation PowerPoint générée a l'air parfaite dans l'aperçu. Que devez-vous encore faire avant de l'envoyer ?",
+      "options_en": [
+        "Nothing, the preview is identical to the file",
+        "Ask Claude if it is correct",
+        "Open it in PowerPoint, spot-check numbers against the source, and read every headline",
+        "Convert it to PDF"
+      ],
+      "options_fr": [
+        "Rien, l'aperçu est identique au fichier",
+        "Demander à Claude si c'est correct",
+        "L'ouvrir dans PowerPoint, vérifier des chiffres par sondage avec la source et relire chaque titre",
+        "La convertir en PDF"
+      ],
+      "answer_index": 2,
+      "explanation_en": "Finished-looking files are the risk: errors hide behind good formatting. Headlines are what people quote back.",
+      "explanation_fr": "Un fichier qui a l'air fini, c'est justement le risque : les erreurs se cachent derrière une belle mise en forme. Les titres sont ce qu'on vous citera."
+    },
+    {
+      "id": "c4q3",
+      "question_en": "You want to keep refining a one-page brief through several rounds. What is the most efficient instruction?",
+      "question_fr": "Vous voulez affiner une note d'une page en plusieurs tours. Quelle est la consigne la plus efficace ?",
+      "options_en": [
+        "\"In the artifact, shorten section 2 and add a risks table.\"",
+        "\"Rewrite everything again, better this time.\"",
+        "Start a new chat for each version",
+        "Paste the brief back into the chat each time"
+      ],
+      "options_fr": [
+        "« Dans l'artefact, raccourcis la section 2 et ajoute un tableau des risques. »",
+        "« Réécris tout encore, en mieux. »",
+        "Ouvrir une nouvelle conversation pour chaque version",
+        "Recoller la note dans la conversation à chaque fois"
+      ],
+      "answer_index": 0,
+      "explanation_en": "Targeted edits to the same artifact keep versions and avoid unwanted changes elsewhere.",
+      "explanation_fr": "Des modifications ciblées sur le même artefact gardent les versions et évitent des changements non voulus ailleurs."
+    },
+    {
+      "id": "c4q4",
+      "question_en": "Which task is best suited to an interactive artifact rather than a Word file?",
+      "question_fr": "Quelle tâche convient mieux à un artefact interactif qu'à un fichier Word ?",
+      "options_en": [
+        "The final signed contract",
+        "A per-diem calculator colleagues can reuse with different numbers",
+        "A letter to a regulator",
+        "Meeting minutes for the archive"
+      ],
+      "options_fr": [
+        "Le contrat final signé",
+        "Une calculatrice de frais de mission réutilisable par les collègues avec d'autres chiffres",
+        "Une lettre à un régulateur",
+        "Un procès-verbal de réunion pour les archives"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Artifacts shine for small interactive tools. Formal documents belong in your organisation's standard file formats.",
+      "explanation_fr": "Les artefacts excellent pour les petits outils interactifs. Les documents formels relèvent des formats de fichier standards de votre organisation."
+    },
+    {
+      "id": "c4q5",
+      "question_en": "In the worked example, the AI guessed an owner's name from an ambiguous abbreviation. What does this show?",
+      "question_fr": "Dans l'exemple, l'IA a deviné le nom d'un responsable à partir d'une abréviation ambiguë. Qu'est-ce que cela montre ?",
+      "options_en": [
+        "AI should never be used for action trackers",
+        "Names, owners and dates in generated files need checking against your notes",
+        "Abbreviations are forbidden in notes",
+        "The fast model should have been used"
+      ],
+      "options_fr": [
+        "Il ne faut jamais utiliser l'IA pour un suivi d'actions",
+        "Les noms, responsables et dates d'un fichier généré doivent être vérifiés avec vos notes",
+        "Les abréviations sont interdites dans les notes",
+        "Il fallait utiliser le modèle rapide"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Where input is ambiguous, AI fills the gap plausibly. People and dates are high-impact details to check.",
+      "explanation_fr": "Quand l'entrée est ambiguë, l'IA comble le vide de façon plausible. Les personnes et les dates sont des détails à fort impact à vérifier."
+    }
+  ],
+  "claude-05": [
+    {
+      "id": "c5q1",
+      "question_en": "Claude answers with web search and cites a page for a key figure you will present tomorrow. What is the minimum you should do?",
+      "question_fr": "Claude répond avec la recherche web et cite une page pour un chiffre clé que vous présenterez demain. Quel est le minimum à faire ?",
+      "options_en": [
+        "Trust it, since a source is cited",
+        "Open the cited page, confirm it says what the answer claims, and check its date",
+        "Ask Claude if it is sure",
+        "Run the same question again"
+      ],
+      "options_fr": [
+        "Lui faire confiance, puisqu'une source est citée",
+        "Ouvrir la page citée, confirmer qu'elle dit ce qu'affirme la réponse, et vérifier sa date",
+        "Demander à Claude s'il est sûr",
+        "Reposer la même question"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Citations can point to pages that do not support the claim, or are outdated. Only opening the source confirms it.",
+      "explanation_fr": "Une citation peut renvoyer à une page qui n'appuie pas l'affirmation, ou qui est périmée. Seule l'ouverture de la source le confirme."
+    },
+    {
+      "id": "c5q2",
+      "question_en": "Which section of a Research report should you read first to judge how much to trust it?",
+      "question_fr": "Quelle section d'un rapport Research lire en premier pour juger de sa fiabilité ?",
+      "options_en": [
+        "The introduction",
+        "The longest section",
+        "The open questions it could not resolve",
+        "The list of sources, counting how many there are"
+      ],
+      "options_fr": [
+        "L'introduction",
+        "La section la plus longue",
+        "Les questions ouvertes qu'il n'a pas pu résoudre",
+        "La liste des sources, pour les compter"
+      ],
+      "answer_index": 2,
+      "explanation_en": "The open questions reveal the gaps. The number of sources says little about their quality.",
+      "explanation_fr": "Les questions ouvertes révèlent les lacunes. Le nombre de sources dit peu de chose sur leur qualité."
+    },
+    {
+      "id": "c5q3",
+      "question_en": "While summarising your inbox through a connector, Claude suggests forwarding a contract to an external address you never mentioned. What is happening, most likely, and what should you do?",
+      "question_fr": "En résumant votre boîte mail via un connecteur, Claude propose de transférer un contrat à une adresse externe que vous n'avez jamais mentionnée. Que se passe-t-il probablement, et que faire ?",
+      "options_en": [
+        "It is a helpful suggestion; approve it",
+        "An email may contain text designed to manipulate the AI; refuse the action and report it",
+        "Claude has a bug; restart the app and approve it",
+        "It is normal behaviour for connectors"
+      ],
+      "options_fr": [
+        "C'est une suggestion utile ; l'approuver",
+        "Un email contient peut-être un texte conçu pour manipuler l'IA ; refuser l'action et le signaler",
+        "Claude a un bug ; redémarrer l'application et approuver",
+        "C'est le comportement normal des connecteurs"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Unrequested actions, especially sending data outward, are a classic sign of prompt injection from untrusted content. You approve actions, never the content's author.",
+      "explanation_fr": "Une action non demandée, surtout un envoi de données vers l'extérieur, est un signe classique d'injection de prompt venant d'un contenu non fiable. C'est vous qui validez les actions, jamais l'auteur du contenu."
+    },
+    {
+      "id": "c5q4",
+      "question_en": "Which connector practice is correct?",
+      "question_fr": "Quelle pratique est correcte avec les connecteurs ?",
+      "options_en": [
+        "Connect your personal Claude account to company email to save time",
+        "Connect every available service in case you need it later",
+        "Connect only what you need, with company approval, and disconnect what you stop using",
+        "Share your connected account with colleagues"
+      ],
+      "options_fr": [
+        "Connecter votre compte Claude personnel à la messagerie de l'entreprise pour gagner du temps",
+        "Connecter tous les services disponibles au cas où",
+        "Ne connecter que le nécessaire, avec l'accord de l'entreprise, et déconnecter ce que vous n'utilisez plus",
+        "Partager votre compte connecté avec des collègues"
+      ],
+      "answer_index": 2,
+      "explanation_en": "Least access plus company approval: treat a connector like giving an assistant the keys to your inbox.",
+      "explanation_fr": "Accès minimal et accord de l'entreprise : traitez un connecteur comme si vous donniez les clés de votre messagerie à un assistant."
+    },
+    {
+      "id": "c5q5",
+      "question_en": "In the worked example, one cited article was about a different company with a similar name. Which habit caught it?",
+      "question_fr": "Dans l'exemple, un article cité concernait une autre entreprise au nom proche. Quelle habitude l'a révélé ?",
+      "options_en": [
+        "Using Research mode instead of web search",
+        "Opening cited sources to confirm key figures",
+        "Asking for more sources",
+        "Using the Calendar connector"
+      ],
+      "options_fr": [
+        "Utiliser le mode Research au lieu de la recherche web",
+        "Ouvrir les sources citées pour confirmer les chiffres clés",
+        "Demander plus de sources",
+        "Utiliser le connecteur Agenda"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Only reading the source revealed the mix-up. More sources would not have.",
+      "explanation_fr": "Seule la lecture de la source a révélé la confusion. Davantage de sources ne l'aurait pas fait."
+    }
+  ],
+  "claude-06": [
+    {
+      "id": "c6q1",
+      "question_en": "Why does \"Is this a good plan?\" tend to produce weak feedback?",
+      "question_fr": "Pourquoi « Est-ce un bon plan ? » donne-t-il souvent un retour faible ?",
+      "options_en": [
+        "AI cannot evaluate plans",
+        "AI assistants tend to agree with the user unless explicitly asked to challenge",
+        "The question is too short to process",
+        "It needs to be asked in English"
+      ],
+      "options_fr": [
+        "L'IA ne peut pas évaluer un plan",
+        "Les assistants d'IA ont tendance à donner raison à l'utilisateur sauf si on leur demande explicitement de contester",
+        "La question est trop courte pour être traitée",
+        "Il faut la poser en anglais"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Agreement bias is real. Asking for a sceptic's strongest objections counters it.",
+      "explanation_fr": "Le biais d'approbation existe. Demander les objections les plus fortes d'un sceptique le contrebalance."
+    },
+    {
+      "id": "c6q2",
+      "question_en": "Why separate \"list the objections\" from \"propose solutions\" into two messages?",
+      "question_fr": "Pourquoi séparer « liste les objections » et « propose des solutions » en deux messages ?",
+      "options_en": [
+        "To save tokens",
+        "Mixing them softens the problems; separating them gives sharper objections",
+        "Claude can only do one thing per message",
+        "Solutions are not useful"
+      ],
+      "options_fr": [
+        "Pour économiser des tokens",
+        "Les mélanger adoucit les problèmes ; les séparer donne des objections plus tranchées",
+        "Claude ne peut faire qu'une chose par message",
+        "Les solutions ne sont pas utiles"
+      ],
+      "answer_index": 1,
+      "explanation_en": "When solutions come attached, problems get framed as easily solved. Separate steps keep the critique honest.",
+      "explanation_fr": "Quand les solutions sont jointes, les problèmes sont présentés comme faciles à régler. Des étapes séparées gardent une critique honnête."
+    },
+    {
+      "id": "c6q3",
+      "question_en": "In a decision memo prompt, why ask Claude to confirm the criteria and weights with you before scoring?",
+      "question_fr": "Dans une note de décision, pourquoi demander à Claude de confirmer avec vous les critères et leurs poids avant de noter ?",
+      "options_en": [
+        "So the judgement stays yours: AI structures the decision, you own it",
+        "Because Claude cannot choose criteria",
+        "To make the memo longer",
+        "It is required by Claude's terms"
+      ],
+      "options_fr": [
+        "Pour que le jugement reste le vôtre : l'IA structure la décision, vous en êtes responsable",
+        "Parce que Claude ne sait pas choisir des critères",
+        "Pour allonger la note",
+        "C'est exigé par les conditions de Claude"
+      ],
+      "answer_index": 0,
+      "explanation_en": "Criteria and weights are value judgements that drive the result. They should be yours.",
+      "explanation_fr": "Critères et poids sont des jugements de valeur qui déterminent le résultat. Ils doivent être les vôtres."
+    },
+    {
+      "id": "c6q4",
+      "question_en": "Claude's reasoning leads to a conclusion that surprises you. What is the best next prompt?",
+      "question_fr": "Le raisonnement de Claude aboutit à une conclusion qui vous surprend. Quel est le meilleur prompt suivant ?",
+      "options_en": [
+        "\"Are you sure?\"",
+        "\"Walk me through the reasoning step by step and tell me which step you are least sure about.\"",
+        "\"Give me a different answer.\"",
+        "Accept it, since the model is more capable"
+      ],
+      "options_fr": [
+        "« Tu es sûr ? »",
+        "« Détaille ton raisonnement étape par étape et dis-moi de quelle étape tu es le moins sûr. »",
+        "« Donne-moi une autre réponse. »",
+        "L'accepter, puisque le modèle est plus capable"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Asking for the weakest step points you to exactly what to verify. \"Are you sure?\" often just produces a reversal without explanation.",
+      "explanation_fr": "Demander l'étape la plus fragile vous indique exactement quoi vérifier. « Tu es sûr ? » produit souvent un simple revirement sans explication."
+    },
+    {
+      "id": "c6q5",
+      "question_en": "A manager wants Claude to decide which of two staff members to promote based on their reviews. What is the right use?",
+      "question_fr": "Un responsable veut que Claude décide lequel de deux collaborateurs promouvoir à partir de leurs évaluations. Quel est le bon usage ?",
+      "options_en": [
+        "Let Claude decide, since it is unbiased",
+        "Use Claude to structure criteria and questions, keep the decision with people and the HR process, and follow data rules on personal data",
+        "Paste both full HR files and ask for a ranking",
+        "Never think about the decision with any tool"
+      ],
+      "options_fr": [
+        "Laisser Claude décider, puisqu'il est impartial",
+        "Utiliser Claude pour structurer critères et questions, garder la décision aux personnes et au processus RH, et respecter les règles sur les données personnelles",
+        "Coller les deux dossiers RH complets et demander un classement",
+        "Ne jamais réfléchir à la décision avec un outil"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Decisions about people need human judgement and process. AI is not neutral, and personal data may not be allowed in the tool.",
+      "explanation_fr": "Les décisions sur des personnes exigent un jugement et un processus humains. L'IA n'est pas neutre, et les données personnelles ne sont peut-être pas autorisées dans l'outil."
+    }
+  ]
+}

@@ -1,0 +1,614 @@
+{
+  "chatgpt-01": [
+    {
+      "id": "g1q1",
+      "question_en": "Which statement about Temporary Chat is accurate?",
+      "question_fr": "Quelle affirmation sur le Chat temporaire est exacte ?",
+      "options_en": [
+        "It is deleted instantly and never stored anywhere",
+        "It is not in your history, does not use or update memory, and is not used for training, though it may be kept briefly for safety review",
+        "It makes it acceptable to paste confidential company data",
+        "It uses a more accurate model"
+      ],
+      "options_fr": [
+        "Il est supprimé instantanément et n'est stocké nulle part",
+        "Il n'apparaît pas dans l'historique, n'utilise ni ne met à jour la mémoire et ne sert pas à l'entraînement, mais peut être conservé brièvement pour des contrôles de sécurité",
+        "Il permet de coller des données confidentielles de l'entreprise",
+        "Il utilise un modèle plus précis"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Temporary Chat limits history, memory and training use, but is not \"never stored\", and it does not override company data rules.",
+      "explanation_fr": "Le Chat temporaire limite l'historique, la mémoire et l'entraînement, mais il n'est pas « jamais stocké », et il ne remplace pas les règles de données de l'entreprise."
+    },
+    {
+      "id": "g1q2",
+      "question_en": "Which custom instruction is most useful for professional work?",
+      "question_fr": "Quelle instruction personnalisée est la plus utile pour le travail ?",
+      "options_en": [
+        "\"Be the best assistant ever.\"",
+        "\"When the question depends on local law or company policy, say so explicitly rather than guessing.\"",
+        "\"Use lots of emojis to keep things friendly.\"",
+        "\"Always agree with my ideas.\""
+      ],
+      "options_fr": [
+        "« Sois le meilleur assistant du monde. »",
+        "« Quand la question dépend du droit local ou d'une politique interne, dis-le explicitement au lieu de deviner. »",
+        "« Utilise beaucoup d'emojis pour rester convivial. »",
+        "« Donne-moi toujours raison. »"
+      ],
+      "answer_index": 1,
+      "explanation_en": "It targets a real failure mode (confident guesses about local rules) with a concrete behaviour.",
+      "explanation_fr": "Elle vise un vrai défaut (des suppositions assurées sur des règles locales) avec un comportement concret."
+    },
+    {
+      "id": "g1q3",
+      "question_en": "You need a quick rewording of a two-line message. Which model choice makes most sense?",
+      "question_fr": "Vous avez besoin de reformuler rapidement un message de deux lignes. Quel choix de modèle est le plus logique ?",
+      "options_en": [
+        "A fast model",
+        "The slowest reasoning model available",
+        "Deep research",
+        "Agent mode"
+      ],
+      "options_fr": [
+        "Un modèle rapide",
+        "Le modèle de raisonnement le plus lent disponible",
+        "La recherche approfondie",
+        "Le mode agent"
+      ],
+      "answer_index": 0,
+      "explanation_en": "Reasoning models are for multi-step or high-stakes work. For a quick rewording, a fast model is the right tool.",
+      "explanation_fr": "Les modèles de raisonnement servent aux travaux en plusieurs étapes ou à fort enjeu. Pour une reformulation rapide, un modèle rapide est le bon outil."
+    },
+    {
+      "id": "g1q4",
+      "question_en": "What is the risk of never reviewing ChatGPT's memory?",
+      "question_fr": "Quel est le risque de ne jamais relire la mémoire de ChatGPT ?",
+      "options_en": [
+        "ChatGPT will stop working",
+        "Outdated or wrong details can quietly shape answers",
+        "Your account will be closed",
+        "There is no risk"
+      ],
+      "options_fr": [
+        "ChatGPT cessera de fonctionner",
+        "Des détails périmés ou faux peuvent influencer discrètement les réponses",
+        "Votre compte sera fermé",
+        "Il n'y a aucun risque"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Memory is useful but can hold an old job title, an old deadline, or something you would not want on a shared screen.",
+      "explanation_fr": "La mémoire est utile mais peut contenir un ancien poste, une ancienne échéance, ou une information que vous ne voudriez pas voir sur un écran partagé."
+    },
+    {
+      "id": "g1q5",
+      "question_en": "On a ChatGPT Business or Enterprise workspace, which statement is right?",
+      "question_fr": "Sur un espace ChatGPT Business ou Enterprise, quelle affirmation est juste ?",
+      "options_en": [
+        "Your data is used for training unless you opt out",
+        "By default your data is not used for training, and your administrator controls retention and features",
+        "There are no data rules at all",
+        "You must use Temporary Chat for everything"
+      ],
+      "options_fr": [
+        "Vos données servent à l'entraînement sauf si vous refusez",
+        "Par défaut vos données ne servent pas à l'entraînement, et votre administrateur gère la conservation et les fonctions",
+        "Il n'y a aucune règle sur les données",
+        "Vous devez utiliser le Chat temporaire pour tout"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Business plans do not train on your data by default. Company policy still decides what may be used.",
+      "explanation_fr": "Les offres professionnelles ne s'entraînent pas sur vos données par défaut. La politique de l'entreprise décide toujours de ce qui peut être utilisé."
+    }
+  ],
+  "chatgpt-02": [
+    {
+      "id": "g2q1",
+      "question_en": "What should your first request be after uploading a spreadsheet for analysis?",
+      "question_fr": "Quelle doit être votre première demande après avoir importé un tableur à analyser ?",
+      "options_en": [
+        "\"Give me the key insights.\"",
+        "\"Make a chart.\"",
+        "\"How many rows and columns did you load, what are the column names, and what data problems do you see? Change nothing yet.\"",
+        "\"Clean the data however you think best.\""
+      ],
+      "options_fr": [
+        "« Donne-moi les points clés. »",
+        "« Fais un graphique. »",
+        "« Combien de lignes et de colonnes as-tu chargées, quels sont les noms des colonnes, et quels problèmes vois-tu ? Ne modifie rien pour l'instant. »",
+        "« Nettoie les données comme tu le juges bon. »"
+      ],
+      "answer_index": 2,
+      "explanation_en": "Confirming what was loaded comes before any insight. Unspecified cleaning hides decisions you should make.",
+      "explanation_fr": "Confirmer ce qui a été chargé passe avant tout constat. Un nettoyage non précisé cache des décisions qui vous reviennent."
+    },
+    {
+      "id": "g2q2",
+      "question_en": "ChatGPT says \"Sales grew 18%.\" What makes this defensible in a meeting?",
+      "question_fr": "ChatGPT indique « Les ventes ont progressé de 18 % ». Qu'est-ce qui rend ce chiffre défendable en réunion ?",
+      "options_en": [
+        "It was produced by code, so it is correct",
+        "Knowing the exact definition used (which periods, absolute or %) and having recomputed it",
+        "Rounding it to 20%",
+        "Putting it in a chart"
+      ],
+      "options_fr": [
+        "Il a été produit par du code, donc il est juste",
+        "Connaître la définition exacte utilisée (quelles périodes, en valeur ou en %) et l'avoir recalculé",
+        "L'arrondir à 20 %",
+        "Le mettre dans un graphique"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Code runs what it was told to run. The definition and an independent recomputation make the figure defensible.",
+      "explanation_fr": "Le code exécute ce qu'on lui demande. La définition et un recalcul indépendant rendent le chiffre défendable."
+    },
+    {
+      "id": "g2q3",
+      "question_en": "In the worked example, travel costs appeared to rise 38% but really rose 9%. What caused it, and which question revealed it?",
+      "question_fr": "Dans l'exemple, les frais de déplacement semblaient en hausse de 38 % mais l'étaient de 9 %. Quelle était la cause, et quelle question l'a révélée ?",
+      "options_en": [
+        "A missing month; \"show me the first 5 rows\"",
+        "A month recorded in USD instead of XAF; \"what could make this conclusion wrong?\"",
+        "A duplicate row; \"remove duplicates\"",
+        "A chart error; \"make a bar chart\""
+      ],
+      "options_fr": [
+        "Un mois manquant ; « montre les 5 premières lignes »",
+        "Un mois saisi en USD au lieu de XAF ; « qu'est-ce qui pourrait rendre cette conclusion fausse ? »",
+        "Une ligne en double ; « supprime les doublons »",
+        "Une erreur de graphique ; « fais un diagramme en barres »"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Mixed currencies are a classic hidden error. Asking what could make the conclusion wrong surfaces such issues.",
+      "explanation_fr": "Le mélange de devises est une erreur cachée classique. Demander ce qui pourrait rendre la conclusion fausse fait remonter ce type de problème."
+    },
+    {
+      "id": "g2q4",
+      "question_en": "Which chart title is most useful to a busy director?",
+      "question_fr": "Quel titre de graphique est le plus utile à un directeur pressé ?",
+      "options_en": [
+        "\"Sales by region\"",
+        "\"Chart 1\"",
+        "\"North fell behind Centre in Q3\"",
+        "\"Q3 data\""
+      ],
+      "options_fr": [
+        "« Ventes par région »",
+        "« Graphique 1 »",
+        "« Le Nord est passé derrière le Centre au T3 »",
+        "« Données T3 »"
+      ],
+      "answer_index": 2,
+      "explanation_en": "A title that states the finding tells the reader what to take away, without decoding the chart.",
+      "explanation_fr": "Un titre qui énonce la conclusion dit au lecteur quoi retenir, sans qu'il ait à décoder le graphique."
+    },
+    {
+      "id": "g2q5",
+      "question_en": "Your file contains customer names and phone numbers, and policy allows analysis only of anonymised data. What do you do?",
+      "question_fr": "Votre fichier contient des noms et numéros de téléphone de clients, et la politique n'autorise que l'analyse de données anonymisées. Que faites-vous ?",
+      "options_en": [
+        "Upload it; ChatGPT will ignore the names",
+        "Replace names and numbers with IDs before uploading",
+        "Upload it in Temporary Chat",
+        "Ask ChatGPT to anonymise it after upload"
+      ],
+      "options_fr": [
+        "L'importer ; ChatGPT ignorera les noms",
+        "Remplacer noms et numéros par des identifiants avant l'import",
+        "L'importer dans un Chat temporaire",
+        "Demander à ChatGPT de l'anonymiser après l'import"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Anonymising after upload is too late: the data has already been sent. Do it before.",
+      "explanation_fr": "Anonymiser après l'import est trop tard : les données sont déjà envoyées. Il faut le faire avant."
+    }
+  ],
+  "chatgpt-03": [
+    {
+      "id": "g3q1",
+      "question_en": "What is Canvas's main advantage over plain chat for a long document?",
+      "question_fr": "Quel est le principal avantage de Canvas sur le chat simple pour un long document ?",
+      "options_en": [
+        "It uses a different, more accurate model",
+        "You can edit a selected passage without the rest of the document being regenerated",
+        "It checks facts automatically",
+        "It formats in your company's template automatically"
+      ],
+      "options_fr": [
+        "Il utilise un autre modèle, plus précis",
+        "Vous pouvez modifier un passage sélectionné sans que le reste du document soit régénéré",
+        "Il vérifie automatiquement les faits",
+        "Il applique automatiquement le modèle de votre entreprise"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Targeted edits keep the rest of the text stable. Canvas does not verify facts or apply your house style for you.",
+      "explanation_fr": "Les modifications ciblées gardent le reste du texte stable. Canvas ne vérifie pas les faits et n'applique pas votre charte à votre place."
+    },
+    {
+      "id": "g3q2",
+      "question_en": "The text is mostly yours and you want to keep your voice. Which tool fits?",
+      "question_fr": "Le texte est surtout de vous et vous voulez garder votre voix. Quel outil convient ?",
+      "options_en": [
+        "Rewrite the whole document",
+        "Suggest edits, then accept or reject each one",
+        "Change reading level to the lowest",
+        "Start a new canvas from scratch"
+      ],
+      "options_fr": [
+        "Réécrire tout le document",
+        "Suggérer des modifications, puis accepter ou refuser chacune",
+        "Mettre le niveau de lecture au plus bas",
+        "Recommencer un canvas de zéro"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Suggested edits keep you in control of every change.",
+      "explanation_fr": "Les suggestions de modification vous laissent maître de chaque changement."
+    },
+    {
+      "id": "g3q3",
+      "question_en": "Why work in separate passes (structure, argument, clarity, tone) instead of \"make it better\"?",
+      "question_fr": "Pourquoi travailler par passes séparées (structure, argumentation, clarté, ton) plutôt que « améliore-le » ?",
+      "options_en": [
+        "Each pass has a clear goal you can judge, and changes are easier to review",
+        "Canvas only allows one change per session",
+        "It uses less of your monthly limit",
+        "\"Make it better\" is not allowed"
+      ],
+      "options_fr": [
+        "Chaque passe a un objectif clair que vous pouvez juger, et les changements sont plus faciles à relire",
+        "Canvas n'autorise qu'une modification par session",
+        "Cela consomme moins de votre quota mensuel",
+        "« Améliore-le » n'est pas autorisé"
+      ],
+      "answer_index": 0,
+      "explanation_en": "Vague requests produce vague, sweeping changes. One concern per pass keeps edits reviewable.",
+      "explanation_fr": "Une demande vague produit des changements vagues et étendus. Une préoccupation par passe garde des modifications relisibles."
+    },
+    {
+      "id": "g3q4",
+      "question_en": "Why is the final \"list every number, date and name\" pass the most important?",
+      "question_fr": "Pourquoi la passe finale « liste chaque chiffre, date et nom » est-elle la plus importante ?",
+      "options_en": [
+        "It improves the tone",
+        "Editing passes can silently change figures or dates, and a list lets you verify them quickly",
+        "It shortens the document",
+        "It is required before export"
+      ],
+      "options_fr": [
+        "Elle améliore le ton",
+        "Les passes de révision peuvent modifier un chiffre ou une date sans prévenir, et une liste permet de les vérifier vite",
+        "Elle raccourcit le document",
+        "Elle est obligatoire avant l'export"
+      ],
+      "answer_index": 1,
+      "explanation_en": "In the worked example, this pass found a start date that differed between the summary and the timeline.",
+      "explanation_fr": "Dans l'exemple, cette passe a révélé une date de démarrage différente entre le résumé et le calendrier."
+    },
+    {
+      "id": "g3q5",
+      "question_en": "Your organisation has a strict house style for proposals. What should you do with the canvas output?",
+      "question_fr": "Votre organisation a une charte stricte pour les propositions. Que faire du résultat du canvas ?",
+      "options_en": [
+        "Send it as exported",
+        "Move the content into your organisation's template and apply its formatting",
+        "Ask ChatGPT to guess the house style",
+        "Convert it to an image"
+      ],
+      "options_fr": [
+        "L'envoyer tel qu'exporté",
+        "Reporter le contenu dans le modèle de votre organisation et appliquer sa mise en forme",
+        "Demander à ChatGPT de deviner la charte",
+        "Le convertir en image"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Canvas is for shaping the content. The final document belongs in your organisation's template.",
+      "explanation_fr": "Canvas sert à construire le contenu. Le document final relève du modèle de votre organisation."
+    }
+  ],
+  "chatgpt-04": [
+    {
+      "id": "g4q1",
+      "question_en": "Your team drafts customer replies every day using the same tone guide and policy. Which fits best?",
+      "question_fr": "Votre équipe rédige chaque jour des réponses clients avec le même guide de ton et la même politique. Qu'est-ce qui convient le mieux ?",
+      "options_en": [
+        "A Project",
+        "A custom GPT shared with the team",
+        "A new chat each time with the policy pasted in",
+        "Temporary Chat"
+      ],
+      "options_fr": [
+        "Un Projet",
+        "Un GPT personnalisé partagé avec l'équipe",
+        "Une nouvelle conversation à chaque fois avec la politique collée",
+        "Le Chat temporaire"
+      ],
+      "answer_index": 1,
+      "explanation_en": "A repeated task, with stable instructions and different inputs, used by several people: that is a GPT's purpose. A Project suits one ongoing piece of work.",
+      "explanation_fr": "Une tâche répétée, avec des instructions stables et des entrées différentes, utilisée par plusieurs personnes : c'est la raison d'être d'un GPT. Un Projet convient à un travail en cours."
+    },
+    {
+      "id": "g4q2",
+      "question_en": "Which GPT instruction best prevents invented content in meeting minutes?",
+      "question_fr": "Quelle instruction de GPT évite le mieux le contenu inventé dans un procès-verbal ?",
+      "options_en": [
+        "\"Write excellent minutes.\"",
+        "\"Only record decisions explicitly stated; put unclear items under Open questions; never invent an owner or deadline.\"",
+        "\"Be creative with the format.\"",
+        "\"Make the minutes as complete as possible.\""
+      ],
+      "options_fr": [
+        "« Rédige un excellent procès-verbal. »",
+        "« N'enregistre que les décisions explicitement mentionnées ; mets les points flous dans Questions ouvertes ; n'invente jamais de responsable ni d'échéance. »",
+        "« Sois créatif sur le format. »",
+        "« Rends le procès-verbal aussi complet que possible. »"
+      ],
+      "answer_index": 1,
+      "explanation_en": "It defines what to do with uncertainty, which is where invention usually happens.",
+      "explanation_fr": "Elle définit quoi faire de l'incertitude, là où l'invention se produit habituellement."
+    },
+    {
+      "id": "g4q3",
+      "question_en": "Why should you never put confidential data in a custom GPT's knowledge files without restrictions?",
+      "question_fr": "Pourquoi ne jamais mettre de données confidentielles dans les fichiers de connaissances d'un GPT sans restriction ?",
+      "options_en": [
+        "Files make the GPT slower",
+        "Users of the GPT may be able to get it to reveal its instructions and files",
+        "GPTs cannot read confidential files",
+        "It is technically impossible to upload them"
+      ],
+      "options_fr": [
+        "Les fichiers ralentissent le GPT",
+        "Les utilisateurs du GPT peuvent parfois l'amener à révéler ses instructions et ses fichiers",
+        "Les GPT ne savent pas lire les fichiers confidentiels",
+        "Il est techniquement impossible de les importer"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Treat anything in a GPT's knowledge as visible to whoever can use the GPT.",
+      "explanation_fr": "Considérez que tout ce qui est dans les connaissances d'un GPT est visible par quiconque peut l'utiliser."
+    },
+    {
+      "id": "g4q4",
+      "question_en": "What makes a GPT test meaningful before sharing?",
+      "question_fr": "Qu'est-ce qui rend significatif le test d'un GPT avant de le partager ?",
+      "options_en": [
+        "One clean example that works",
+        "Five real inputs including awkward ones, fixing instructions and re-running all five",
+        "Asking the GPT whether it works",
+        "Letting colleagues find the problems"
+      ],
+      "options_fr": [
+        "Un exemple propre qui fonctionne",
+        "Cinq vraies entrées dont des difficiles, en corrigeant les instructions et en relançant les cinq",
+        "Demander au GPT s'il fonctionne",
+        "Laisser les collègues trouver les problèmes"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Awkward inputs reveal failures. Re-running all cases catches fixes that break something else.",
+      "explanation_fr": "Les entrées difficiles révèlent les défaillances. Relancer tous les cas repère les corrections qui en cassent d'autres."
+    },
+    {
+      "id": "g4q5",
+      "question_en": "What is a good habit when opening a new chat in a long-running Project?",
+      "question_fr": "Quelle est une bonne habitude en ouvrant une nouvelle conversation dans un Projet de longue durée ?",
+      "options_en": [
+        "Paste all files again",
+        "Ask for a summary of where things stand and what is open, then correct anything wrong",
+        "Delete old chats first",
+        "Turn memory off"
+      ],
+      "options_fr": [
+        "Recoller tous les fichiers",
+        "Demander un résumé de l'état d'avancement et des points ouverts, puis corriger ce qui est faux",
+        "Supprimer d'abord les anciennes conversations",
+        "Désactiver la mémoire"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Checking the AI's understanding up front prevents building on an outdated picture.",
+      "explanation_fr": "Vérifier d'emblée la compréhension de l'IA évite de construire sur une image périmée."
+    }
+  ],
+  "chatgpt-05": [
+    {
+      "id": "g5q1",
+      "question_en": "Which question is better suited to deep research than to a quick search?",
+      "question_fr": "Quelle question convient mieux à la recherche approfondie qu'à une recherche rapide ?",
+      "options_en": [
+        "Today's euro to CFA franc rate",
+        "A ministry's office opening hours",
+        "How digital payroll providers in Cameroon compare on fees, compliance support and integrations",
+        "The date of next week's public holiday"
+      ],
+      "options_fr": [
+        "Le taux euro / franc CFA du jour",
+        "Les horaires d'ouverture d'un ministère",
+        "La comparaison des solutions de paie numérique au Cameroun sur les frais, l'accompagnement réglementaire et les intégrations",
+        "La date du jour férié de la semaine prochaine"
+      ],
+      "answer_index": 2,
+      "explanation_en": "Broad comparative questions need many sources and structure. Simple current facts need a quick search.",
+      "explanation_fr": "Les questions comparatives larges demandent de nombreuses sources et une structure. Les faits simples et actuels demandent une recherche rapide."
+    },
+    {
+      "id": "g5q2",
+      "question_en": "What is the 3×3 rule for checking a research report?",
+      "question_fr": "En quoi consiste la règle 3×3 pour vérifier un rapport de recherche ?",
+      "options_en": [
+        "Read it three times over three days",
+        "Check 3 key claims in their sources, 3 source types for quality and date, and 3 numbers for exact match",
+        "Ask three AI tools the same question",
+        "Keep only three sources"
+      ],
+      "options_fr": [
+        "Le lire trois fois sur trois jours",
+        "Vérifier 3 affirmations clés dans leurs sources, 3 types de sources pour leur qualité et date, et 3 chiffres pour leur correspondance exacte",
+        "Poser la même question à trois outils d'IA",
+        "Ne garder que trois sources"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Nine targeted checks give a quick, honest signal of whether the report can be relied on.",
+      "explanation_fr": "Neuf vérifications ciblées donnent un signal rapide et honnête sur la fiabilité du rapport."
+    },
+    {
+      "id": "g5q3",
+      "question_en": "Five sources in a report all repeat the same press release. What is this failure pattern called in the lesson?",
+      "question_fr": "Cinq sources d'un rapport reprennent toutes le même communiqué. Comment la leçon nomme-t-elle cette défaillance ?",
+      "options_en": [
+        "Citation drift",
+        "Echo sources",
+        "Stale facts",
+        "Confident gaps"
+      ],
+      "options_fr": [
+        "Glissement de citation",
+        "Sources en écho",
+        "Faits périmés",
+        "Lacunes assurées"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Many citations can still be one source. Count independent origins, not links.",
+      "explanation_fr": "De nombreuses citations peuvent ne représenter qu'une seule source. Comptez les origines indépendantes, pas les liens."
+    },
+    {
+      "id": "g5q4",
+      "question_en": "Two of the nine 3×3 checks fail. How should you treat the report?",
+      "question_fr": "Deux des neuf vérifications 3×3 échouent. Comment traiter le rapport ?",
+      "options_en": [
+        "Use it, since 7 of 9 passed",
+        "As a draft list of leads to verify, not as evidence",
+        "Delete it and never use deep research again",
+        "Remove the two failed items and send the rest"
+      ],
+      "options_fr": [
+        "L'utiliser, puisque 7 sur 9 ont réussi",
+        "Comme une liste de pistes à vérifier, pas comme une preuve",
+        "Le supprimer et ne plus jamais utiliser la recherche approfondie",
+        "Retirer les deux éléments en échec et envoyer le reste"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Failed spot-checks suggest more unchecked problems. The report becomes a starting point, not a source.",
+      "explanation_fr": "Des sondages en échec laissent supposer d'autres problèmes non vérifiés. Le rapport devient un point de départ, pas une source."
+    },
+    {
+      "id": "g5q5",
+      "question_en": "Why add \"Where sources disagree\" and \"What I could not find\" to a research brief?",
+      "question_fr": "Pourquoi ajouter « Là où les sources divergent » et « Ce que je n'ai pas trouvé » à une commande de recherche ?",
+      "options_en": [
+        "To make the report longer",
+        "They show how much to trust the rest, and where you need human follow-up",
+        "Deep research requires them",
+        "To reduce the number of citations"
+      ],
+      "options_fr": [
+        "Pour allonger le rapport",
+        "Elles montrent quelle confiance accorder au reste, et où un suivi humain est nécessaire",
+        "La recherche approfondie les exige",
+        "Pour réduire le nombre de citations"
+      ],
+      "answer_index": 1,
+      "explanation_en": "These sections expose uncertainty that a smooth report would otherwise hide.",
+      "explanation_fr": "Ces sections exposent une incertitude qu'un rapport fluide cacherait autrement."
+    }
+  ],
+  "chatgpt-06": [
+    {
+      "id": "g6q1",
+      "question_en": "Which is the best first task for agent mode at work?",
+      "question_fr": "Quelle est la meilleure première tâche pour le mode agent au travail ?",
+      "options_en": [
+        "Paying supplier invoices",
+        "Emailing all clients about a price change",
+        "Shortlisting workshop venues into a table, with an explicit \"do not contact or book\" instruction",
+        "Deleting old files from the shared drive"
+      ],
+      "options_fr": [
+        "Payer les factures fournisseurs",
+        "Envoyer un email à tous les clients sur un changement de prix",
+        "Présélectionner des salles d'atelier dans un tableau, avec la consigne explicite « ne contacte et ne réserve rien »",
+        "Supprimer les anciens fichiers du disque partagé"
+      ],
+      "answer_index": 2,
+      "explanation_en": "Start agents on tasks where errors are cheap and reversible, with a clear stopping point.",
+      "explanation_fr": "Commencez les agents sur des tâches où l'erreur coûte peu et est réversible, avec un point d'arrêt clair."
+    },
+    {
+      "id": "g6q2",
+      "question_en": "While running a task, the agent proposes an action you did not ask for after visiting a website. What should you do?",
+      "question_fr": "Pendant une tâche, l'agent propose une action non demandée après avoir visité un site. Que faire ?",
+      "options_en": [
+        "Approve it; the agent knows best",
+        "Stop it: web content can contain hidden instructions that steer agents",
+        "Let it continue and check later",
+        "Give it your password so it can finish"
+      ],
+      "options_fr": [
+        "L'approuver ; l'agent sait mieux",
+        "L'arrêter : le contenu web peut contenir des instructions cachées qui orientent les agents",
+        "Le laisser continuer et vérifier plus tard",
+        "Lui donner votre mot de passe pour qu'il termine"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Unrequested actions after reading web content are a warning sign of prompt injection.",
+      "explanation_fr": "Une action non demandée après la lecture d'un contenu web est un signal d'alerte d'injection de prompt."
+    },
+    {
+      "id": "g6q3",
+      "question_en": "You generate a poster for an internal event. What must you check?",
+      "question_fr": "Vous générez une affiche pour un événement interne. Que devez-vous vérifier ?",
+      "options_en": [
+        "Nothing, images do not contain errors",
+        "Every word in the image, and that it respects your brand guidelines",
+        "Only the colours",
+        "That it is the largest size available"
+      ],
+      "options_fr": [
+        "Rien, les images ne contiennent pas d'erreurs",
+        "Chaque mot de l'image, et le respect de votre charte",
+        "Seulement les couleurs",
+        "Qu'elle est à la plus grande taille disponible"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Text inside generated images is still a common source of errors, and brand rules apply.",
+      "explanation_fr": "Le texte dans les images générées reste une source d'erreurs fréquente, et la charte s'applique."
+    },
+    {
+      "id": "g6q4",
+      "question_en": "What is the main risk of voice mode when debriefing a meeting in a taxi or open office?",
+      "question_fr": "Quel est le principal risque du mode vocal pour débriefer une réunion en taxi ou en open space ?",
+      "options_en": [
+        "The transcription will be in the wrong language",
+        "People nearby can hear confidential information",
+        "Voice mode uses more data",
+        "It cannot produce an email draft"
+      ],
+      "options_fr": [
+        "La transcription sera dans la mauvaise langue",
+        "Les personnes autour peuvent entendre des informations confidentielles",
+        "Le mode vocal consomme plus de données",
+        "Il ne peut pas produire de brouillon d'email"
+      ],
+      "answer_index": 1,
+      "explanation_en": "The tool may be approved, but the setting is not private. Choose where you speak.",
+      "explanation_fr": "L'outil est peut-être autorisé, mais le lieu n'est pas privé. Choisissez où vous parlez."
+    },
+    {
+      "id": "g6q5",
+      "question_en": "In the hotel-shortlisting example, what did the assistant keep for herself?",
+      "question_fr": "Dans l'exemple de présélection d'hôtels, qu'est-ce que l'assistante a gardé pour elle ?",
+      "options_en": [
+        "Nothing; the agent booked the hotel",
+        "Price verification, the decision, and contacting the venues",
+        "Only the final payment",
+        "Writing the search criteria in the agent's browser"
+      ],
+      "options_fr": [
+        "Rien ; l'agent a réservé l'hôtel",
+        "La vérification des prix, la décision et la prise de contact avec les établissements",
+        "Seulement le paiement final",
+        "La saisie des critères dans le navigateur de l'agent"
+      ],
+      "answer_index": 1,
+      "explanation_en": "The agent did the legwork; the human kept verification, decisions and communication.",
+      "explanation_fr": "L'agent a fait le travail de terrain ; l'humaine a gardé la vérification, les décisions et la communication."
+    }
+  ]
+}

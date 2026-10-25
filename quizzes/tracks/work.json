@@ -1,0 +1,716 @@
+{
+  "work-01": [
+    {
+      "id": "w1q1",
+      "question_en": "You want replies in your team's style. Why give two different examples rather than one?",
+      "question_fr": "Vous voulez des réponses dans le style de votre équipe. Pourquoi donner deux exemples différents plutôt qu'un ?",
+      "options_en": [
+        "Two examples are required by the tools",
+        "So the AI copies the style, not the content of one specific answer",
+        "One example is always ignored",
+        "It makes the prompt shorter"
+      ],
+      "options_fr": [
+        "Les outils exigent deux exemples",
+        "Pour que l'IA copie le style, et non le contenu d'une réponse précise",
+        "Un seul exemple est toujours ignoré",
+        "Cela raccourcit le prompt"
+      ],
+      "answer_index": 1,
+      "explanation_en": "With one example, AI tends to mimic its specifics. Varied examples isolate the style.",
+      "explanation_fr": "Avec un seul exemple, l'IA a tendance à en imiter les détails. Des exemples variés isolent le style."
+    },
+    {
+      "id": "w1q2",
+      "question_en": "A single long prompt keeps producing a report with wrong figures. What is the best fix?",
+      "question_fr": "Un long prompt unique produit sans cesse un rapport aux chiffres faux. Quelle est la meilleure correction ?",
+      "options_en": [
+        "Add \"be accurate\" in capital letters",
+        "Split it into a chain (extract facts, check, analyse, check, draft) with a checkpoint after each step",
+        "Use a longer prompt with more detail",
+        "Ask for the report three times and pick the best"
+      ],
+      "options_fr": [
+        "Ajouter « sois précis » en majuscules",
+        "Le découper en enchaînement (extraire les faits, vérifier, analyser, vérifier, rédiger) avec un contrôle après chaque étape",
+        "Utiliser un prompt plus long et plus détaillé",
+        "Demander le rapport trois fois et choisir le meilleur"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Chaining catches each error at the step where it appears, before it gets built upon.",
+      "explanation_fr": "L'enchaînement intercepte chaque erreur à l'étape où elle apparaît, avant qu'on construise dessus."
+    },
+    {
+      "id": "w1q3",
+      "question_en": "What is the honest view of AI self-checks (\"check your draft against these criteria\")?",
+      "question_fr": "Quelle est la vision honnête de l'auto-contrôle par l'IA (« vérifie ton brouillon selon ces critères ») ?",
+      "options_en": [
+        "They make human review unnecessary",
+        "They are useless",
+        "They catch many obvious slips but can mark things \"pass\" wrongly; the criteria also serve as your own review checklist",
+        "They only work in Claude"
+      ],
+      "options_fr": [
+        "Ils rendent la relecture humaine inutile",
+        "Ils ne servent à rien",
+        "Ils interceptent beaucoup d'erreurs évidentes mais peuvent marquer « réussi » à tort ; les critères servent aussi de grille de relecture pour vous",
+        "Ils ne fonctionnent que dans Claude"
+      ],
+      "answer_index": 2,
+      "explanation_en": "Self-checks help, but they are not proof. You remain the final check.",
+      "explanation_fr": "L'auto-contrôle aide, mais n'est pas une preuve. Vous restez le contrôle final."
+    },
+    {
+      "id": "w1q4",
+      "question_en": "The AI keeps inventing figures not in your data. Which instruction targets this problem?",
+      "question_fr": "L'IA invente sans cesse des chiffres absents de vos données. Quelle consigne vise ce problème ?",
+      "options_en": [
+        "\"Use only the data inside <data>; write 'not available' otherwise.\"",
+        "\"Write in a professional tone.\"",
+        "\"Give me three options.\"",
+        "\"Try again.\""
+      ],
+      "options_fr": [
+        "« Utilise uniquement les données dans <donnees> ; écris « non disponible » sinon. »",
+        "« Écris sur un ton professionnel. »",
+        "« Donne-moi trois options. »",
+        "« Recommence. »"
+      ],
+      "answer_index": 0,
+      "explanation_en": "Naming the problem and giving an honest fallback (\"not available\") is how you diagnose bad output, rather than just retrying.",
+      "explanation_fr": "Nommer le problème et donner une issue honnête (« non disponible ») est la manière de diagnostiquer un mauvais résultat, plutôt que de simplement recommencer."
+    },
+    {
+      "id": "w1q5",
+      "question_en": "When is \"ask me up to three questions before you start\" most useful?",
+      "question_fr": "Quand « pose-moi jusqu'à trois questions avant de commencer » est-il le plus utile ?",
+      "options_en": [
+        "When you are tempted to write a long, detailed prompt for a task",
+        "For simple rewording",
+        "Never; it wastes time",
+        "Only for translation"
+      ],
+      "options_fr": [
+        "Quand vous êtes tenté d'écrire un long prompt détaillé pour une tâche",
+        "Pour une simple reformulation",
+        "Jamais ; cela fait perdre du temps",
+        "Seulement pour la traduction"
+      ],
+      "answer_index": 0,
+      "explanation_en": "The AI identifies what is missing faster than you can anticipate everything up front.",
+      "explanation_fr": "L'IA identifie ce qui manque plus vite que vous ne pourriez tout anticiper."
+    }
+  ],
+  "work-02": [
+    {
+      "id": "w2q1",
+      "question_en": "What is the recommended way to start building a daily AI routine?",
+      "question_fr": "Quelle est la manière recommandée de commencer une routine IA quotidienne ?",
+      "options_en": [
+        "Adopt all five moments from day one",
+        "Start with two moments for two weeks, then add more once they are habits",
+        "Use AI only when you think of it",
+        "Start with weekly reviews only"
+      ],
+      "options_fr": [
+        "Adopter les cinq moments dès le premier jour",
+        "Commencer par deux moments pendant deux semaines, puis en ajouter quand ce sont des habitudes",
+        "N'utiliser l'IA que quand on y pense",
+        "Commencer uniquement par les revues hebdomadaires"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Habits form by attaching a small number of prompts to moments that already happen.",
+      "explanation_fr": "Les habitudes se forment en attachant quelques prompts à des moments qui existent déjà."
+    },
+    {
+      "id": "w2q2",
+      "question_en": "Why does the day-planning prompt ask \"which item should I drop or delegate if the day overruns\"?",
+      "question_fr": "Pourquoi le prompt de planification demande-t-il « quel élément abandonner ou déléguer si la journée déborde » ?",
+      "options_en": [
+        "To make the plan realistic by deciding trade-offs in advance",
+        "To reduce your workload permanently",
+        "Because AI cannot plan a full day",
+        "To share with your manager"
+      ],
+      "options_fr": [
+        "Pour rendre le plan réaliste en décidant des arbitrages à l'avance",
+        "Pour réduire définitivement votre charge",
+        "Parce que l'IA ne sait pas planifier une journée entière",
+        "Pour le partager avec votre responsable"
+      ],
+      "answer_index": 0,
+      "explanation_en": "Days overrun. Knowing in advance what gives way prevents dropping the wrong thing under pressure.",
+      "explanation_fr": "Les journées débordent. Savoir à l'avance ce qui cède évite d'abandonner la mauvaise chose sous pression."
+    },
+    {
+      "id": "w2q3",
+      "question_en": "What does the end-of-day question \"anything I promised someone today that I haven't scheduled\" catch?",
+      "question_fr": "Que rattrape la question de fin de journée « tout ce que j'ai promis aujourd'hui et que je n'ai pas planifié » ?",
+      "options_en": [
+        "Meeting room bookings",
+        "Forgotten small commitments that erode trust",
+        "Expense claims",
+        "Spam emails"
+      ],
+      "options_fr": [
+        "Les réservations de salles",
+        "Les petits engagements oubliés qui usent la confiance",
+        "Les notes de frais",
+        "Les spams"
+      ],
+      "answer_index": 1,
+      "explanation_en": "In the worked example it caught four commitments in the first week, including a client price confirmation.",
+      "explanation_fr": "Dans l'exemple, elle a rattrapé quatre engagements dès la première semaine, dont une confirmation de prix client."
+    },
+    {
+      "id": "w2q4",
+      "question_en": "It is 7 a.m. and you are in a hurry. A confidential email would be quick to triage with your personal AI account. What do you do?",
+      "question_fr": "Il est 7 h et vous êtes pressé. Un email confidentiel serait vite trié avec votre compte IA personnel. Que faites-vous ?",
+      "options_en": [
+        "Paste it this once",
+        "Paste it but remove the signature",
+        "Follow your data rules: use only the approved tool, or handle that email without AI",
+        "Forward it to your personal email first"
+      ],
+      "options_fr": [
+        "Le coller cette fois-ci seulement",
+        "Le coller en retirant la signature",
+        "Respecter vos règles de données : n'utiliser que l'outil autorisé, ou traiter cet email sans IA",
+        "Le transférer d'abord sur votre messagerie personnelle"
+      ],
+      "answer_index": 2,
+      "explanation_en": "Data rules do not relax under time pressure. That is exactly when breaches happen.",
+      "explanation_fr": "Les règles de données ne s'assouplissent pas sous la pression du temps. C'est justement là que les fuites arrivent."
+    },
+    {
+      "id": "w2q5",
+      "question_en": "In the after-meeting prompt, why mark actions without a clear owner as \"OWNER?\"",
+      "question_fr": "Dans le prompt d'après réunion, pourquoi marquer « RESPONSABLE ? » les actions sans responsable clair ?",
+      "options_en": [
+        "So the AI does not guess an owner, and you can resolve it before the follow-up goes out",
+        "To make the email longer",
+        "Because every action must have two owners",
+        "To blame someone later"
+      ],
+      "options_fr": [
+        "Pour que l'IA ne devine pas un responsable, et que vous régliez ce point avant l'envoi du suivi",
+        "Pour allonger l'email",
+        "Parce que chaque action doit avoir deux responsables",
+        "Pour désigner un coupable plus tard"
+      ],
+      "answer_index": 0,
+      "explanation_en": "An action without an owner usually does not get done. Making the gap visible gets it fixed.",
+      "explanation_fr": "Une action sans responsable n'est généralement pas faite. Rendre le manque visible permet de le corriger."
+    }
+  ],
+  "work-03": [
+    {
+      "id": "w3q1",
+      "question_en": "In the reporting pipeline, which stage should the AI not do for you?",
+      "question_fr": "Dans la chaîne de reporting, quelle étape l'IA ne doit-elle pas faire à votre place ?",
+      "options_en": [
+        "Producing the KPI table",
+        "Adding the business causes behind the findings",
+        "Formatting slides",
+        "Listing findings tied to figures"
+      ],
+      "options_fr": [
+        "Produire le tableau d'indicateurs",
+        "Ajouter les causes métier derrière les constats",
+        "Mettre en forme les diapositives",
+        "Lister des constats reliés aux chiffres"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Causes come from your knowledge of the business, which the AI does not have. It is also the part your manager most values.",
+      "explanation_fr": "Les causes viennent de votre connaissance de l'activité, que l'IA n'a pas. C'est aussi la partie que votre responsable apprécie le plus."
+    },
+    {
+      "id": "w3q2",
+      "question_en": "Why ask for findings \"without speculating about causes\" in Stage 3?",
+      "question_fr": "Pourquoi demander des constats « sans spéculer sur les causes » à l'étape 3 ?",
+      "options_en": [
+        "To keep the report short",
+        "AI-invented causes sound plausible and are hard to spot later; causes should come from you",
+        "Causes are not important",
+        "AI cannot write about causes"
+      ],
+      "options_fr": [
+        "Pour garder le rapport court",
+        "Les causes inventées par l'IA semblent plausibles et sont difficiles à repérer ensuite ; elles doivent venir de vous",
+        "Les causes ne sont pas importantes",
+        "L'IA ne sait pas écrire sur les causes"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Plausible but invented explanations are among the most damaging errors in reports.",
+      "explanation_fr": "Des explications plausibles mais inventées comptent parmi les erreurs les plus dommageables d'un rapport."
+    },
+    {
+      "id": "w3q3",
+      "question_en": "Which checks should stay human, even once the pipeline is automated?",
+      "question_fr": "Quels contrôles doivent rester humains, même une fois la chaîne automatisée ?",
+      "options_en": [
+        "None; automation replaces checks",
+        "Stage 1 (data in) and Stage 4 (narrative numbers) for anything leaving your team",
+        "Only slide formatting",
+        "Only the spelling check"
+      ],
+      "options_fr": [
+        "Aucun ; l'automatisation remplace les contrôles",
+        "L'étape 1 (données entrantes) et l'étape 4 (chiffres du récit) pour tout ce qui sort de votre équipe",
+        "Seulement la mise en forme des diapositives",
+        "Seulement l'orthographe"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Data coming in and numbers going out are where errors have the most impact.",
+      "explanation_fr": "Les données qui entrent et les chiffres qui sortent sont là où les erreurs ont le plus d'impact."
+    },
+    {
+      "id": "w3q4",
+      "question_en": "A generated bar chart's y-axis starts at 900 instead of 0, making a 3% fall look dramatic. What does the lesson recommend?",
+      "question_fr": "L'axe vertical d'un diagramme en barres généré commence à 900 au lieu de 0, ce qui donne à une baisse de 3 % un air dramatique. Que recommande la leçon ?",
+      "options_en": [
+        "Keep it; it highlights the change",
+        "Specify a y-axis starting at zero for bar charts, the same scale across periods, and labelled units",
+        "Remove the chart",
+        "Switch to a pie chart"
+      ],
+      "options_fr": [
+        "Le garder ; il met la variation en valeur",
+        "Exiger un axe partant de zéro pour les barres, la même échelle entre périodes et des unités indiquées",
+        "Supprimer le graphique",
+        "Passer à un camembert"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Truncated axes exaggerate changes and mislead readers.",
+      "explanation_fr": "Les axes tronqués exagèrent les variations et trompent le lecteur."
+    },
+    {
+      "id": "w3q5",
+      "question_en": "In the worked example, what did Stage 2's recomputation catch?",
+      "question_fr": "Dans l'exemple, qu'a intercepté le recalcul de l'étape 2 ?",
+      "options_en": [
+        "A spelling mistake in a headline",
+        "A change % calculated on the wrong base",
+        "A missing slide",
+        "A wrong template"
+      ],
+      "options_fr": [
+        "Une faute d'orthographe dans un titre",
+        "Un écart % calculé sur la mauvaise base",
+        "Une diapositive manquante",
+        "Un mauvais modèle"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Recomputing two figures yourself is cheap insurance against calculation errors reaching the board.",
+      "explanation_fr": "Recalculer soi-même deux chiffres est une assurance peu coûteuse contre les erreurs de calcul qui arriveraient au conseil."
+    }
+  ],
+  "work-04": [
+    {
+      "id": "w4q1",
+      "question_en": "Your company has approved only ChatGPT Business. A colleague says Claude is better for contracts. What should you do with confidential contracts?",
+      "question_fr": "Votre entreprise n'a approuvé que ChatGPT Business. Un collègue dit que Claude est meilleur pour les contrats. Que faire des contrats confidentiels ?",
+      "options_en": [
+        "Use Claude anyway, since it is better",
+        "Use the approved tool for confidential work data",
+        "Alternate between both",
+        "Use a personal account of each"
+      ],
+      "options_fr": [
+        "Utiliser Claude quand même, puisqu'il est meilleur",
+        "Utiliser l'outil approuvé pour les données de travail confidentielles",
+        "Alterner entre les deux",
+        "Utiliser un compte personnel de chacun"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Approval and business-plan protections come before capability differences.",
+      "explanation_fr": "L'approbation et les protections de l'offre professionnelle passent avant les différences de capacités."
+    },
+    {
+      "id": "w4q2",
+      "question_en": "What is the best way to decide which tool to use for your recurring tasks?",
+      "question_fr": "Quelle est la meilleure manière de choisir l'outil pour vos tâches récurrentes ?",
+      "options_en": [
+        "Read online rankings",
+        "Run identical prompts and files in both on your real tasks, score accuracy, edits and time, and choose per task",
+        "Use whichever is newest",
+        "Ask each tool which is better"
+      ],
+      "options_fr": [
+        "Lire des classements en ligne",
+        "Lancer des prompts et fichiers identiques dans les deux sur vos vraies tâches, noter exactitude, corrections et temps, et choisir tâche par tâche",
+        "Utiliser le plus récent",
+        "Demander à chaque outil lequel est meilleur"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Only your own test shows performance on your documents and language.",
+      "explanation_fr": "Seul votre propre test montre la performance sur vos documents et votre langue."
+    },
+    {
+      "id": "w4q3",
+      "question_en": "Two AI tools agree on a figure. What can you conclude?",
+      "question_fr": "Deux outils d'IA sont d'accord sur un chiffre. Que pouvez-vous en conclure ?",
+      "options_en": [
+        "It is definitely correct",
+        "It is more likely correct, but not proven; they can share an error",
+        "It is definitely wrong",
+        "Nothing; agreement is meaningless"
+      ],
+      "options_fr": [
+        "Il est forcément exact",
+        "Il est plus probablement exact, mais ce n'est pas prouvé ; ils peuvent partager une erreur",
+        "Il est forcément faux",
+        "Rien ; l'accord ne signifie rien"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Cross-checking is most valuable for the disagreements it reveals. Agreement is reassurance, not proof.",
+      "explanation_fr": "La contre-vérification vaut surtout par les désaccords qu'elle révèle. L'accord rassure, il ne prouve pas."
+    },
+    {
+      "id": "w4q4",
+      "question_en": "In the cross-check prompt, why say \"Do not rewrite the draft\"?",
+      "question_fr": "Dans le prompt de contre-vérification, pourquoi dire « Ne réécris pas le brouillon » ?",
+      "options_en": [
+        "To save time",
+        "So you get a clear list of issues to check instead of a new text with new, unmarked errors",
+        "Because the second tool cannot write",
+        "To protect copyright"
+      ],
+      "options_fr": [
+        "Pour gagner du temps",
+        "Pour obtenir une liste claire de problèmes à vérifier, plutôt qu'un nouveau texte avec de nouvelles erreurs non signalées",
+        "Parce que le second outil ne sait pas écrire",
+        "Pour protéger le droit d'auteur"
+      ],
+      "answer_index": 1,
+      "explanation_en": "A reviewer's job is to point out problems. A rewrite mixes fixes with fresh mistakes.",
+      "explanation_fr": "Le rôle d'un relecteur est de signaler les problèmes. Une réécriture mélange corrections et nouvelles erreurs."
+    },
+    {
+      "id": "w4q5",
+      "question_en": "Why does the lesson advise against constantly switching between tools?",
+      "question_fr": "Pourquoi la leçon déconseille-t-elle de changer sans cesse d'outil ?",
+      "options_en": [
+        "Switching is against the terms of service",
+        "It wastes your setup (profile, memory, Projects, GPTs); pick a primary tool and use the other deliberately",
+        "Tools stop working if you switch",
+        "Your data is shared between them"
+      ],
+      "options_fr": [
+        "Changer d'outil est contraire aux conditions d'utilisation",
+        "Cela gaspille votre configuration (profil, mémoire, Projets, GPT) ; choisissez un outil principal et utilisez l'autre délibérément",
+        "Les outils cessent de fonctionner si on change",
+        "Vos données sont partagées entre eux"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Setup compounds over time. Use the second tool for a specific feature or as a cross-checker.",
+      "explanation_fr": "La configuration porte ses fruits avec le temps. Utilisez le second outil pour une fonction précise ou comme contre-vérificateur."
+    }
+  ],
+  "work-05": [
+    {
+      "id": "w5q1",
+      "question_en": "Which task passes the 3R test (Repeated, Rule-based, Reversible) best?",
+      "question_fr": "Quelle tâche réussit le mieux le test des 3R (Répétée, Réglée, Réversible) ?",
+      "options_en": [
+        "Annual strategy retreat planning",
+        "Weekly extraction of invoice fields into a review spreadsheet",
+        "Automatic payments to suppliers",
+        "Deciding staff bonuses"
+      ],
+      "options_fr": [
+        "La préparation du séminaire stratégique annuel",
+        "L'extraction hebdomadaire des champs de factures dans un tableur de validation",
+        "Les paiements automatiques aux fournisseurs",
+        "La décision des primes du personnel"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Weekly, checklist-based, and reviewed before anything happens. Payments are not reversible, and the others are not repeated or rule-based.",
+      "explanation_fr": "Hebdomadaire, fondée sur une liste de contrôle, et validée avant toute conséquence. Les paiements ne sont pas réversibles, et les autres ne sont ni répétées ni réglées."
+    },
+    {
+      "id": "w5q2",
+      "question_en": "An automation drafts replies to client enquiries. How should it end?",
+      "question_fr": "Une automatisation rédige des réponses aux demandes clients. Comment doit-elle se terminer ?",
+      "options_en": [
+        "Send directly to save time",
+        "Draft goes to a review queue; a human approves before sending",
+        "Send, then a human checks a sample later",
+        "Send only during office hours"
+      ],
+      "options_fr": [
+        "Envoi direct pour gagner du temps",
+        "Le brouillon va dans une file de validation ; un humain valide avant l'envoi",
+        "Envoi, puis un humain vérifie un échantillon plus tard",
+        "Envoi uniquement aux heures de bureau"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Anything leaving your team must pass a human review step, never go out directly.",
+      "explanation_fr": "Tout ce qui sort de votre équipe doit passer par une validation humaine, jamais partir directement."
+    },
+    {
+      "id": "w5q3",
+      "question_en": "Your invoice automation has worked perfectly for a month. Should you keep spot-checking?",
+      "question_fr": "Votre automatisation de factures fonctionne parfaitement depuis un mois. Faut-il continuer les contrôles par sondage ?",
+      "options_en": [
+        "No, it has proven itself",
+        "Yes; in the worked example a weekly spot-check caught a date-format error in week three",
+        "Only if a client complains",
+        "Only once a year"
+      ],
+      "options_fr": [
+        "Non, elle a fait ses preuves",
+        "Oui ; dans l'exemple, un contrôle hebdomadaire a révélé une erreur de format de date en troisième semaine",
+        "Seulement si un client se plaint",
+        "Seulement une fois par an"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Inputs change over time. Regular sampling catches drift that a first test cannot.",
+      "explanation_fr": "Les entrées changent avec le temps. Un échantillonnage régulier repère les dérives qu'un premier test ne voit pas."
+    },
+    {
+      "id": "w5q4",
+      "question_en": "Your automation reads emails from outside the company. Which risk does this add?",
+      "question_fr": "Votre automatisation lit des emails venant de l'extérieur. Quel risque cela ajoute-t-il ?",
+      "options_en": [
+        "None, emails are safe",
+        "Prompt injection: an email can contain text designed to manipulate the AI, so the automation must not take irreversible actions on its own",
+        "The AI will refuse to read them",
+        "Higher licence costs only"
+      ],
+      "options_fr": [
+        "Aucun, les emails sont sûrs",
+        "L'injection de prompt : un email peut contenir un texte conçu pour manipuler l'IA, donc l'automatisation ne doit pas faire seule d'actions irréversibles",
+        "L'IA refusera de les lire",
+        "Seulement des coûts de licence plus élevés"
+      ],
+      "answer_index": 1,
+      "explanation_en": "External content is untrusted. Keep irreversible actions behind human approval.",
+      "explanation_fr": "Le contenu externe n'est pas fiable. Gardez les actions irréversibles derrière une validation humaine."
+    },
+    {
+      "id": "w5q5",
+      "question_en": "You want to use an automation platform like Power Automate or Zapier with AI. What is the first step?",
+      "question_fr": "Vous voulez utiliser une plateforme d'automatisation comme Power Automate ou Zapier avec l'IA. Quelle est la première étape ?",
+      "options_en": [
+        "Create a free personal account and connect your work email",
+        "Ask IT; many organisations already license one and must approve connections",
+        "Build it at home over the weekend",
+        "Copy a template from the internet and run it"
+      ],
+      "options_fr": [
+        "Créer un compte personnel gratuit et connecter votre messagerie professionnelle",
+        "Demander à l'informatique ; beaucoup d'organisations ont déjà une licence et doivent approuver les connexions",
+        "La construire chez vous le week-end",
+        "Copier un modèle d'internet et le lancer"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Automations move company data between systems. IT approval and the existing licence come first.",
+      "explanation_fr": "Les automatisations font circuler les données de l'entreprise entre systèmes. L'accord de l'informatique et la licence existante passent d'abord."
+    }
+  ],
+  "work-06": [
+    {
+      "id": "w6q1",
+      "question_en": "Which prompts belong in your prompt library?",
+      "question_fr": "Quels prompts ont leur place dans votre bibliothèque ?",
+      "options_en": [
+        "Every prompt you find online",
+        "Prompts you have actually used at least three times, with setup, checks and last-tested date",
+        "Only prompts longer than 200 words",
+        "Only prompts written by AI"
+      ],
+      "options_fr": [
+        "Tous les prompts trouvés en ligne",
+        "Les prompts réellement utilisés au moins trois fois, avec configuration, contrôles et date du dernier test",
+        "Seulement les prompts de plus de 200 mots",
+        "Seulement les prompts écrits par l'IA"
+      ],
+      "answer_index": 1,
+      "explanation_en": "A small, tested library gets used. A long untested list does not.",
+      "explanation_fr": "Une petite bibliothèque testée est utilisée. Une longue liste non testée ne l'est pas."
+    },
+    {
+      "id": "w6q2",
+      "question_en": "Which measurement of time saved is honest?",
+      "question_fr": "Quelle mesure du temps gagné est honnête ?",
+      "options_en": [
+        "Time of the AI step only, on one demo",
+        "Whole-task time including checks and corrections, on at least five real tasks, with quality noted",
+        "Your best guess at the end of the month",
+        "The vendor's published average"
+      ],
+      "options_fr": [
+        "Le temps de l'étape IA seule, sur une démonstration",
+        "Le temps de toute la tâche, contrôles et corrections compris, sur au moins cinq vraies tâches, avec la qualité notée",
+        "Votre meilleure estimation en fin de mois",
+        "La moyenne publiée par l'éditeur"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Checking time is part of the real cost, and faster-but-worse is not a gain.",
+      "explanation_fr": "Le temps de vérification fait partie du coût réel, et plus rapide mais moins bon n'est pas un gain."
+    },
+    {
+      "id": "w6q3",
+      "question_en": "Why include \"what did not work\" in your results?",
+      "question_fr": "Pourquoi inclure « ce qui n'a pas marché » dans vos résultats ?",
+      "options_en": [
+        "It is required by law",
+        "It makes the rest of your results credible",
+        "To lower expectations",
+        "To get more training"
+      ],
+      "options_fr": [
+        "La loi l'exige",
+        "Cela rend le reste de vos résultats crédible",
+        "Pour baisser les attentes",
+        "Pour obtenir plus de formation"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Results that only show successes look like marketing. Honest limits build trust.",
+      "explanation_fr": "Des résultats qui ne montrent que des succès ressemblent à de la publicité. Des limites honnêtes créent la confiance."
+    },
+    {
+      "id": "w6q4",
+      "question_en": "Which 30-day goal is best written?",
+      "question_fr": "Quel objectif à 30 jours est le mieux formulé ?",
+      "options_en": [
+        "\"Use AI more.\"",
+        "\"Be more productive with AI.\"",
+        "\"Cut monthly report time from 2 days to 1 day without more correction rounds, by 30 November, shown to my manager.\"",
+        "\"Try every AI feature.\""
+      ],
+      "options_fr": [
+        "« Utiliser davantage l'IA. »",
+        "« Être plus productif avec l'IA. »",
+        "« Réduire le temps du rapport mensuel de 2 jours à 1 jour sans plus de cycles de corrections, d'ici le 30 novembre, présenté à mon responsable. »",
+        "« Essayer toutes les fonctions d'IA. »"
+      ],
+      "answer_index": 2,
+      "explanation_en": "Measurable, with a quality guard, a deadline and a named audience.",
+      "explanation_fr": "Mesurable, avec un garde-fou qualité, une échéance et un destinataire nommé."
+    },
+    {
+      "id": "w6q5",
+      "question_en": "Why review the playbook monthly?",
+      "question_fr": "Pourquoi relire le guide chaque mois ?",
+      "options_en": [
+        "AI tools and company policies change quickly; old instructions go out of date",
+        "Prompts expire after 30 days",
+        "To make it longer",
+        "It is required for the certificate"
+      ],
+      "options_fr": [
+        "Les outils d'IA et les politiques d'entreprise changent vite ; les anciennes consignes se périment",
+        "Les prompts expirent au bout de 30 jours",
+        "Pour l'allonger",
+        "C'est exigé pour le certificat"
+      ],
+      "answer_index": 0,
+      "explanation_en": "Features move, plans change, policies update. A playbook needs maintenance to stay correct.",
+      "explanation_fr": "Les fonctions bougent, les offres changent, les politiques évoluent. Un guide doit être entretenu pour rester juste."
+    }
+  ],
+  "work-07": [
+    {
+      "id": "w7q1",
+      "question_en": "What is the purpose of running a colleague's prompt on your own real task during the workshop?",
+      "question_fr": "Quel est l'objectif d'exécuter le prompt d'un collègue sur votre propre tâche réelle pendant l'atelier ?",
+      "options_en": [
+        "To compare typing speed",
+        "To expose hidden assumptions and missing context that only show when someone else uses it",
+        "To copy their work",
+        "To test the internet connection"
+      ],
+      "options_fr": [
+        "Comparer la vitesse de frappe",
+        "Révéler les hypothèses cachées et le contexte manquant qui n'apparaissent que quand quelqu'un d'autre l'utilise",
+        "Copier son travail",
+        "Tester la connexion internet"
+      ],
+      "answer_index": 1,
+      "explanation_en": "A prompt that only works for its author is not ready to share with a team.",
+      "explanation_fr": "Un prompt qui ne fonctionne que pour son auteur n'est pas prêt à être partagé avec une équipe."
+    },
+    {
+      "id": "w7q2",
+      "question_en": "Which set of methods does the cross-check drill use?",
+      "question_fr": "Quelles méthodes l'exercice de contre-vérification utilise-t-il ?",
+      "options_en": [
+        "Spell-check and word count",
+        "Quotes-first, the 3×3 rule, the number-and-date list, and a second-tool review",
+        "Asking the AI if it is confident",
+        "Reading the output aloud"
+      ],
+      "options_fr": [
+        "Correcteur orthographique et nombre de mots",
+        "Citations d'abord, règle 3×3, liste des chiffres et dates, et relecture par un second outil",
+        "Demander à l'IA si elle est sûre d'elle",
+        "Lire le résultat à voix haute"
+      ],
+      "answer_index": 1,
+      "explanation_en": "These are the verification methods taught across the Claude, ChatGPT and Advanced tracks.",
+      "explanation_fr": "Ce sont les méthodes de vérification enseignées dans les parcours Claude, ChatGPT et Avancé."
+    },
+    {
+      "id": "w7q3",
+      "question_en": "Why compare the AI's role-play feedback with a human peer's feedback on the same attempt?",
+      "question_fr": "Pourquoi comparer le retour de l'IA sur le jeu de rôle avec celui d'un pair humain sur le même essai ?",
+      "options_en": [
+        "To prove AI feedback is useless",
+        "To see what each notices that the other misses, such as tone and body language versus structure",
+        "To grade the peer",
+        "Because the AI cannot give feedback"
+      ],
+      "options_fr": [
+        "Pour prouver que le retour de l'IA est inutile",
+        "Pour voir ce que chacun remarque et que l'autre manque, comme le ton et la gestuelle face à la structure",
+        "Pour noter le pair",
+        "Parce que l'IA ne peut pas donner de retour"
+      ],
+      "answer_index": 1,
+      "explanation_en": "AI and human feedback have different blind spots. Using both gives a fuller picture.",
+      "explanation_fr": "Le retour de l'IA et celui d'un humain ont des angles morts différents. Utiliser les deux donne une image plus complète."
+    },
+    {
+      "id": "w7q4",
+      "question_en": "What three things does each person commit to at the end of the workshop?",
+      "question_fr": "À quelles trois choses chacun s'engage-t-il à la fin de l'atelier ?",
+      "options_en": [
+        "A new tool, a new prompt, a new course",
+        "Their 30-day goal, their baseline number, and the person they will show the result to",
+        "Three new automations",
+        "Using AI for every task"
+      ],
+      "options_fr": [
+        "Un nouvel outil, un nouveau prompt, un nouveau cours",
+        "Son objectif à 30 jours, son chiffre de départ et la personne à qui il montrera le résultat",
+        "Trois nouvelles automatisations",
+        "Utiliser l'IA pour chaque tâche"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Goal, baseline and audience turn a plan into a measurable commitment.",
+      "explanation_fr": "Objectif, point de départ et destinataire transforment un plan en engagement mesurable."
+    },
+    {
+      "id": "w7q5",
+      "question_en": "No live session is scheduled. What is the recommended alternative?",
+      "question_fr": "Aucune séance en direct n'est prévue. Quelle est l'alternative recommandée ?",
+      "options_en": [
+        "Skip this lesson",
+        "Do the prompt swap and cross-check drill with a colleague, or alone using a second AI tool as reviewer",
+        "Wait for the next cohort",
+        "Ask the AI to do the workshop for you"
+      ],
+      "options_fr": [
+        "Sauter cette leçon",
+        "Faire l'échange de prompts et l'exercice de contre-vérification avec un collègue, ou seul avec un second outil d'IA comme relecteur",
+        "Attendre la prochaine promotion",
+        "Demander à l'IA de faire l'atelier à votre place"
+      ],
+      "answer_index": 1,
+      "explanation_en": "The value is in testing your playbook against someone or something other than yourself.",
+      "explanation_fr": "L'intérêt est de confronter votre guide à quelqu'un ou à quelque chose d'autre que vous-même."
+    }
+  ]
+}
