@@ -5,5 +5,5 @@ window.AIW_CONFIG = {
   // Google Apps Script web-app URL from scripts/signup-apps-script.gs (ends in /exec). Enables the optional sign-up.
   signupEndpoint: "",
   // Contact shown in the sign-up privacy notice, for questions about personal data.
-  privacyContact: ""
+  privacyContact: "koloadvisoryaiforall@gmail.com"
 };
