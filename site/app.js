@@ -94,7 +94,7 @@
       siteTitle: "AI for All",
       heroEyebrow: "28 lessons · 5 tracks · Claude, ChatGPT & more · EN/FR",
       heroTagline: "AI is for everyone. Take the mystery out of it with hands-on lessons on Claude, ChatGPT, Gemini, Meta AI, Copilot and more, at your own pace.",
-      footerNote: "Progress is stored only in this browser. Nothing is sent anywhere.",
+      footerNote: "Progress is saved in this browser. We count anonymous visits, without cookies. Nothing personal is sent unless you sign up.",
       units: "Lessons",
       notStarted: "Not started",
       inProgress: "In progress",
@@ -159,13 +159,39 @@
       certNamePlaceholder: "Full name",
       certPrint: "Print or save as PDF",
       certLockedTitle: "Not unlocked yet",
-      viewCertificate: "View your certificate"
+      viewCertificate: "View your certificate",
+      signupCardTitle: "Stay in touch (optional)",
+      signupCardBody: "Reminders, live workshop invitations and help with your progress.",
+      signupCardDone: "Signed up as {name}",
+      manage: "Manage",
+      signupTitle: "Stay in touch (optional)",
+      signupIntro: "Sign up if you would like us to follow your progress and contact you about the course: reminders, live workshops and your certificate. The course works fully without signing up.",
+      signupName: "First name",
+      signupEmail: "Email (optional if you give a WhatsApp number)",
+      signupWhatsapp: "WhatsApp number with country code (optional if you give an email)",
+      signupConsent: "I agree that AI for All stores my first name, contact details and course progress (lessons passed, last lesson opened, last visit) to follow my progress and contact me about this course. I can delete this data at any time from this page.",
+      signupPrivacyContact: "Questions about your data: {contact}",
+      signupSubmit: "Sign up",
+      signupNeedName: "Please enter your first name.",
+      signupNeedContact: "Please enter an email or a WhatsApp number.",
+      signupBadEmail: "This email address does not look right.",
+      signupBadPhone: "Enter the WhatsApp number with its country code, for example +237 6XX XX XX XX.",
+      signupNeedConsent: "Please tick the box to agree, or go back without signing up.",
+      signupSending: "Sending…",
+      signupError: "Sign-up failed. Check your connection and try again.",
+      signupThanks: "Thank you, {name}! You're signed up.",
+      signupManageTitle: "Your sign-up",
+      signupYourDetails: "We have: {name} · {contact}. Your progress is shared each time you open a lesson or finish a quiz.",
+      signupDelete: "Delete my data",
+      signupDeleteConfirm: "Tap again to confirm deletion",
+      signupDeleted: "Your data has been deleted. You can keep using the course.",
+      signupDeleteError: "Deletion failed. Check your connection and try again."
     },
     fr: {
       siteTitle: "L'IA pour tous",
       heroEyebrow: "28 leçons · 5 parcours · Claude, ChatGPT et plus · FR/EN",
       heroTagline: "L'IA, c'est pour tout le monde. Levez le mystère avec des leçons pratiques sur Claude, ChatGPT, Gemini, Meta AI, Copilot et d'autres, à votre rythme.",
-      footerNote: "La progression est enregistrée uniquement dans ce navigateur. Rien n'est envoyé ailleurs.",
+      footerNote: "La progression est enregistrée dans ce navigateur. Nous comptons les visites de façon anonyme, sans cookies. Rien de personnel n'est envoyé sauf si vous vous inscrivez.",
       units: "Leçons",
       notStarted: "Non commencé",
       inProgress: "En cours",
@@ -230,7 +256,33 @@
       certNamePlaceholder: "Nom complet",
       certPrint: "Imprimer ou enregistrer en PDF",
       certLockedTitle: "Pas encore débloquée",
-      viewCertificate: "Voir votre attestation"
+      viewCertificate: "Voir votre attestation",
+      signupCardTitle: "Restons en contact (facultatif)",
+      signupCardBody: "Rappels, invitations aux ateliers en direct et aide pour progresser.",
+      signupCardDone: "Inscrit(e) : {name}",
+      manage: "Gérer",
+      signupTitle: "Restons en contact (facultatif)",
+      signupIntro: "Inscrivez-vous si vous souhaitez que nous suivions votre progression et vous contactions au sujet du cours : rappels, ateliers en direct et attestation. Le cours fonctionne entièrement sans inscription.",
+      signupName: "Prénom",
+      signupEmail: "Email (facultatif si vous donnez un numéro WhatsApp)",
+      signupWhatsapp: "Numéro WhatsApp avec l'indicatif du pays (facultatif si vous donnez un email)",
+      signupConsent: "J'accepte que L'IA pour tous enregistre mon prénom, mes coordonnées et ma progression (leçons réussies, dernière leçon ouverte, dernière visite) pour suivre ma progression et me contacter au sujet de ce cours. Je peux supprimer ces données à tout moment depuis cette page.",
+      signupPrivacyContact: "Questions sur vos données : {contact}",
+      signupSubmit: "S'inscrire",
+      signupNeedName: "Veuillez saisir votre prénom.",
+      signupNeedContact: "Veuillez saisir un email ou un numéro WhatsApp.",
+      signupBadEmail: "Cette adresse email ne semble pas correcte.",
+      signupBadPhone: "Saisissez le numéro WhatsApp avec l'indicatif du pays, par exemple +237 6XX XX XX XX.",
+      signupNeedConsent: "Veuillez cocher la case pour donner votre accord, ou revenir sans vous inscrire.",
+      signupSending: "Envoi…",
+      signupError: "L'inscription a échoué. Vérifiez votre connexion et réessayez.",
+      signupThanks: "Merci, {name} ! Vous êtes inscrit(e).",
+      signupManageTitle: "Votre inscription",
+      signupYourDetails: "Nous avons : {name} · {contact}. Votre progression est partagée chaque fois que vous ouvrez une leçon ou terminez un quiz.",
+      signupDelete: "Supprimer mes données",
+      signupDeleteConfirm: "Touchez encore pour confirmer la suppression",
+      signupDeleted: "Vos données ont été supprimées. Vous pouvez continuer à utiliser le cours.",
+      signupDeleteError: "La suppression a échoué. Vérifiez votre connexion et réessayez."
     }
   };
 
@@ -585,6 +637,20 @@
     }
     html += "</div>";
 
+    // Optional sign-up: one line, never in the way of the course.
+    if (signupEnabled()) {
+      var signup = getSignup();
+      html += '<div class="pace-line signup-line">';
+      if (signup.id) {
+        html += "<span>" + t("signupCardDone", { name: "<strong>" + escapeHtml(signup.name) + "</strong>" }) + "</span>" +
+          '<button type="button" class="link-btn" id="signupBtn">' + t("manage") + "</button>";
+      } else {
+        html += "<span><strong>" + t("signupCardTitle") + "</strong><br><small>" + t("signupCardBody") + "</small></span>" +
+          '<button type="button" class="btn small secondary" id="signupBtn">' + t("signupSubmit") + "</button>";
+      }
+      html += "</div>";
+    }
+
     html += '<h2 class="sr-title">' + t("units") + "</h2>";
     var stepNo = 0;
     TRACKS.forEach(function (tr) {
@@ -652,6 +718,7 @@
     Array.prototype.forEach.call(app.querySelectorAll(".testout-link"), function (btn) {
       btn.addEventListener("click", function () {
         markUnitOpened(btn.getAttribute("data-testout"));
+        track("test-out/" + btn.getAttribute("data-testout"), "Test out", true);
         go("#/quiz/" + btn.getAttribute("data-testout"));
       });
     });
@@ -660,6 +727,8 @@
       else go("#/certificate");
     });
     document.getElementById("paceBtn").addEventListener("click", function () { go("#/pace"); });
+    var signupBtn = document.getElementById("signupBtn");
+    if (signupBtn) signupBtn.addEventListener("click", function () { go("#/signup"); });
     document.getElementById("certCardBtn").addEventListener("click", function () { go("#/certificate"); });
   }
 
@@ -762,11 +831,13 @@
     if (!window.AIW_CONTENT || !window.AIW_CONTENT[unitId]) { renderError(); return; }
     state.view = "unit";
     applyChrome(); // language must be set before the content is measured
-    if (state.unitId !== unitId || state.pagedFor !== pageKey(unitId)) paginateUnit(unitId);
+    var newLesson = state.unitId !== unitId;
+    if (newLesson || state.pagedFor !== pageKey(unitId)) paginateUnit(unitId);
     state.unitId = unitId;
     markUnitOpened(unitId);
     state.screenIndex = Math.min(Math.max(screen, 1), state.screens.length) - 1;
     renderUnitScreen();
+    if (newLesson) syncProgress(); // after renderUnitScreen, which records this as the last lesson
   }
 
   function renderUnitScreen() {
@@ -841,6 +912,7 @@
         copyText(quote.innerText.trim(), function () {
           btn.textContent = t("copied");
           btn.classList.add("ok");
+          track("copy-prompt/" + state.unitId, "Prompt copied", true);
           setTimeout(function () { btn.textContent = t("copy"); btn.classList.remove("ok"); }, 1800);
         }, function () {
           // Clipboard blocked: select the text so a long-press copy is one step away.
@@ -977,6 +1049,8 @@
         }
         state.quizSubmitted = true;
         saveQuizResult(unitId, score, total);
+        track((score / total >= PASS_RATIO ? "quiz-pass/" : "quiz-fail/") + unitId, UNITS[idx].titleEn, true);
+        syncProgress();
         renderQuiz();
         window.scrollTo(0, 0);
         focusMain();
@@ -1005,7 +1079,11 @@
     }
 
     var cert = getCert();
-    if (!cert.completedAt) { cert.completedAt = new Date().toISOString(); saveCert(cert); }
+    if (!cert.completedAt) {
+      cert.completedAt = new Date().toISOString();
+      saveCert(cert);
+      track("certificate-unlocked", "Certificate unlocked", true);
+    }
     var date = new Date(cert.completedAt).toLocaleDateString(state.lang === "en" ? "en-GB" : "fr-FR",
       { year: "numeric", month: "long", day: "numeric" });
 
@@ -1042,6 +1120,181 @@
     document.getElementById("certBack").addEventListener("click", function () { go("#/"); });
   }
 
+  // ---------- anonymous visit counts (GoatCounter, no cookies) ----------
+  // Off unless site/config.js has a goatcounterCode. Counts views and course events, never names.
+
+  var CONFIG = window.AIW_CONFIG || {};
+  var gcQueue = [];
+  var gcReady = false;
+  var lastTrackedPath = "";
+
+  function loadAnalytics() {
+    if (!CONFIG.goatcounterCode) return;
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://gc.zgo.at/count.js";
+    s.setAttribute("data-goatcounter", "https://" + CONFIG.goatcounterCode + ".goatcounter.com/count");
+    s.setAttribute("data-goatcounter-settings", '{"no_onload": true}');
+    s.onload = function () {
+      gcReady = true;
+      gcQueue.splice(0).forEach(sendCount);
+    };
+    document.head.appendChild(s);
+  }
+  function sendCount(vars) {
+    if (window.goatcounter && window.goatcounter.count) window.goatcounter.count(vars);
+  }
+  function track(path, title, isEvent) {
+    if (!CONFIG.goatcounterCode) return;
+    var vars = { path: path, title: title || path, event: !!isEvent };
+    if (gcReady) sendCount(vars); else gcQueue.push(vars);
+  }
+  // One page view per lesson/quiz/screen type, not per lesson screen.
+  function trackView() {
+    var parts = location.hash.replace(/^#\/?/, "").split("/");
+    var path = "/site/" + (parts[0] ? parts[0] + (parts[1] ? "/" + parts[1] : "") : "");
+    if (path === lastTrackedPath) return;
+    lastTrackedPath = path;
+    var unit = UNITS[unitIndex(parts[1])];
+    track(path, unit ? unit.titleEn : (parts[0] || "home"), false);
+  }
+
+  // ---------- optional sign-up (Google Sheet via Apps Script) ----------
+  // Off unless site/config.js has a signupEndpoint. Nothing is sent before the learner signs up
+  // and ticks the consent box; after that, progress updates go to the same row.
+
+  function getSignup() { return getJson("aiw_signup"); }
+  function signupEnabled() { return !!CONFIG.signupEndpoint; }
+
+  function newLearnerId() {
+    if (window.crypto && crypto.randomUUID) return crypto.randomUUID();
+    return "id-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 12);
+  }
+
+  function postToSheet(payload) {
+    return fetch(CONFIG.signupEndpoint, {
+      method: "POST",
+      // text/plain keeps this a "simple" request, which Apps Script accepts without a CORS preflight.
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(payload)
+    }).then(function (r) { return r.json(); })
+      .then(function (data) { if (!data || !data.ok) throw new Error((data && data.error) || "failed"); return data; });
+  }
+
+  function progressPayload() {
+    var progress = getProgress();
+    var passed = UNITS.filter(function (u) { return (progress[u.id] || {}).quizPassed; });
+    var last = getLast();
+    return {
+      action: "update",
+      id: getSignup().id,
+      lang: state.lang,
+      pace: getDiagnostic().paceId || "",
+      passedCount: passed.length,
+      passedIds: passed.map(function (u) { return u.id; }),
+      lastLesson: last.id || "",
+      certificate: passed.length === UNITS.length
+    };
+  }
+
+  var syncTimer = null;
+  function syncProgress() {
+    if (!signupEnabled() || !getSignup().id) return;
+    clearTimeout(syncTimer);
+    syncTimer = setTimeout(function () {
+      postToSheet(progressPayload()).catch(function () { /* best effort; the next update resends everything */ });
+    }, 1500);
+  }
+
+  function renderSignup() {
+    state.view = "signup";
+    applyChrome();
+    var signup = getSignup();
+    var html;
+
+    if (signup.id) {
+      var contact = [signup.email, signup.whatsapp].filter(Boolean).join(" · ");
+      html = '<div class="card"><h2 tabindex="-1" data-focus>' + t("signupManageTitle") + "</h2>" +
+        "<p>" + t("signupYourDetails", { name: escapeHtml(signup.name), contact: escapeHtml(contact) }) + "</p>" +
+        '<p class="small-note" id="signupMsg" role="status"></p>' +
+        '<button class="btn secondary danger" id="deleteBtn">' + t("signupDelete") + "</button></div>" +
+        '<button class="btn secondary" id="signupBack">' + t("backToHome") + "</button>";
+      app.innerHTML = html;
+      var armed = false;
+      var deleteBtn = document.getElementById("deleteBtn");
+      deleteBtn.addEventListener("click", function () {
+        if (!armed) { armed = true; deleteBtn.textContent = t("signupDeleteConfirm"); return; }
+        deleteBtn.disabled = true;
+        postToSheet({ action: "delete", id: signup.id }).then(function () {
+          try { localStorage.removeItem("aiw_signup"); } catch (e) { /* storage unavailable */ }
+          track("signup-deleted", "Sign-up deleted", true);
+          app.innerHTML = '<div class="result-banner pass" tabindex="-1" data-focus>' + t("signupDeleted") + "</div>" +
+            '<button class="btn secondary" id="signupBack">' + t("backToHome") + "</button>";
+          document.getElementById("signupBack").addEventListener("click", function () { go("#/"); });
+          focusMain();
+        }, function () {
+          deleteBtn.disabled = false;
+          document.getElementById("signupMsg").textContent = t("signupDeleteError");
+        });
+      });
+      document.getElementById("signupBack").addEventListener("click", function () { go("#/"); });
+      return;
+    }
+
+    html = '<h2 tabindex="-1" data-focus>' + t("signupTitle") + "</h2>" +
+      "<p>" + t("signupIntro") + "</p>" +
+      '<form id="signupForm" novalidate>' +
+      '<label class="question" for="suName">' + t("signupName") + "</label>" +
+      '<input class="text-input" id="suName" autocomplete="given-name" maxlength="80">' +
+      '<label class="question" for="suEmail">' + t("signupEmail") + "</label>" +
+      '<input class="text-input" id="suEmail" type="email" autocomplete="email" maxlength="120">' +
+      '<label class="question" for="suWhatsapp">' + t("signupWhatsapp") + "</label>" +
+      '<input class="text-input" id="suWhatsapp" type="tel" autocomplete="tel" maxlength="40" placeholder="+237 6XX XX XX XX">' +
+      '<label class="consent"><input type="checkbox" id="suConsent"> <span>' + t("signupConsent") + "</span></label>" +
+      (CONFIG.privacyContact ? '<p class="small-note">' + t("signupPrivacyContact", { contact: escapeHtml(CONFIG.privacyContact) }) + "</p>" : "") +
+      '<p class="form-error" id="signupMsg" role="alert"></p>' +
+      '<button class="btn" type="submit" id="signupSubmit">' + t("signupSubmit") + "</button>" +
+      "</form>" +
+      '<button class="btn secondary" id="signupBack">' + t("backToHome") + "</button>";
+    app.innerHTML = html;
+
+    document.getElementById("signupBack").addEventListener("click", function () { go("#/"); });
+    document.getElementById("signupForm").addEventListener("submit", function (ev) {
+      ev.preventDefault();
+      var msg = document.getElementById("signupMsg");
+      var name = document.getElementById("suName").value.trim();
+      var email = document.getElementById("suEmail").value.trim();
+      var whatsapp = document.getElementById("suWhatsapp").value.trim();
+      var error = "";
+      if (!name) error = t("signupNeedName");
+      else if (!email && !whatsapp) error = t("signupNeedContact");
+      else if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) error = t("signupBadEmail");
+      else if (whatsapp && !/^\+?[0-9][0-9 ().-]{6,}$/.test(whatsapp)) error = t("signupBadPhone");
+      else if (!document.getElementById("suConsent").checked) error = t("signupNeedConsent");
+      msg.textContent = error;
+      if (error) return;
+
+      var submit = document.getElementById("signupSubmit");
+      submit.disabled = true;
+      submit.textContent = t("signupSending");
+      var record = { id: newLearnerId(), name: name, email: email, whatsapp: whatsapp, at: new Date().toISOString() };
+      postToSheet({ action: "signup", id: record.id, name: name, email: email, whatsapp: whatsapp,
+        lang: state.lang, pace: getDiagnostic().paceId || "" }).then(function () {
+        safeSet("aiw_signup", JSON.stringify(record));
+        track("signup", "Sign-up", true);
+        syncProgress();
+        app.innerHTML = '<div class="result-banner pass" tabindex="-1" data-focus>' + t("signupThanks", { name: escapeHtml(name) }) + "</div>" +
+          '<button class="btn" id="signupBack">' + t("backToHome") + "</button>";
+        document.getElementById("signupBack").addEventListener("click", function () { go("#/"); });
+        focusMain();
+      }, function () {
+        submit.disabled = false;
+        submit.textContent = t("signupSubmit");
+        msg.textContent = t("signupError");
+      });
+    });
+  }
+
   // ---------- routing ----------
 
   var firstRoute = true;
@@ -1063,7 +1316,9 @@
     else if (view === "pace" && parts[2] === "done") renderDiagnosticResult(parts[1]);
     else if (view === "pace") openDiagnosticQ2(parts[1]);
     else if (view === "certificate") renderCertificate();
+    else if (view === "signup" && signupEnabled()) renderSignup();
     else renderHome();
+    trackView();
     window.scrollTo(0, 0);
     if (!firstRoute) focusMain();
     firstRoute = false;
@@ -1074,6 +1329,7 @@
   langToggle.addEventListener("click", function () {
     state.lang = state.lang === "en" ? "fr" : "en";
     setLang(state.lang);
+    track("lang/" + state.lang, "Language: " + state.lang, true);
     // Keep quiz answers when switching language mid-quiz; everything else re-renders from the URL.
     if (state.view === "quiz") renderQuiz();
     else route();
@@ -1106,5 +1362,6 @@
   // ---------- boot ----------
 
   applyChrome();
+  loadAnalytics();
   route();
 })();

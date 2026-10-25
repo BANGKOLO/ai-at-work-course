@@ -12,7 +12,7 @@ A free, bilingual (English/French) course that takes the mystery out of AI, for 
 - **Lesson site:** `site/index.html`, the course itself (mobile-first, no signup). It also opens straight from disk, with no server needed.
 - **Printable workbook:** `workbook/workbook.html`
 
-No personal data is collected. Progress, the chosen pace and the certificate name are stored only in your own browser.
+Progress, the chosen pace and the certificate name are stored in the learner's browser. Visits and course events (lesson opened, quiz passed or failed, prompt copied, certificate unlocked) are counted anonymously, without cookies, with GoatCounter (dashboard: https://aiforall.goatcounter.com). An optional sign-up (first name plus email and/or WhatsApp) stores the learner's details and progress in a Google Sheet via `scripts/signup-apps-script.gs`; learners can delete their row from the course. Both are configured in `site/config.js` and stay off while their value is empty.
 
 Learners get a printable certificate of completion once they pass all 28 lesson quizzes (80% pass mark). It is generated in their browser and states completion only.
 
