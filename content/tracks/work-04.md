@@ -30,6 +30,8 @@ Both tools change every few months, and today's leader on one task may not be th
 | Multi-step tasks on websites | ChatGPT agent mode / Claude in Chrome |
 | Talking instead of typing | Voice modes in both mobile apps |
 
+The same filters apply to Gemini, Copilot, Meta AI or any other assistant from the Other AI assistants track. The table shows Claude and ChatGPT only because you have worked with both in depth.
+
 **Third filter: run your own test**
 
 Reviews online cannot tell you which tool handles *your* documents and *your* language best. Run a small test once a quarter:
@@ -97,6 +99,8 @@ Les deux outils évoluent tous les quelques mois, et le meilleur d'aujourd'hui s
 | Accéder à vos emails, agenda, Drive | Connecteurs dans les deux (accord de l'administrateur) |
 | Des tâches en plusieurs étapes sur des sites web | Mode agent ChatGPT / Claude in Chrome |
 | Parler au lieu de taper | Modes vocaux des deux applications mobiles |
+
+Les mêmes filtres valent pour Gemini, Copilot, Meta AI ou tout autre assistant du parcours Les autres assistants IA. Le tableau ne montre Claude et ChatGPT que parce que vous les avez travaillés en profondeur.
 
 **Troisième filtre : votre propre test**
 

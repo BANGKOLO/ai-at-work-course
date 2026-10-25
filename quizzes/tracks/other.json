@@ -1,0 +1,410 @@
+{
+  "other-01": [
+    {
+      "id": "o1q1",
+      "question_en": "Your friend says: 'I deleted my Gemini activity, so nobody can ever see those chats again.' What is accurate?",
+      "question_fr": "Une amie dit : « J'ai supprimé mon activité Gemini, donc personne ne pourra plus jamais voir ces conversations. » Qu'est-ce qui est exact ?",
+      "options_en": [
+        "She is right: deleting activity removes every copy immediately",
+        "Chats already reviewed by humans are kept separately for up to three years, even after activity is deleted",
+        "Deleted chats are published publicly after 72 hours",
+        "Only chats in Gems are kept"
+      ],
+      "options_fr": [
+        "Elle a raison : supprimer l'activité efface immédiatement toutes les copies",
+        "Les conversations déjà relues par des humains sont conservées à part jusqu'à trois ans, même après suppression de l'activité",
+        "Les conversations supprimées sont rendues publiques après 72 heures",
+        "Seules les conversations dans les Gems sont conservées"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Google's privacy hub says reviewed chats are disconnected from the account but kept for up to three years, and deleting activity does not remove them.",
+      "explanation_fr": "Le centre de confidentialité de Google indique que les conversations relues sont détachées du compte mais conservées jusqu'à trois ans, et que supprimer l'activité ne les efface pas."
+    },
+    {
+      "id": "o1q2",
+      "question_en": "You want to ask Gemini one question about a personal health worry and do not want it used to improve Google's AI. What is the best option?",
+      "question_fr": "Vous voulez poser à Gemini une question sur un souci de santé personnel, sans qu'elle serve à améliorer l'IA de Google. Quelle est la meilleure option ?",
+      "options_en": [
+        "Use a temporary chat, knowing it is still kept for 72 hours for responding and safety",
+        "Ask in a Gem, because Gems are never stored",
+        "Ask in Gemini Live, because spoken chats are never stored",
+        "There is no way to limit how it is used"
+      ],
+      "options_fr": [
+        "Utiliser une conversation temporaire, en sachant qu'elle est tout de même conservée 72 heures pour la réponse et la sécurité",
+        "La poser dans un Gem, car les Gems ne sont jamais enregistrés",
+        "La poser dans Gemini Live, car les conversations orales ne sont jamais enregistrées",
+        "Il n'existe aucun moyen d'en limiter l'usage"
+      ],
+      "answer_index": 0,
+      "explanation_en": "Temporary chats are not used to train the models, but Google keeps them with your account for 72 hours. For truly sensitive matters, also ask whether you need to type them at all.",
+      "explanation_fr": "Les conversations temporaires ne servent pas à entraîner les modèles, mais Google les conserve 72 heures avec votre compte. Pour un sujet vraiment sensible, demandez-vous aussi s'il faut l'écrire."
+    },
+    {
+      "id": "o1q3",
+      "question_en": "Every Friday you turn rough notes into the same style of weekly update. Which Gemini feature fits best?",
+      "question_fr": "Chaque vendredi, vous transformez des notes brutes en un point hebdomadaire au même format. Quelle fonction de Gemini convient le mieux ?",
+      "options_en": [
+        "Deep Research",
+        "Gemini Live",
+        "A Gem with your format and rules written once",
+        "A temporary chat"
+      ],
+      "options_fr": [
+        "Deep Research",
+        "Gemini Live",
+        "Un Gem avec votre format et vos règles écrits une fois",
+        "Une conversation temporaire"
+      ],
+      "answer_index": 2,
+      "explanation_en": "A Gem is a saved set of instructions you reuse, like a Claude Project or a custom GPT. It is made for repeated tasks.",
+      "explanation_fr": "Un Gem est un ensemble d'instructions enregistré et réutilisable, comme un Projet Claude ou un GPT personnalisé. Il est fait pour les tâches répétées."
+    },
+    {
+      "id": "o1q4",
+      "question_en": "A student must prepare answers that stay strictly within the official syllabus. Which Google tool is designed for that?",
+      "question_fr": "Un élève doit préparer des réponses qui restent strictement dans le programme officiel. Quel outil Google est conçu pour cela ?",
+      "options_en": [
+        "Gemini with web search turned on",
+        "NotebookLM, which answers from uploaded sources and shows where each answer comes from",
+        "Gemini Live in voice mode",
+        "Gmail's smart reply"
+      ],
+      "options_fr": [
+        "Gemini avec la recherche web activée",
+        "NotebookLM, qui répond à partir des sources déposées et montre d'où vient chaque réponse",
+        "Gemini Live en mode vocal",
+        "La réponse suggérée de Gmail"
+      ],
+      "answer_index": 1,
+      "explanation_en": "NotebookLM grounds its answers in the documents you upload and points to the passage, which makes it easy to stay close to an official text and check it.",
+      "explanation_fr": "NotebookLM appuie ses réponses sur les documents que vous déposez et indique le passage, ce qui permet de rester fidèle au texte officiel et de vérifier."
+    },
+    {
+      "id": "o1q5",
+      "question_en": "Gemini's Deep Research gives you a long report with many sources for a funding application. What should you do before using it?",
+      "question_fr": "Deep Research de Gemini vous fournit un long rapport avec de nombreuses sources pour une demande de financement. Que faire avant de l'utiliser ?",
+      "options_en": [
+        "Nothing: many sources means it is reliable",
+        "Shorten it and send it as your own work",
+        "Ask Gemini whether the report is correct",
+        "Open the sources behind the most important claims and check that they say what the report says"
+      ],
+      "options_fr": [
+        "Rien : beaucoup de sources veut dire fiable",
+        "Le raccourcir et l'envoyer comme votre propre travail",
+        "Demander à Gemini si le rapport est exact",
+        "Ouvrir les sources des affirmations les plus importantes et vérifier qu'elles disent bien ce qu'affirme le rapport"
+      ],
+      "answer_index": 3,
+      "explanation_en": "Research tools can cite real pages that do not support the claim. Checking the key sources yourself is the only reliable test.",
+      "explanation_fr": "Les outils de recherche peuvent citer de vraies pages qui ne soutiennent pas l'affirmation. Vérifier vous-même les sources clés est le seul test fiable."
+    }
+  ],
+  "other-02": [
+    {
+      "id": "o2q1",
+      "question_en": "In a family WhatsApp group, your cousin tags @Meta AI on a message. What does Meta AI receive?",
+      "question_fr": "Dans un groupe WhatsApp familial, votre cousin mentionne @Meta AI sur un message. Que reçoit Meta AI ?",
+      "options_en": [
+        "The whole group history and everyone's contacts",
+        "Nothing: group chats are encrypted so Meta AI cannot read them",
+        "The message it was tagged in or that was shared with it, which Meta receives",
+        "Only the photos in the group"
+      ],
+      "options_fr": [
+        "Tout l'historique du groupe et les contacts de chacun",
+        "Rien : les groupes sont chiffrés, donc Meta AI ne peut pas les lire",
+        "Le message sur lequel elle est mentionnée ou qui lui est partagé, que Meta reçoit",
+        "Seulement les photos du groupe"
+      ],
+      "answer_index": 2,
+      "explanation_en": "Personal chats stay end-to-end encrypted, but whatever is shared with Meta AI, including by tagging it, is received by Meta. It does not see the rest of the group.",
+      "explanation_fr": "Les discussions personnelles restent chiffrées de bout en bout, mais tout ce qui est partagé avec Meta AI, y compris par mention, est reçu par Meta. Elle ne voit pas le reste du groupe."
+    },
+    {
+      "id": "o2q2",
+      "question_en": "A WhatsApp contact called 'Meta AI Support' says your account will be closed unless you send the code you just received by SMS. What do you do?",
+      "question_fr": "Un contact WhatsApp nommé « Support Meta AI » dit que votre compte sera fermé si vous n'envoyez pas le code reçu par SMS. Que faites-vous ?",
+      "options_en": [
+        "Send the code quickly to keep the account",
+        "Do not reply; report and block it, because Meta AI is built into the app and never asks for codes",
+        "Ask Meta AI whether you should send the code",
+        "Send only half of the code"
+      ],
+      "options_fr": [
+        "Envoyer vite le code pour garder le compte",
+        "Ne pas répondre ; le signaler et le bloquer, car Meta AI est intégrée à l'application et ne demande jamais de code",
+        "Demander à Meta AI s'il faut envoyer le code",
+        "N'envoyer que la moitié du code"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Requests for codes, payments or passwords from an 'AI' or 'support' contact are scams. Never share one-time codes with anyone.",
+      "explanation_fr": "Les demandes de code, de paiement ou de mot de passe venant d'un contact « IA » ou « support » sont des arnaques. Ne partagez jamais un code à usage unique."
+    },
+    {
+      "id": "o2q3",
+      "question_en": "Which request is the safest to send to Meta AI?",
+      "question_fr": "Quelle demande est la plus sûre à envoyer à Meta AI ?",
+      "options_en": [
+        "Translate this meeting reminder into English: 'Our next meeting is on Saturday at 3 pm at the community hall.'",
+        "Here is my Mobile Money PIN, check why my transfer failed",
+        "Summarise my neighbour's medical results from this photo",
+        "Add up these members' contributions with their names and phone numbers"
+      ],
+      "options_fr": [
+        "Traduis ce rappel en anglais : « Notre prochaine réunion est samedi à 15 h à la salle communautaire. »",
+        "Voici mon code Mobile Money, vérifie pourquoi mon transfert a échoué",
+        "Résume les résultats médicaux de ma voisine à partir de cette photo",
+        "Additionne les cotisations de ces membres avec leurs noms et numéros de téléphone"
+      ],
+      "answer_index": 0,
+      "explanation_en": "The reminder contains no personal data. PINs, other people's health details and members' names and numbers should never be sent to an AI in a chat app.",
+      "explanation_fr": "Le rappel ne contient aucune donnée personnelle. Codes secrets, santé d'autrui, noms et numéros des membres ne doivent jamais être envoyés à une IA dans une messagerie."
+    },
+    {
+      "id": "o2q4",
+      "question_en": "You run a group where members share private matters, and you do not want anyone using its messages with AI features. Which WhatsApp setting helps?",
+      "question_fr": "Vous animez un groupe où les membres partagent des sujets privés, et vous ne voulez pas que quiconque utilise ses messages avec des fonctions d'IA. Quel réglage WhatsApp aide ?",
+      "options_en": [
+        "Turning off notifications",
+        "Changing the group photo",
+        "Advanced Chat Privacy for that group",
+        "Archiving the group"
+      ],
+      "options_fr": [
+        "Désactiver les notifications",
+        "Changer la photo du groupe",
+        "La Confidentialité avancée des discussions pour ce groupe",
+        "Archiver le groupe"
+      ],
+      "answer_index": 2,
+      "explanation_en": "Advanced Chat Privacy stops members from using the chat's messages with AI features and from exporting the chat.",
+      "explanation_fr": "La Confidentialité avancée des discussions empêche les membres d'utiliser les messages avec des fonctions d'IA et d'exporter la discussion."
+    },
+    {
+      "id": "o2q5",
+      "question_en": "Meta AI tells you confidently which medicine dose to give a child. What is the right next step?",
+      "question_fr": "Meta AI vous indique avec assurance quelle dose de médicament donner à un enfant. Quelle est la bonne suite ?",
+      "options_en": [
+        "Follow it, because it sounded confident",
+        "Ask the same question twice and follow the most common answer",
+        "Forward the answer to the family group",
+        "Check with a pharmacist, doctor or the medicine's leaflet before acting"
+      ],
+      "options_fr": [
+        "La suivre, puisqu'elle semblait sûre d'elle",
+        "Poser deux fois la question et suivre la réponse la plus fréquente",
+        "Transférer la réponse au groupe familial",
+        "Vérifier auprès d'un pharmacien, d'un médecin ou de la notice avant d'agir"
+      ],
+      "answer_index": 3,
+      "explanation_en": "Any AI can be confidently wrong. For health, law or money, a trusted human or official source has the final word.",
+      "explanation_fr": "Toute IA peut se tromper avec assurance. Pour la santé, le droit ou l'argent, une personne compétente ou une source officielle a le dernier mot."
+    }
+  ],
+  "other-03": [
+    {
+      "id": "o3q1",
+      "question_en": "At work you open Copilot to summarise an internal report. What should you check first?",
+      "question_fr": "Au travail, vous ouvrez Copilot pour résumer un rapport interne. Que vérifier en premier ?",
+      "options_en": [
+        "That you are signed in with your organisation's work account, not a personal one",
+        "That the report is under ten pages",
+        "That Copilot is in dark mode",
+        "That you have used Copilot before"
+      ],
+      "options_fr": [
+        "Que vous êtes connecté avec le compte professionnel de votre organisation, pas un compte personnel",
+        "Que le rapport fait moins de dix pages",
+        "Que Copilot est en mode sombre",
+        "Que vous avez déjà utilisé Copilot"
+      ],
+      "answer_index": 0,
+      "explanation_en": "Personal and work Copilot have very different data protection. Enterprise data protection applies only when you are signed in with the work account your organisation manages.",
+      "explanation_fr": "Copilot personnel et professionnel offrent des protections très différentes. La protection des données d'entreprise ne s'applique que connecté avec le compte géré par votre organisation."
+    },
+    {
+      "id": "o3q2",
+      "question_en": "On your personal Microsoft account you switch off training on your conversations. Which statement is accurate?",
+      "question_fr": "Sur votre compte Microsoft personnel, vous désactivez l'entraînement sur vos conversations. Quelle affirmation est exacte ?",
+      "options_en": [
+        "Microsoft will no longer keep any of your conversations",
+        "Your past conversations are deleted automatically",
+        "It applies to future conversations; some conversations may still be reviewed by humans for safety",
+        "Copilot will stop answering questions"
+      ],
+      "options_fr": [
+        "Microsoft ne conservera plus aucune de vos conversations",
+        "Vos anciennes conversations sont supprimées automatiquement",
+        "Cela vaut pour les conversations futures ; certaines peuvent encore être relues par des humains pour la sécurité",
+        "Copilot cessera de répondre"
+      ],
+      "answer_index": 2,
+      "explanation_en": "Microsoft's FAQ says the training opt-out covers future activity, human review cannot be switched off, and activity is kept for 18 months by default unless you delete it.",
+      "explanation_fr": "La FAQ de Microsoft indique que le refus vaut pour l'activité future, que la relecture humaine ne peut pas être désactivée, et que l'activité est conservée 18 mois par défaut sauf suppression."
+    },
+    {
+      "id": "o3q3",
+      "question_en": "Copilot in Excel says your sales column 'increased by 18% in March'. What do you do before putting this in a report?",
+      "question_fr": "Copilot dans Excel affirme que vos ventes ont « augmenté de 18 % en mars ». Que faire avant de l'inscrire dans un rapport ?",
+      "options_en": [
+        "Copy it directly, since Copilot read the sheet",
+        "Recalculate the figure from the sheet yourself or check the formula it used",
+        "Round it to 20% to be safe",
+        "Ask Copilot in Word to confirm it"
+      ],
+      "options_fr": [
+        "Le copier tel quel, puisque Copilot a lu la feuille",
+        "Recalculer le chiffre vous-même dans la feuille ou vérifier la formule utilisée",
+        "L'arrondir à 20 % par prudence",
+        "Demander à Copilot dans Word de le confirmer"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Every number an AI gives you must be checked against the source data before it goes into anything you send.",
+      "explanation_fr": "Tout chiffre donné par une IA doit être vérifié dans les données sources avant d'entrer dans un document que vous envoyez."
+    },
+    {
+      "id": "o3q4",
+      "question_en": "Which prompt makes a Copilot summary of a long email thread easiest to check?",
+      "question_fr": "Quel prompt rend le résumé Copilot d'un long fil d'emails le plus facile à vérifier ?",
+      "options_en": [
+        "Summarise this.",
+        "Make this shorter and more professional.",
+        "Tell me what to reply.",
+        "Summarise in 5 points, list decisions and dates, quote the email each point comes from, and write 'not stated' if something is missing."
+      ],
+      "options_fr": [
+        "Résume ceci.",
+        "Rends ça plus court et plus professionnel.",
+        "Dis-moi quoi répondre.",
+        "Résume en 5 points, liste décisions et dates, cite l'email d'où vient chaque point, et écris « non indiqué » s'il manque quelque chose."
+      ],
+      "answer_index": 3,
+      "explanation_en": "Quotes let you check each point against the original, and 'not stated' stops the tool from filling gaps with guesses.",
+      "explanation_fr": "Les citations permettent de vérifier chaque point dans l'original, et « non indiqué » empêche l'outil de combler les vides par des suppositions."
+    },
+    {
+      "id": "o3q5",
+      "question_en": "A colleague cannot find Copilot inside Word, while you can. What is the most likely reason?",
+      "question_fr": "Un collègue ne trouve pas Copilot dans Word, alors que vous l'avez. Quelle est la raison la plus probable ?",
+      "options_en": [
+        "Their licence or their organisation's settings do not include it",
+        "Copilot only works in English",
+        "They need to restart their phone",
+        "Copilot is only for managers"
+      ],
+      "options_fr": [
+        "Sa licence ou les réglages de son organisation ne l'incluent pas",
+        "Copilot ne marche qu'en anglais",
+        "Il doit redémarrer son téléphone",
+        "Copilot est réservé aux responsables"
+      ],
+      "answer_index": 0,
+      "explanation_en": "Many Copilot features inside Office apps depend on a paid plan or a work licence, and administrators decide what is switched on.",
+      "explanation_fr": "Beaucoup de fonctions Copilot dans Office dépendent d'une offre payante ou d'une licence professionnelle, et les administrateurs décident de ce qui est activé."
+    }
+  ],
+  "other-04": [
+    {
+      "id": "o4q1",
+      "question_en": "A friend recommends a new free AI app you have never heard of. Which question should you answer before typing anything personal into it?",
+      "question_fr": "Un ami vous recommande une nouvelle application d'IA gratuite inconnue. À quelle question répondre avant d'y taper quoi que ce soit de personnel ?",
+      "options_en": [
+        "How many stars it has in the app store",
+        "Whether it has a nice logo",
+        "Where my data goes and whether it is used for training, according to its privacy policy",
+        "Whether my friend likes it"
+      ],
+      "options_fr": [
+        "Combien d'étoiles elle a dans la boutique",
+        "Si elle a un joli logo",
+        "Où vont mes données et si elles servent à l'entraînement, d'après sa politique de confidentialité",
+        "Si mon ami l'aime bien"
+      ],
+      "answer_index": 2,
+      "explanation_en": "Ratings and recommendations do not tell you how your data is handled. If you cannot find a privacy policy or training setting, treat the tool as public.",
+      "explanation_fr": "Les notes et recommandations ne disent rien du traitement de vos données. Sans politique de confidentialité ni réglage d'entraînement trouvables, considérez l'outil comme public."
+    },
+    {
+      "id": "o4q2",
+      "question_en": "According to its privacy policy, where does DeepSeek store user data?",
+      "question_fr": "D'après sa politique de confidentialité, où DeepSeek stocke-t-il les données des utilisateurs ?",
+      "options_en": [
+        "On servers in the People's Republic of China",
+        "Only on your own phone",
+        "In the European Union",
+        "It does not store any data"
+      ],
+      "options_fr": [
+        "Sur des serveurs en République populaire de Chine",
+        "Uniquement sur votre téléphone",
+        "Dans l'Union européenne",
+        "Il ne stocke aucune donnée"
+      ],
+      "answer_index": 0,
+      "explanation_en": "DeepSeek's policy says data is stored in China. That does not make it useless, but it is a reason to keep personal and work data out of it.",
+      "explanation_fr": "La politique de DeepSeek indique un stockage en Chine. Cela ne le rend pas inutile, mais c'est une raison d'y garder hors de portée vos données personnelles et professionnelles."
+    },
+    {
+      "id": "o4q3",
+      "question_en": "You need a quick answer about a recent public announcement and want to see where the information comes from. Which assistant is designed for that?",
+      "question_fr": "Vous voulez une réponse rapide sur une annonce publique récente et voir d'où vient l'information. Quel assistant est conçu pour cela ?",
+      "options_en": [
+        "Any assistant, with no need to open the sources",
+        "Perplexity, which shows its sources with each answer, which you then open",
+        "A copycat app with a similar logo",
+        "Grok, because posts on X are always verified"
+      ],
+      "options_fr": [
+        "N'importe quel assistant, sans besoin d'ouvrir les sources",
+        "Perplexity, qui affiche ses sources avec chaque réponse, que vous ouvrez ensuite",
+        "Une application copie au logo ressemblant",
+        "Grok, car les publications sur X sont toujours vérifiées"
+      ],
+      "answer_index": 1,
+      "explanation_en": "Perplexity is built around showing sources. Showing sources only helps if you open them; and posts on X are often unverified.",
+      "explanation_fr": "Perplexity est conçu pour afficher ses sources. Cela n'aide que si vous les ouvrez ; et les publications sur X sont souvent non vérifiées."
+    },
+    {
+      "id": "o4q4",
+      "question_en": "An 'AI tutor' app outside the official store promises guaranteed exam answers if you pay by Mobile Money first. What is this?",
+      "question_fr": "Une application de « tuteur IA » hors de la boutique officielle promet des réponses d'examen garanties si vous payez d'abord par Mobile Money. De quoi s'agit-il ?",
+      "options_en": [
+        "A good deal if the price is low",
+        "A normal paid AI plan",
+        "A warning sign of a scam: guaranteed results and payment outside the official store",
+        "A sign the app uses the best AI model"
+      ],
+      "options_fr": [
+        "Une bonne affaire si le prix est bas",
+        "Une offre d'IA payante normale",
+        "Un signal d'arnaque : résultats garantis et paiement hors de la boutique officielle",
+        "Le signe que l'application utilise le meilleur modèle d'IA"
+      ],
+      "answer_index": 2,
+      "explanation_en": "Guaranteed results, payment outside official channels and no clear company are classic warning signs. Walk away.",
+      "explanation_fr": "Résultats garantis, paiement hors des circuits officiels et entreprise floue sont des signaux d'alerte classiques. Partez."
+    },
+    {
+      "id": "o4q5",
+      "question_en": "What is the most reliable way to choose between two assistants for your own weekly tasks?",
+      "question_fr": "Quelle est la façon la plus fiable de choisir entre deux assistants pour vos tâches de la semaine ?",
+      "options_en": [
+        "Pick the one with the most online reviews",
+        "Pick the newest one",
+        "Pick the one your favourite influencer uses",
+        "Give both the identical three real tasks, score errors, edits and time, and choose per task"
+      ],
+      "options_fr": [
+        "Prendre celui qui a le plus d'avis en ligne",
+        "Prendre le plus récent",
+        "Prendre celui qu'utilise votre influenceur préféré",
+        "Donner aux deux les trois mêmes vraies tâches, noter erreurs, retouches et temps, et choisir par tâche"
+      ],
+      "answer_index": 3,
+      "explanation_en": "Only your own test shows how a tool handles your language and your tasks, and the best choice can differ from one task to another.",
+      "explanation_fr": "Seul votre propre test montre comment un outil gère votre langue et vos tâches, et le meilleur choix peut varier d'une tâche à l'autre."
+    }
+  ]
+}

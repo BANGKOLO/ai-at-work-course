@@ -4,28 +4,29 @@
 
 ### How the course is organised
 
-The course has 24 lessons in four tracks:
+The course has 28 lessons in five tracks:
 
 | Track | Lessons | What it covers |
 |---|---|---|
 | Foundations | 1–5 | How AI works, structured prompts, data confidentiality, verification, when not to use AI |
 | Claude in practice | 6–11 | Setup, long documents, Projects, artifacts and files, research and connectors, thinking work |
 | ChatGPT in practice | 12–17 | Setup, data analysis, Canvas, Projects and custom GPTs, deep research, voice and agent mode |
-| Advanced daily workflows | 18–24 | Advanced prompting, daily routine, reporting pipeline, choosing and cross-checking tools, automation, your playbook, live workshop |
+| Other AI assistants | 18–21 | Google Gemini, Meta AI in WhatsApp, Microsoft Copilot, and how to judge any new AI tool (Mistral, DeepSeek, Perplexity, Grok) |
+| Advanced daily workflows | 22–28 | Advanced prompting, daily routine, reporting pipeline, choosing and cross-checking tools, automation, your playbook, live workshop |
 
-**Skip what you already know.** Every Foundations lesson has a "test out" link. If you pass its quiz (80%), the lesson counts as completed. **Only one tool approved at work?** Do that tool's track and skip the other. You can still try the other tool on public material for Advanced Lesson 4.
+**Skip what you already know.** Every Foundations lesson has a "test out" link. If you pass its quiz (80%), the lesson counts as completed. **Only one tool approved at work?** Do that tool's track and skip the other (Copilot users: see the Other AI assistants track). You can still try the other tool on public material for Advanced Lesson 4.
 
 ### Design principles in a competitive market
 
 - **Sourced claims only.** Every statistic must be sourced or marked `[UNVERIFIED]`. We do not use attention-grabbing statistics about job losses or income gains from AI to pressure a purchase.
 - **Visible pricing.** Price and refund terms are shown before anyone is asked to pay, never hidden behind a quiz or funnel.
 - **An honest certificate.** The certificate states completion only, not a professional licence or accreditation.
-- **No implied endorsement.** This course is independent. It teaches Claude (made by Anthropic) and ChatGPT (made by OpenAI), but it is not affiliated with, sponsored or endorsed by either company, and we do not use their logos.
+- **No implied endorsement.** This course is independent. It teaches Claude (Anthropic), ChatGPT (OpenAI), Gemini (Google), Meta AI (Meta), Copilot (Microsoft) and others, but it is not affiliated with, sponsored or endorsed by any of these companies, and we do not use their logos.
 - **Tools change.** Features, menus and plan limits change often. Lessons describe what to look for and tell you where to check the current version.
 
 ### Pace plans
 
-All plans teach the same 24 lessons, with the same 80% pass mark and the same certificate wording. Only the schedule changes.
+All plans teach the same 28 lessons, with the same 80% pass mark and the same certificate wording. Only the schedule changes.
 
 #### Plan A — 7-Day Sprint
 
@@ -34,14 +35,14 @@ All plans teach the same 24 lessons, with the same 80% pass mark and the same ce
 | Day | Lessons |
 |---|---|
 | 1 | 1–5 — Foundations (test out where you can) |
-| 2 | 6–8 — Claude: setup, documents, Projects |
-| 3 | 9–11 — Claude: artifacts, research, thinking partner |
-| 4 | 12–14 — ChatGPT: setup, data analysis, Canvas |
-| 5 | 15–17 — ChatGPT: GPTs, deep research, agent mode |
-| 6 | 18–20 — Advanced: prompting, daily routine, reporting pipeline |
-| 7 | 21–23 — Advanced: tool choice, automation, playbook (built solo) |
+| 2 | 6–9 — Claude: setup, documents, Projects, artifacts |
+| 3 | 10–13 — Claude: research, thinking partner; ChatGPT: setup, data analysis |
+| 4 | 14–17 — ChatGPT: Canvas, GPTs, deep research, agent mode |
+| 5 | 18–21 — Other AI assistants: Gemini, Meta AI, Copilot, judging new tools |
+| 6 | 22–24 — Advanced: prompting, daily routine, reporting pipeline |
+| 7 | 25–27 — Advanced: tool choice, automation, playbook (built solo) |
 
-Lesson 24, the 90-minute live workshop, is skipped at this pace. Do its prompt-swap and cross-check drill with a colleague instead.
+Lesson 28, the 90-minute live workshop, is skipped at this pace. Do its prompt-swap and cross-check drill with a colleague instead.
 
 - **Advantage:** the fastest route to a working playbook.
 - **Target audience:** motivated individuals with a near-term deadline, or someone evaluating the course for a team.
@@ -55,10 +56,12 @@ Lesson 24, the 90-minute live workshop, is skipped at this pace. Do its prompt-s
 | 1 | 1–5 — Foundations (test out where you can) |
 | 2–4 | 6–11 — Claude track, two lessons a day |
 | 5–7 | 12–17 — ChatGPT track, two lessons a day |
-| 8–9 | 18–20 — Advanced: prompting, routine, pipeline |
-| 10–11 | 21–22 — tool choice, automation |
-| 12–13 | 23 — build your playbook and measure a baseline |
-| 14 | 24 — workshop as an async peer check-in (for example, a WhatsApp group swapping prompts and playbooks) |
+| 8–9 | 18–21 — Other AI assistants, two lessons a day |
+| 10 | 22–23 — Advanced: prompting, daily routine |
+| 11 | 24–25 — reporting pipeline, tool choice |
+| 12 | 26 — automation |
+| 13 | 27 — build your playbook and measure a baseline |
+| 14 | 28 — workshop as an async peer check-in (for example, a WhatsApp group swapping prompts and playbooks) |
 
 - **Advantage:** time to use each lesson at work before moving on, with no live session to schedule.
 - **Target audience:** full-time staff with a normal workload; a sensible default for most team rollouts.
@@ -70,11 +73,11 @@ Lesson 24, the 90-minute live workshop, is skipped at this pace. Do its prompt-s
 | Week | Lessons |
 |---|---|
 | 1 | 1–5 Foundations, then 6–7 (Claude) |
-| 2 | 8–11 (Claude), 12–13 (ChatGPT) |
-| 3 | 14–17 (ChatGPT), 18–20 (Advanced) |
-| 4 | 21–23 (Advanced), day 28: lesson 24 live workshop |
+| 2 | 8–11 (Claude), 12–14 (ChatGPT) |
+| 3 | 15–17 (ChatGPT), 18–21 (Other AI assistants) |
+| 4 | 22–27 (Advanced), day 28: lesson 28 live workshop |
 
-Practice days are built in: each week has at least two days with no new lesson, used to apply the week's prompts on real work. Your baseline is captured on day 1 (home screen), so the 30-day plan in Lesson 23 starts with a real measurement.
+Practice days are built in: each week has at least two days with no new lesson, used to apply the week's prompts on real work. Your baseline is captured on day 1 (home screen), so the 30-day plan in Lesson 27 starts with a real measurement.
 
 - **Advantage:** the lightest daily load, the full live workshop, and enough time for habits to form.
 - **Target audience:** organisations enrolling a cohort, and learners who prefer steady practice over a sprint.
@@ -90,15 +93,16 @@ Practice days are built in: each week has at least two days with no new lesson, 
 | — | **Live check-in 1:** setup problems, data rules, first wins |
 | 6–8 | 12–17 — ChatGPT track (or deeper practice in the approved tool) |
 | — | **Live check-in 2:** share the best prompts and Projects/GPTs |
-| 9–12 | 18–23 — Advanced workflows, playbooks, measured results |
-| — | **Lesson 24 workshop**, assessment, certificate |
+| 9 | 18–21 — Other AI assistants (focus on the organisation's approved tool) |
+| 10–12 | 22–27 — Advanced workflows, playbooks, measured results |
+| — | **Lesson 28 workshop**, assessment, certificate |
 
 - **Advantage:** 2–3 lessons a week per employee, three live touchpoints, easy to roll out in waves.
 - **Target audience:** organisations of roughly 50+ staff doing a company-wide rollout.
 
 ### Pace choice and your baseline
 
-The pace cards at the top of the home screen can be tapped at any time. Choosing one opens an optional question: one task you do often and how long it takes today. It is stored only in your browser (never sent anywhere) and becomes the "Before" figure in your Lesson 23 playbook.
+The pace cards at the top of the home screen can be tapped at any time. Choosing one opens an optional question: one task you do often and how long it takes today. It is stored only in your browser (never sent anywhere) and becomes the "Before" figure in your Lesson 27 playbook.
 
 ---
 
@@ -106,28 +110,29 @@ The pace cards at the top of the home screen can be tapped at any time. Choosing
 
 ### Organisation du cours
 
-Le cours compte 24 leçons réparties en quatre parcours :
+Le cours compte 28 leçons réparties en cinq parcours :
 
 | Parcours | Leçons | Contenu |
 |---|---|---|
 | Fondamentaux | 1–5 | Fonctionnement de l'IA, prompts structurés, confidentialité des données, vérification, quand ne pas utiliser l'IA |
 | Claude en pratique | 6–11 | Configuration, documents longs, Projets, artefacts et fichiers, recherche et connecteurs, réflexion |
 | ChatGPT en pratique | 12–17 | Configuration, analyse de données, Canvas, Projets et GPT personnalisés, recherche approfondie, voix et mode agent |
-| Flux de travail avancés | 18–24 | Prompts avancés, routine quotidienne, chaîne de reporting, choix et contre-vérification des outils, automatisation, votre guide, atelier en direct |
+| Les autres assistants IA | 18–21 | Google Gemini, Meta AI dans WhatsApp, Microsoft Copilot, et comment juger tout nouvel outil d'IA (Mistral, DeepSeek, Perplexity, Grok) |
+| Flux de travail avancés | 22–28 | Prompts avancés, routine quotidienne, chaîne de reporting, choix et contre-vérification des outils, automatisation, votre guide, atelier en direct |
 
-**Passez ce que vous savez déjà.** Chaque leçon des Fondamentaux a un lien « test de dispense ». Si vous réussissez son quiz (80 %), la leçon est validée. **Un seul outil autorisé au travail ?** Suivez le parcours de cet outil et passez l'autre. Vous pourrez quand même essayer l'autre outil sur des contenus publics pour la leçon Avancé 4.
+**Passez ce que vous savez déjà.** Chaque leçon des Fondamentaux a un lien « test de dispense ». Si vous réussissez son quiz (80 %), la leçon est validée. **Un seul outil autorisé au travail ?** Suivez le parcours de cet outil et passez l'autre (utilisateurs de Copilot : voir le parcours Les autres assistants IA). Vous pourrez quand même essayer l'autre outil sur des contenus publics pour la leçon Avancé 4.
 
 ### Principes de conception dans un marché concurrentiel
 
 - **Affirmations sourcées uniquement.** Toute statistique doit être sourcée ou marquée `[UNVERIFIED]`. Nous n'utilisons pas de statistiques accrocheuses sur les pertes d'emploi ou les gains de revenus liés à l'IA pour pousser à l'achat.
 - **Prix visible.** Le prix et les conditions de remboursement sont affichés avant toute demande de paiement, jamais cachés derrière un quiz ou un tunnel.
 - **Un certificat honnête.** Le certificat atteste la fin de la formation uniquement, pas une licence professionnelle ni une accréditation.
-- **Aucune approbation sous-entendue.** Ce cours est indépendant. Il enseigne Claude (conçu par Anthropic) et ChatGPT (conçu par OpenAI), mais n'est ni affilié, ni sponsorisé, ni approuvé par l'une ou l'autre entreprise, et nous n'utilisons pas leurs logos.
+- **Aucune approbation sous-entendue.** Ce cours est indépendant. Il enseigne Claude (Anthropic), ChatGPT (OpenAI), Gemini (Google), Meta AI (Meta), Copilot (Microsoft) et d'autres, mais n'est ni affilié, ni sponsorisé, ni approuvé par aucune de ces entreprises, et nous n'utilisons pas leurs logos.
 - **Les outils changent.** Fonctions, menus et limites des offres changent souvent. Les leçons décrivent quoi chercher et indiquent où vérifier la version actuelle.
 
 ### Formules de rythme
 
-Toutes les formules enseignent les mêmes 24 leçons, avec la même note de passage de 80 % et la même formulation du certificat. Seul le calendrier change.
+Toutes les formules enseignent les mêmes 28 leçons, avec la même note de passage de 80 % et la même formulation du certificat. Seul le calendrier change.
 
 #### Formule A — Sprint de 7 jours
 
@@ -136,14 +141,14 @@ Toutes les formules enseignent les mêmes 24 leçons, avec la même note de pass
 | Jour | Leçons |
 |---|---|
 | 1 | 1–5 — Fondamentaux (dispense par quiz si possible) |
-| 2 | 6–8 — Claude : configuration, documents, Projets |
-| 3 | 9–11 — Claude : artefacts, recherche, partenaire de réflexion |
-| 4 | 12–14 — ChatGPT : configuration, analyse de données, Canvas |
-| 5 | 15–17 — ChatGPT : GPT, recherche approfondie, mode agent |
-| 6 | 18–20 — Avancé : prompts, routine quotidienne, chaîne de reporting |
-| 7 | 21–23 — Avancé : choix d'outil, automatisation, guide (construit seul) |
+| 2 | 6–9 — Claude : configuration, documents, Projets, artefacts |
+| 3 | 10–13 — Claude : recherche, partenaire de réflexion ; ChatGPT : configuration, analyse de données |
+| 4 | 14–17 — ChatGPT : Canvas, GPT, recherche approfondie, mode agent |
+| 5 | 18–21 — Autres assistants IA : Gemini, Meta AI, Copilot, juger un nouvel outil |
+| 6 | 22–24 — Avancé : prompts, routine quotidienne, chaîne de reporting |
+| 7 | 25–27 — Avancé : choix d'outil, automatisation, guide (construit seul) |
 
-La leçon 24, l'atelier en direct de 90 minutes, n'a pas sa place à ce rythme. Faites plutôt l'échange de prompts et l'exercice de contre-vérification avec un collègue.
+La leçon 28, l'atelier en direct de 90 minutes, n'a pas sa place à ce rythme. Faites plutôt l'échange de prompts et l'exercice de contre-vérification avec un collègue.
 
 - **Avantage :** le chemin le plus rapide vers un guide opérationnel.
 - **Public cible :** personnes motivées avec une échéance proche, ou qui évaluent le cours pour une équipe.
@@ -157,10 +162,12 @@ La leçon 24, l'atelier en direct de 90 minutes, n'a pas sa place à ce rythme. 
 | 1 | 1–5 — Fondamentaux (dispense par quiz si possible) |
 | 2–4 | 6–11 — parcours Claude, deux leçons par jour |
 | 5–7 | 12–17 — parcours ChatGPT, deux leçons par jour |
-| 8–9 | 18–20 — Avancé : prompts, routine, chaîne |
-| 10–11 | 21–22 — choix d'outil, automatisation |
-| 12–13 | 23 — construire votre guide et mesurer votre point de départ |
-| 14 | 24 — atelier sous forme d'échange asynchrone entre pairs (par exemple, un groupe WhatsApp pour échanger prompts et guides) |
+| 8–9 | 18–21 — Autres assistants IA, deux leçons par jour |
+| 10 | 22–23 — Avancé : prompts, routine quotidienne |
+| 11 | 24–25 — chaîne de reporting, choix d'outil |
+| 12 | 26 — automatisation |
+| 13 | 27 — construire votre guide et mesurer votre point de départ |
+| 14 | 28 — atelier sous forme d'échange asynchrone entre pairs (par exemple, un groupe WhatsApp pour échanger prompts et guides) |
 
 - **Avantage :** le temps d'appliquer chaque leçon au travail avant de passer à la suivante, sans séance en direct à programmer.
 - **Public cible :** salariés à temps plein avec une charge normale ; un choix par défaut raisonnable pour la plupart des déploiements en équipe.
@@ -172,11 +179,11 @@ La leçon 24, l'atelier en direct de 90 minutes, n'a pas sa place à ce rythme. 
 | Semaine | Leçons |
 |---|---|
 | 1 | 1–5 Fondamentaux, puis 6–7 (Claude) |
-| 2 | 8–11 (Claude), 12–13 (ChatGPT) |
-| 3 | 14–17 (ChatGPT), 18–20 (Avancé) |
-| 4 | 21–23 (Avancé), jour 28 : leçon 24, atelier en direct |
+| 2 | 8–11 (Claude), 12–14 (ChatGPT) |
+| 3 | 15–17 (ChatGPT), 18–21 (Autres assistants IA) |
+| 4 | 22–27 (Avancé), jour 28 : leçon 28, atelier en direct |
 
-Des jours de pratique sont prévus : chaque semaine compte au moins deux jours sans nouvelle leçon, consacrés à appliquer les prompts de la semaine à un vrai travail. Votre point de départ est enregistré dès le jour 1 (écran d'accueil), donc le plan à 30 jours de la leçon 23 démarre avec une vraie mesure.
+Des jours de pratique sont prévus : chaque semaine compte au moins deux jours sans nouvelle leçon, consacrés à appliquer les prompts de la semaine à un vrai travail. Votre point de départ est enregistré dès le jour 1 (écran d'accueil), donc le plan à 30 jours de la leçon 27 démarre avec une vraie mesure.
 
 - **Avantage :** la charge quotidienne la plus légère, l'atelier en direct complet, et le temps d'installer des habitudes.
 - **Public cible :** organisations qui inscrivent une promotion, et apprenants qui préfèrent une pratique régulière à un sprint.
@@ -192,12 +199,13 @@ Des jours de pratique sont prévus : chaque semaine compte au moins deux jours s
 | — | **Point en direct 1 :** problèmes de configuration, règles de données, premiers succès |
 | 6–8 | 12–17 — parcours ChatGPT (ou pratique approfondie de l'outil autorisé) |
 | — | **Point en direct 2 :** partage des meilleurs prompts et Projets/GPT |
-| 9–12 | 18–23 — flux avancés, guides, résultats mesurés |
-| — | **Atelier de la leçon 24**, évaluation, certificat |
+| 9 | 18–21 — Autres assistants IA (priorité à l'outil autorisé par l'organisation) |
+| 10–12 | 22–27 — flux avancés, guides, résultats mesurés |
+| — | **Atelier de la leçon 28**, évaluation, certificat |
 
 - **Avantage :** 2 à 3 leçons par semaine et par salarié, trois points en direct, un déploiement facile par vagues.
 - **Public cible :** organisations d'environ 50 salariés ou plus qui déploient la formation à l'échelle de l'entreprise.
 
 ### Choix du rythme et point de départ
 
-Les cartes de rythme en haut de l'écran d'accueil peuvent être tapotées à tout moment. En choisir une ouvre une question optionnelle : une tâche que vous faites souvent et le temps qu'elle vous prend aujourd'hui. La réponse est stockée uniquement dans votre navigateur (jamais envoyée ailleurs) et devient le chiffre « Avant » de votre guide à la leçon 23.
+Les cartes de rythme en haut de l'écran d'accueil peuvent être tapotées à tout moment. En choisir une ouvre une question optionnelle : une tâche que vous faites souvent et le temps qu'elle vous prend aujourd'hui. La réponse est stockée uniquement dans votre navigateur (jamais envoyée ailleurs) et devient le chiffre « Avant » de votre guide à la leçon 27.
